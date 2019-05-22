@@ -14,4 +14,5 @@ dist-boot
 dist-install
 ghc.mk
 .cabal-sandbox
+.stack
 cabal.sandbox.config
