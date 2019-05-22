@@ -1,0 +1,65 @@
+
+==================== FINAL INTERFACE ====================
+2019-05-22 17:17:49.192166606 UTC
+
+interface binary-0.8.7.0-BLOwEKiKlD84pHPCNhnRK5:Data.Binary.Internal 8065
+  interface hash: ef1f528146078e0e6a402770106c9189
+  ABI hash: 090186753e4cf387b1cf0176d283c9f3
+  export-list hash: e0c535d6514578e00f1d844344e40212
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 1d5bbb1614d54ff2e850a2b6e839659b
+  opt_hash: 5835274e0c52a5d281a4b935bfdb5c93
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Data.ByteString.Internal.accursedUnutterablePerformIO
+module dependencies:
+package dependencies: array-0.5.3.0 base-4.12.0.0
+                      bytestring-0.10.8.2 deepseq-1.4.4.0 ghc-prim-0.5.3
+                      integer-gmp-1.0.2.0
+orphans: base-4.12.0.0:GHC.Float base-4.12.0.0:GHC.Base
+family instance modules: base-4.12.0.0:Control.Applicative
+                         base-4.12.0.0:Data.Complex base-4.12.0.0:Data.Functor.Compose
+                         base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity
+                         base-4.12.0.0:Data.Functor.Product base-4.12.0.0:Data.Functor.Sum
+                         base-4.12.0.0:Data.Monoid base-4.12.0.0:Data.Semigroup
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:Data.Version
+                         base-4.12.0.0:Data.Void base-4.12.0.0:GHC.Generics
+                         base-4.12.0.0:GHC.IO.Exception
+import  -/  base-4.12.0.0:Prelude 3c779dfd6448bdd8e234c336802c2acb
+import  -/  bytestring-0.10.8.2:Data.ByteString.Internal f8067c0775041a7adb8f53745475ed88
+addDependentFile "/home/schernichkin/.stack/programs/x86_64-linux/ghc-8.6.5/lib/ghc-8.6.5/include/ghcversion.h" 43db44f9bb88490c2fa995e5f5ec33f2
+addDependentFile ".stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/autogen/cabal_macros.h" e6f1f8b8bb6582b087a6681896f0d62a
+addDependentFile "/usr/include/stdc-predef.h" b11071912035aeb144fe65c00cfe2168
+ae9ce7306f97385a22cb0e529ccf90f9
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Data.Binary.Internal.$trModule3
+                   Data.Binary.Internal.$trModule1) -}
+75a7abbcd1e15756e9f2ce6403f2996e
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Data.Binary.Internal.$trModule2) -}
+ed9dff8d2e01b0eb09f223734d97b97a
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Data.Binary.Internal"#) -}
+7fc4ca3ad7d01d771a7d839e2ab178a3
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Data.Binary.Internal.$trModule4) -}
+3111613c8f811796de06470d7483e47f
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("binary-0.8.7.0-BLOwEKiKlD84pHPCNhnRK5"#) -}
+trusted: none
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+

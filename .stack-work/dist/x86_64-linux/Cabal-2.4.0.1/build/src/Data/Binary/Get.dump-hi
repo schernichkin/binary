@@ -1,0 +1,1811 @@
+
+==================== FINAL INTERFACE ====================
+2019-05-22 17:17:51.529368793 UTC
+
+interface binary-0.8.7.0-BLOwEKiKlD84pHPCNhnRK5:Data.Binary.Get 8065
+  interface hash: 2354efeff69b614b69b7f8c449e70013
+  ABI hash: ff9c2260189d4b12b1f075c0f0ce14c6
+  export-list hash: 8c4fc30bb8f08ebabe6c413e8ef3a3ba
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: ff976e259465bdaff8c46efea121ec07
+  opt_hash: 5835274e0c52a5d281a4b935bfdb5c93
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Data.Binary.Get.getDoublebe
+  Data.Binary.Get.getDoublehost
+  Data.Binary.Get.getDoublele
+  Data.Binary.Get.getFloatbe
+  Data.Binary.Get.getFloathost
+  Data.Binary.Get.getFloatle
+  Data.Binary.Get.getInt16be
+  Data.Binary.Get.getInt16host
+  Data.Binary.Get.getInt16le
+  Data.Binary.Get.getInt32be
+  Data.Binary.Get.getInt32host
+  Data.Binary.Get.getInt32le
+  Data.Binary.Get.getInt64be
+  Data.Binary.Get.getInt64host
+  Data.Binary.Get.getInt64le
+  Data.Binary.Get.getInt8
+  Data.Binary.Get.getInthost
+  Data.Binary.Get.getLazyByteString
+  Data.Binary.Get.getLazyByteStringNul
+  Data.Binary.Get.getRemainingLazyByteString
+  Data.Binary.Get.getWord16be
+  Data.Binary.Get.getWord16host
+  Data.Binary.Get.getWord16le
+  Data.Binary.Get.getWord32be
+  Data.Binary.Get.getWord32host
+  Data.Binary.Get.getWord32le
+  Data.Binary.Get.getWord64be
+  Data.Binary.Get.getWord64host
+  Data.Binary.Get.getWord64le
+  Data.Binary.Get.getWord8
+  Data.Binary.Get.getWordhost
+  Data.Binary.Get.pushChunk
+  Data.Binary.Get.pushChunks
+  Data.Binary.Get.pushEndOfInput
+  Data.Binary.Get.runGet
+  Data.Binary.Get.runGetIncremental
+  Data.Binary.Get.runGetOrFail
+  Data.Binary.Get.runGetState
+  Data.Binary.Get.skip
+  Data.Binary.Get.Internal.bytesRead
+  Data.Binary.Get.Internal.getByteString
+  Data.Binary.Get.Internal.getBytes
+  Data.Binary.Get.Internal.isEmpty
+  Data.Binary.Get.Internal.isolate
+  Data.Binary.Get.Internal.label
+  Data.Binary.Get.Internal.lookAhead
+  Data.Binary.Get.Internal.lookAheadE
+  Data.Binary.Get.Internal.lookAheadM
+  Data.Binary.Get.Internal.remaining
+  Data.Binary.Get.ByteOffset
+  Data.Binary.Get.Decoder{Data.Binary.Get.Done Data.Binary.Get.Fail Data.Binary.Get.Partial}
+  Data.Binary.Get.Internal.Get
+module dependencies: Data.Binary.FloatCast Data.Binary.Get.Internal
+                     Data.Binary.Internal
+package dependencies: array-0.5.3.0 base-4.12.0.0
+                      bytestring-0.10.8.2 deepseq-1.4.4.0 ghc-prim-0.5.3
+                      integer-gmp-1.0.2.0
+orphans: base-4.12.0.0:GHC.Float base-4.12.0.0:GHC.Base
+family instance modules: base-4.12.0.0:Control.Applicative
+                         base-4.12.0.0:Data.Complex base-4.12.0.0:Data.Functor.Compose
+                         base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity
+                         base-4.12.0.0:Data.Functor.Product base-4.12.0.0:Data.Functor.Sum
+                         base-4.12.0.0:Data.Monoid base-4.12.0.0:Data.Semigroup
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:Data.Version
+                         base-4.12.0.0:Data.Void base-4.12.0.0:GHC.Exts
+                         base-4.12.0.0:GHC.Generics base-4.12.0.0:GHC.IO.Exception
+import  -/  base-4.12.0.0:Data.Bits 64fdef6c05b11e33e007318d457467e9
+import  -/  base-4.12.0.0:Data.Either 423bee738f25e5ee983d072216009be8
+import  -/  base-4.12.0.0:Data.Functor 069b2025a03e32fd228e74a86a58a075
+import  -/  base-4.12.0.0:Foreign 194166dc1cce29a58ee017ed45b6c1fb
+import  -/  base-4.12.0.0:Foreign.Storable 379843bb6beffe814f03155babd3a2a1
+import  -/  base-4.12.0.0:GHC.Base c00b75f0b052d05c55ba6a4dd1c63b26
+import  -/  base-4.12.0.0:GHC.Err ea5e313ef4146b40b5d8b27aa168e736
+import  -/  base-4.12.0.0:GHC.Int 75a738083d98da9ebef0ff75df759462
+import  -/  base-4.12.0.0:GHC.Num c2039f03637c68f47b0bbff4c18ec616
+import  -/  base-4.12.0.0:GHC.Real af2b985dd29515c375fb78b2c9298d42
+import  -/  base-4.12.0.0:GHC.Show 838a5d039379d82d9626aae53dfce276
+import  -/  base-4.12.0.0:GHC.Word 36bd327b03ce8a144ab8e66a53975837
+import  -/  base-4.12.0.0:Prelude 3c779dfd6448bdd8e234c336802c2acb
+import  -/  Data.Binary.FloatCast e902e8bec8d65f930c017c464de1f21c
+  exports: 8a13bb60343e3fa682d9bef51a968a7d
+  wordToDouble 8481404c56aa387878af4cc8e02a89c2
+  wordToFloat 52d7cd847aa863aaf7bf2599830bae70
+import  -/  Data.Binary.Get.Internal 72d9f9f5cb4680e87b57f70e12a256ec
+  exports: 1715e4a790f17c7d3ecf70ee7ff47df1
+  BytesRead b3db03bb23213bc285175b8022df2bbe
+  Consume 9dd97f1f0e71fc78ad3a8787b0f7a1a3
+  Decoder a8bf888f063389d343f398bcd63cf8a2
+  Done 66e98f8a9970472d364f1c265653f416
+  Fail fee2471cd236640674f8145af0f2f113
+  Get a186c9537e26c2f269fcb2c351eb0f38
+  Partial e9613f3754514c3d6aeadea3b4d76545
+  bytesRead 6196e8dadce11105268b40093bb2e330
+  failOnEOF fd90dccc5825300728033c7ec82cd4dc
+  getByteString c1d082dd6a7fcc9d5e7e75223e285c02
+  getBytes 77db72247a67480177d8cf9f7750bae6
+  isEmpty 05f77d631baec96009d66a9dbb818fb3
+  isolate 17a0a3c941061de3d388a7b9bb2f41b0
+  label 938309c54d14c915337ab78bbd67b0aa
+  lookAhead b6c88a0968c7c4c1d176bac527fb0ac8
+  lookAheadE d74ae2679fd95d7262004238c7c5fe25
+  lookAheadM 0c4bb3a043b64ab81f99fcf2d7a593ae
+  readN a186c9537e26c2f269fcb2c351eb0f38
+  readNWith 46675a42f54b9090f7407e8abb3d4de5
+  remaining ecad5fe3a2f0ecedb4f685f5889839b3
+  runGetIncremental 651791b42097319e11d9abd33711e49f
+  withInputChunks 2596f9c7dc5cd2cce21015127b0c93dd
+import  -/  bytestring-0.10.8.2:Data.ByteString fd8cecf441c361eb2e989315be3b33ab
+import  -/  bytestring-0.10.8.2:Data.ByteString.Internal f8067c0775041a7adb8f53745475ed88
+import  -/  bytestring-0.10.8.2:Data.ByteString.Lazy 17bbfcb66adfeb54389d1792c4493dec
+import  -/  bytestring-0.10.8.2:Data.ByteString.Lazy.Internal 2323410d496b66c6a46f7c8b483c1856
+import  -/  bytestring-0.10.8.2:Data.ByteString.Unsafe 776fbb495c4caeeff10435741858143b
+import  -/  ghc-prim-0.5.3:GHC.Classes 0f6fd7d7db53fc48f6e1f01803cc6c9d
+addDependentFile "/home/schernichkin/.stack/programs/x86_64-linux/ghc-8.6.5/lib/ghc-8.6.5/include/MachDeps.h" 2b3aee30e6bc4d66487e3ad10d3c0f27
+addDependentFile "/home/schernichkin/.stack/programs/x86_64-linux/ghc-8.6.5/lib/ghc-8.6.5/include/ghcautoconf.h" dafb5816672d6b8184b3b4fee222c9ba
+addDependentFile "/home/schernichkin/.stack/programs/x86_64-linux/ghc-8.6.5/lib/ghc-8.6.5/include/ghcversion.h" 43db44f9bb88490c2fa995e5f5ec33f2
+addDependentFile ".stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/autogen/cabal_macros.h" e6f1f8b8bb6582b087a6681896f0d62a
+addDependentFile "/usr/include/stdc-predef.h" b11071912035aeb144fe65c00cfe2168
+342cb0f11957b26c421ac2173cc29baa
+  $tc'Done :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8797785767254618774##
+                   1694688710187415742##
+                   Data.Binary.Get.$trModule
+                   Data.Binary.Get.$tc'Done2
+                   1#
+                   Data.Binary.Get.$tc'Done1) -}
+51c4aacf41652df6052f78c60884400a
+  $tc'Done1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+16b112f2e9f2c83a83eb5f151f749a6f
+  $tc'Done2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Data.Binary.Get.$tc'Done3) -}
+8d7ad6a1f7bb9117df691192047248c6
+  $tc'Done3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Done"#) -}
+5c63d4ad90882b25bf83c9209b41198e
+  $tc'Fail :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1939906753480420519##
+                   5696184117211306081##
+                   Data.Binary.Get.$trModule
+                   Data.Binary.Get.$tc'Fail2
+                   1#
+                   Data.Binary.Get.$tc'Fail1) -}
+b14a36c8ee2e9c405f8c016e9ae14c29
+  $tc'Fail1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+9992816716785ed7470b9306b3f10744
+  $tc'Fail2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Data.Binary.Get.$tc'Fail3) -}
+84bc36f0ae1f824086e958faad33c50e
+  $tc'Fail3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Fail"#) -}
+f2895e435f1092c2f804cc82ff5b29f4
+  $tc'Partial :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12544279149518435894##
+                   1511368687896045008##
+                   Data.Binary.Get.$trModule
+                   Data.Binary.Get.$tc'Partial2
+                   1#
+                   Data.Binary.Get.$tc'Partial1) -}
+4f6148c302ee6ada85e95adfe6541853
+  $tc'Partial1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+4014e3038bf3472787c03383a210b5de
+  $tc'Partial2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Data.Binary.Get.$tc'Partial3) -}
+a8da03992b803684fd913b7e85c07707
+  $tc'Partial3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Partial"#) -}
+c23309a08d0ad8685e26cbe70ab6b2ae
+  $tcDecoder :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   11400628577641455548##
+                   16443579326294945209##
+                   Data.Binary.Get.$trModule
+                   Data.Binary.Get.$tcDecoder1
+                   0#
+                   GHC.Types.krep$*Arr*) -}
+dbe48d348101e33168177d4fb2da3e3d
+  $tcDecoder1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Data.Binary.Get.$tcDecoder2) -}
+f47a26c3ce18964f54dbccd1f7588897
+  $tcDecoder2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Decoder"#) -}
+d0c42ad0d597bfe0888b450783405dfe
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Data.Binary.Get.$trModule3
+                   Data.Binary.Get.$trModule1) -}
+b9be09eb04e8dec56b3d81632df49bd3
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Data.Binary.Get.$trModule2) -}
+485626cc7c8539d8744ddce3e553e382
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Data.Binary.Get"#) -}
+faab254d49be115f42ecd850c96fdf31
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Data.Binary.Get.$trModule4) -}
+5e8554e8a45cb3da904326f06e667fb2
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("binary-0.8.7.0-BLOwEKiKlD84pHPCNhnRK5"#) -}
+8fc9ede69b26030fee81ed66b5ff28e0
+  $wconsumeBytes ::
+    GHC.Prim.Int#
+    -> GHC.Prim.Addr#
+    -> GHC.ForeignPtr.ForeignPtrContents
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> Data.Either.Either
+         GHC.Int.Int64
+         (Data.ByteString.Internal.ByteString,
+          Data.ByteString.Internal.ByteString)
+  {- Arity: 5, Strictness: <S,U><L,U><L,U><L,U><S,U>, Inline: [2],
+     Unfolding: (\ (ww :: GHC.Prim.Int#)
+                   (ww1 :: GHC.Prim.Addr#)
+                   (ww2 :: GHC.ForeignPtr.ForeignPtrContents)
+                   (ww3 :: GHC.Prim.Int#)
+                   (ww4 :: GHC.Prim.Int#) ->
+                 case GHC.Prim.>=# ww4 ww of lwild {
+                   DEFAULT
+                   -> Data.Either.Left
+                        @ GHC.Int.Int64
+                        @ (Data.ByteString.Internal.ByteString,
+                           Data.ByteString.Internal.ByteString)
+                        (GHC.Int.I64# (GHC.Prim.-# ww ww4))
+                   1#
+                   -> Data.Either.Right
+                        @ GHC.Int.Int64
+                        @ (Data.ByteString.Internal.ByteString,
+                           Data.ByteString.Internal.ByteString)
+                        (case GHC.Prim.<=# ww 0# of lwild1 {
+                           DEFAULT
+                           -> case GHC.Prim.>=# ww ww4 of lwild2 {
+                                DEFAULT
+                                -> (Data.ByteString.Internal.PS ww1 ww2 ww3 ww,
+                                    Data.ByteString.Internal.PS
+                                      ww1
+                                      ww2
+                                      (GHC.Prim.+# ww3 ww)
+                                      (GHC.Prim.-# ww4 ww))
+                                1#
+                                -> (Data.ByteString.Internal.PS ww1 ww2 ww3 ww4,
+                                    Data.ByteString.empty) }
+                           1#
+                           -> (Data.ByteString.empty,
+                               Data.ByteString.Internal.PS ww1 ww2 ww3 ww4) }) }) -}
+7a424de4aaeb65eb8ddf0e1f432a3b2e
+  $wconsumeUntilNul ::
+    GHC.Prim.Addr#
+    -> GHC.ForeignPtr.ForeignPtrContents
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> Data.Either.Either
+         ()
+         (Data.ByteString.Internal.ByteString,
+          Data.ByteString.Internal.ByteString)
+  {- Arity: 4, Strictness: <S,U><L,U><S,U><S,U>, Inline: [2],
+     Unfolding: (\ (ww :: GHC.Prim.Addr#)
+                   (ww1 :: GHC.ForeignPtr.ForeignPtrContents)
+                   (ww2 :: GHC.Prim.Int#)
+                   (ww3 :: GHC.Prim.Int#) ->
+                 let {
+                   p' :: GHC.Prim.Addr# = GHC.Prim.plusAddr# ww ww2
+                 } in
+                 case {__pkg_ccall bytestring-0.10.8.2 GHC.Prim.Addr#
+                                                       -> GHC.Prim.Int#
+                                                       -> GHC.Prim.Word#
+                                                       -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                       -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                                             GHC.Prim.Addr# #)}
+                        p'
+                        0#
+                        (GHC.Prim.int2Word# ww3)
+                        GHC.Prim.realWorld# of wild2 { (#,#) ds4 ds5 ->
+                 case GHC.Prim.eqAddr# ds5 __NULL of lwild {
+                   DEFAULT
+                   -> case GHC.Prim.touch#
+                             @ 'GHC.Types.LiftedRep
+                             @ GHC.ForeignPtr.ForeignPtrContents
+                             ww1
+                             ds4 of s' { DEFAULT ->
+                      let {
+                        n :: GHC.Prim.Int# = GHC.Prim.minusAddr# ds5 p'
+                      } in
+                      let {
+                        dt3 :: GHC.Prim.Int# = GHC.Prim.-# ww3 n
+                      } in
+                      case GHC.Prim.<=# dt3 0# of lwild1 {
+                        DEFAULT
+                        -> Data.Either.Right
+                             @ ()
+                             @ (Data.ByteString.Internal.ByteString,
+                                Data.ByteString.Internal.ByteString)
+                             (Data.ByteString.Internal.PS ww ww1 ww2 n,
+                              case GHC.Prim.>=# 1# dt3 of lwild2 {
+                                DEFAULT
+                                -> Data.ByteString.Internal.PS
+                                     ww
+                                     ww1
+                                     (GHC.Prim.+# (GHC.Prim.+# ww2 n) 1#)
+                                     (GHC.Prim.-# dt3 1#)
+                                1# -> Data.ByteString.empty })
+                        1# -> Data.Binary.Get.getLazyByteStringNul2 } }
+                   1#
+                   -> case GHC.Prim.touch#
+                             @ 'GHC.Types.LiftedRep
+                             @ GHC.ForeignPtr.ForeignPtrContents
+                             ww1
+                             ds4 of s' { DEFAULT ->
+                      Data.Binary.Get.getLazyByteStringNul2 } } }) -}
+8ce4a832f9b941fffc6440a2a96c79fb
+  $wpoly_go ::
+    Data.Binary.Get.Internal.Decoder a
+    -> GHC.Prim.Int# -> Data.Binary.Get.Decoder a
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,U>, Inline: [2] -}
+5ff9c6cb8b64bb83c1a8e7fb163bc85a
+  $wrunGetState ::
+    Data.Binary.Get.Internal.Get a
+    -> Data.ByteString.Lazy.Internal.ByteString
+    -> Data.Binary.Get.ByteOffset
+    -> (# a, Data.ByteString.Lazy.Internal.ByteString,
+          Data.Binary.Get.ByteOffset #)
+  {- Arity: 3, Strictness: <C(C(S)),1*C1(C1(U))><L,U><L,U(U)>,
+     Inline: [2],
+     Unfolding: (\ @ a
+                   (w :: Data.Binary.Get.Internal.Get a)
+                   (w1 :: Data.ByteString.Lazy.Internal.ByteString)
+                   (w2 :: Data.Binary.Get.ByteOffset) ->
+                 let {
+                   exit :: Data.ByteString.Lazy.Internal.ByteString
+                           -> Data.ByteString.Internal.ByteString
+                           -> GHC.Prim.Int#
+                           -> a
+                           -> (# a, Data.ByteString.Lazy.Internal.ByteString,
+                                 Data.Binary.Get.ByteOffset #)
+                     <join 4> {- Arity: 4,
+                                 Strictness: <L,U><S,1*U(U,U,U,1*U)><L,U><L,U> -}
+                   = \ (lbs :: Data.ByteString.Lazy.Internal.ByteString)[OneShot]
+                       (s :: Data.ByteString.Internal.ByteString)[OneShot]
+                       (dt :: GHC.Prim.Int#)[OneShot]
+                       (a1 :: a)[OneShot] ->
+                     case s of wild { Data.ByteString.Internal.PS dt1 dt2 dt3 dt4 ->
+                     (# a1,
+                        case dt4 of wild1 {
+                          DEFAULT
+                          -> Data.ByteString.Lazy.Internal.Chunk dt1 dt2 dt3 wild1 lbs
+                          0# -> lbs },
+                        case w2 of wild1 { GHC.Int.I64# y# ->
+                        GHC.Int.I64# (GHC.Prim.+# dt y#) } #) }
+                 } in
+                 letrec {
+                   go :: Data.Binary.Get.Decoder a
+                         -> Data.ByteString.Lazy.Internal.ByteString
+                         -> (# a, Data.ByteString.Lazy.Internal.ByteString,
+                               Data.Binary.Get.ByteOffset #)
+                     <join 2> {- Arity: 2, Strictness: <S,1*U><L,U> -}
+                   = \ (ds :: Data.Binary.Get.Decoder a)
+                       (lbs :: Data.ByteString.Lazy.Internal.ByteString) ->
+                     case ds of wild {
+                       Data.Binary.Get.Fail ds1 dt msg
+                       -> case Data.Binary.Get.runGetState1 @ a dt msg
+                          ret_ty (# a, Data.ByteString.Lazy.Internal.ByteString,
+                                    Data.Binary.Get.ByteOffset #)
+                          of {}
+                       Data.Binary.Get.Partial k
+                       -> go
+                            (k (Data.Binary.Get.takeHeadChunk lbs))
+                            (case lbs of wild1 {
+                               Data.ByteString.Lazy.Internal.Empty
+                               -> Data.ByteString.Lazy.Internal.Empty
+                               Data.ByteString.Lazy.Internal.Chunk dt dt1 dt2 dt3 lbs' -> lbs' })
+                       Data.Binary.Get.Done s dt a1 -> exit lbs s dt a1 }
+                 } in
+                 go
+                   (Data.Binary.Get.$wpoly_go
+                      @ a
+                      (Data.Binary.Get.Internal.runGetIncremental1
+                         @ a
+                         (w `cast` (Data.Binary.Get.Internal.N:Get[0] <a>_R)
+                            @ a
+                            Data.ByteString.empty
+                            (Data.Binary.Get.Internal.$WDone @ a)))
+                      0#)
+                   w1) -}
+901a903cbb26b6e9ac2c0d699c3400d1
+  type ByteOffset = GHC.Int.Int64
+d35255ad3309931047a9ce670c656daf
+  data Decoder a
+    = Fail !Data.ByteString.Internal.ByteString
+           {-# UNPACK #-}Data.Binary.Get.ByteOffset
+           GHC.Base.String
+    | Partial (GHC.Maybe.Maybe Data.ByteString.Internal.ByteString
+               -> Data.Binary.Get.Decoder a)
+    | Done !Data.ByteString.Internal.ByteString
+           {-# UNPACK #-}Data.Binary.Get.ByteOffset
+           a
+86104f100208ca597c8580d6b0952c0f
+  consumeAll :: Data.Binary.Get.Internal.Consume ()
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><L,A>m1,
+     Unfolding: InlineRule (2, True, True)
+                (\ (ds :: ()) (ds1 :: Data.ByteString.Internal.ByteString) ->
+                 Data.Binary.Get.getLazyByteStringNul2) -}
+fcce91c09e3a7ea07e875d68193d18d1
+  consumeBytes :: Data.Binary.Get.Internal.Consume GHC.Int.Int64
+  {- Arity: 2, Strictness: <S(S),1*U(U)><S(SLSS),1*U(U,U,U,U)>,
+     Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: GHC.Int.Int64)
+                   (w1 :: Data.ByteString.Internal.ByteString) ->
+                 case w of ww { GHC.Int.I64# ww1 ->
+                 case w1 of ww2 { Data.ByteString.Internal.PS ww3 ww4 ww5 ww6 ->
+                 Data.Binary.Get.$wconsumeBytes ww1 ww3 ww4 ww5 ww6 } }) -}
+0fb92306e194c5eaa2878cc2e4d70597
+  consumeUntilNul :: Data.Binary.Get.Internal.Consume ()
+  {- Arity: 2, Strictness: <L,A><S(SLSS),1*U(U,U,U,U)>, Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: ()) (w1 :: Data.ByteString.Internal.ByteString) ->
+                 case w1 of ww { Data.ByteString.Internal.PS ww1 ww2 ww3 ww4 ->
+                 Data.Binary.Get.$wconsumeUntilNul ww1 ww2 ww3 ww4 }) -}
+417336f0abf6ee4ff47cd954f79a51c7
+  getDoublebe :: Data.Binary.Get.Internal.Get GHC.Types.Double
+  {- Arity: 2, Strictness: <S(SLSS),1*U(U,U,U,U)><L,C(C1(U))>,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (let {
+                   m :: GHC.Types.Int = GHC.Types.I# 8#
+                 } in
+                 (\ @ r
+                    (i :: Data.ByteString.Internal.ByteString)
+                    (ks :: Data.Binary.Get.Internal.Success GHC.Types.Double r) ->
+                  (Data.Binary.Get.Internal.readN
+                     @ GHC.Word.Word64
+                     m
+                     Data.Binary.Get.word64be)
+                    `cast`
+                  (Data.Binary.Get.Internal.N:Get[0] <GHC.Word.Word64>_R)
+                    @ r
+                    i
+                    (\ (i' :: Data.ByteString.Internal.ByteString)
+                       (a1 :: GHC.Word.Word64) ->
+                     ks i' (Data.Binary.FloatCast.wordToDouble a1)))
+                   `cast`
+                 (Sym (Data.Binary.Get.Internal.N:Get[0] <GHC.Types.Double>_R))) -}
+ea84bc12853cd9a3e537523b0d4fcbf9
+  getDoublehost :: Data.Binary.Get.Internal.Get GHC.Types.Double
+  {- Arity: 2, Strictness: <S(SLSS),1*U(U,U,U,U)><L,C(C1(U))>,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (\ @ r
+                   (i :: Data.ByteString.Internal.ByteString)
+                   (ks :: Data.Binary.Get.Internal.Success GHC.Types.Double r) ->
+                 (Data.Binary.Get.Internal.readN
+                    @ GHC.Word.Word64
+                    Foreign.Storable.$fStorableDouble5
+                    (\ (s :: Data.ByteString.Internal.ByteString) ->
+                     case s of wild { Data.ByteString.Internal.PS dt dt1 dt2 dt3 ->
+                     case GHC.Prim.readWord64OffAddr#
+                            @ GHC.Prim.RealWorld
+                            (GHC.Prim.plusAddr# dt dt2)
+                            0#
+                            GHC.Prim.realWorld# of ds2 { (#,#) ipv ipv1 ->
+                     case GHC.Prim.touch#
+                            @ 'GHC.Types.LiftedRep
+                            @ GHC.ForeignPtr.ForeignPtrContents
+                            dt1
+                            ipv of s' { DEFAULT ->
+                     GHC.Word.W64# ipv1 } } }))
+                   `cast`
+                 (Data.Binary.Get.Internal.N:Get[0] <GHC.Word.Word64>_R)
+                   @ r
+                   i
+                   (\ (i' :: Data.ByteString.Internal.ByteString)
+                      (a1 :: GHC.Word.Word64) ->
+                    ks i' (Data.Binary.FloatCast.wordToDouble a1)))
+                  `cast`
+                (Sym (Data.Binary.Get.Internal.N:Get[0] <GHC.Types.Double>_R)) -}
+5b1629ca4e97c7d0b5b63c21dc27b293
+  getDoublele :: Data.Binary.Get.Internal.Get GHC.Types.Double
+  {- Arity: 2, Strictness: <S(SLSS),1*U(U,U,U,U)><L,C(C1(U))>,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (let {
+                   m :: GHC.Types.Int = GHC.Types.I# 8#
+                 } in
+                 (\ @ r
+                    (i :: Data.ByteString.Internal.ByteString)
+                    (ks :: Data.Binary.Get.Internal.Success GHC.Types.Double r) ->
+                  (Data.Binary.Get.Internal.readN
+                     @ GHC.Word.Word64
+                     m
+                     Data.Binary.Get.word64le)
+                    `cast`
+                  (Data.Binary.Get.Internal.N:Get[0] <GHC.Word.Word64>_R)
+                    @ r
+                    i
+                    (\ (i' :: Data.ByteString.Internal.ByteString)
+                       (a1 :: GHC.Word.Word64) ->
+                     ks i' (Data.Binary.FloatCast.wordToDouble a1)))
+                   `cast`
+                 (Sym (Data.Binary.Get.Internal.N:Get[0] <GHC.Types.Double>_R))) -}
+cfbd54bff6ae48fcc4f8460d2ba333b3
+  getFloatbe :: Data.Binary.Get.Internal.Get GHC.Types.Float
+  {- Arity: 2, Strictness: <S(SLSS),1*U(U,U,U,U)><L,C(C1(U))>,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (let {
+                   m :: GHC.Types.Int = GHC.Types.I# 4#
+                 } in
+                 (\ @ r
+                    (i :: Data.ByteString.Internal.ByteString)
+                    (ks :: Data.Binary.Get.Internal.Success GHC.Types.Float r) ->
+                  (Data.Binary.Get.Internal.readN
+                     @ GHC.Word.Word32
+                     m
+                     Data.Binary.Get.word32be)
+                    `cast`
+                  (Data.Binary.Get.Internal.N:Get[0] <GHC.Word.Word32>_R)
+                    @ r
+                    i
+                    (\ (i' :: Data.ByteString.Internal.ByteString)
+                       (a1 :: GHC.Word.Word32) ->
+                     ks i' (Data.Binary.FloatCast.wordToFloat a1)))
+                   `cast`
+                 (Sym (Data.Binary.Get.Internal.N:Get[0] <GHC.Types.Float>_R))) -}
+2e0bab637071d422b42e207f61c7b081
+  getFloathost :: Data.Binary.Get.Internal.Get GHC.Types.Float
+  {- Arity: 2, Strictness: <S(SLSS),1*U(U,U,U,U)><L,C(C1(U))>,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (\ @ r
+                   (i :: Data.ByteString.Internal.ByteString)
+                   (ks :: Data.Binary.Get.Internal.Success GHC.Types.Float r) ->
+                 (Data.Binary.Get.Internal.readN
+                    @ GHC.Word.Word32
+                    Foreign.Storable.$fStorableBool7
+                    (\ (s :: Data.ByteString.Internal.ByteString) ->
+                     case s of wild { Data.ByteString.Internal.PS dt dt1 dt2 dt3 ->
+                     case GHC.Prim.readWord32OffAddr#
+                            @ GHC.Prim.RealWorld
+                            (GHC.Prim.plusAddr# dt dt2)
+                            0#
+                            GHC.Prim.realWorld# of ds2 { (#,#) ipv ipv1 ->
+                     case GHC.Prim.touch#
+                            @ 'GHC.Types.LiftedRep
+                            @ GHC.ForeignPtr.ForeignPtrContents
+                            dt1
+                            ipv of s' { DEFAULT ->
+                     GHC.Word.W32# ipv1 } } }))
+                   `cast`
+                 (Data.Binary.Get.Internal.N:Get[0] <GHC.Word.Word32>_R)
+                   @ r
+                   i
+                   (\ (i' :: Data.ByteString.Internal.ByteString)
+                      (a1 :: GHC.Word.Word32) ->
+                    ks i' (Data.Binary.FloatCast.wordToFloat a1)))
+                  `cast`
+                (Sym (Data.Binary.Get.Internal.N:Get[0] <GHC.Types.Float>_R)) -}
+caa7e34b783832b6b82ecc462f020384
+  getFloatle :: Data.Binary.Get.Internal.Get GHC.Types.Float
+  {- Arity: 2, Strictness: <S(SLSS),1*U(U,U,U,U)><L,C(C1(U))>,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (let {
+                   m :: GHC.Types.Int = GHC.Types.I# 4#
+                 } in
+                 (\ @ r
+                    (i :: Data.ByteString.Internal.ByteString)
+                    (ks :: Data.Binary.Get.Internal.Success GHC.Types.Float r) ->
+                  (Data.Binary.Get.Internal.readN
+                     @ GHC.Word.Word32
+                     m
+                     Data.Binary.Get.word32le)
+                    `cast`
+                  (Data.Binary.Get.Internal.N:Get[0] <GHC.Word.Word32>_R)
+                    @ r
+                    i
+                    (\ (i' :: Data.ByteString.Internal.ByteString)
+                       (a1 :: GHC.Word.Word32) ->
+                     ks i' (Data.Binary.FloatCast.wordToFloat a1)))
+                   `cast`
+                 (Sym (Data.Binary.Get.Internal.N:Get[0] <GHC.Types.Float>_R))) -}
+297e2b4cc27aa49eb56e71629a59df44
+  getInt16be :: Data.Binary.Get.Internal.Get GHC.Int.Int16
+  {- Arity: 2, Strictness: <S(SLSS),1*U(U,U,U,U)><L,C(C1(U))>,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (let {
+                   m :: GHC.Types.Int = GHC.Types.I# 2#
+                 } in
+                 (\ @ r
+                    (i :: Data.ByteString.Internal.ByteString)
+                    (ks :: Data.Binary.Get.Internal.Success GHC.Int.Int16 r) ->
+                  (Data.Binary.Get.Internal.readN
+                     @ GHC.Word.Word16
+                     m
+                     Data.Binary.Get.word16be)
+                    `cast`
+                  (Data.Binary.Get.Internal.N:Get[0] <GHC.Word.Word16>_R)
+                    @ r
+                    i
+                    (\ (i' :: Data.ByteString.Internal.ByteString)
+                       (a1 :: GHC.Word.Word16) ->
+                     ks
+                       i'
+                       (case a1 of wild { GHC.Word.W16# x# ->
+                        GHC.Int.I16# (GHC.Prim.narrow16Int# (GHC.Prim.word2Int# x#)) })))
+                   `cast`
+                 (Sym (Data.Binary.Get.Internal.N:Get[0] <GHC.Int.Int16>_R))) -}
+f9fd156924c0f82e592b4135028eda24
+  getInt16host :: Data.Binary.Get.Internal.Get GHC.Int.Int16
+  {- Arity: 2, Strictness: <S(SLSS),1*U(U,U,U,U)><L,C(C1(U))>,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (Data.Binary.Get.Internal.readN
+                   @ GHC.Int.Int16
+                   Foreign.Storable.$fStorableInt10
+                   (\ (s :: Data.ByteString.Internal.ByteString) ->
+                    case s of wild { Data.ByteString.Internal.PS dt dt1 dt2 dt3 ->
+                    case GHC.Prim.readInt16OffAddr#
+                           @ GHC.Prim.RealWorld
+                           (GHC.Prim.plusAddr# dt dt2)
+                           0#
+                           GHC.Prim.realWorld# of ds2 { (#,#) ipv ipv1 ->
+                    case GHC.Prim.touch#
+                           @ 'GHC.Types.LiftedRep
+                           @ GHC.ForeignPtr.ForeignPtrContents
+                           dt1
+                           ipv of s' { DEFAULT ->
+                    GHC.Int.I16# ipv1 } } })) -}
+7cc98bbee13f2a1a155183df07c0c230
+  getInt16le :: Data.Binary.Get.Internal.Get GHC.Int.Int16
+  {- Arity: 2, Strictness: <S(SLSS),1*U(U,U,U,U)><L,C(C1(U))>,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (let {
+                   m :: GHC.Types.Int = GHC.Types.I# 2#
+                 } in
+                 (\ @ r
+                    (i :: Data.ByteString.Internal.ByteString)
+                    (ks :: Data.Binary.Get.Internal.Success GHC.Int.Int16 r) ->
+                  (Data.Binary.Get.Internal.readN
+                     @ GHC.Word.Word16
+                     m
+                     Data.Binary.Get.word16le)
+                    `cast`
+                  (Data.Binary.Get.Internal.N:Get[0] <GHC.Word.Word16>_R)
+                    @ r
+                    i
+                    (\ (i' :: Data.ByteString.Internal.ByteString)
+                       (a1 :: GHC.Word.Word16) ->
+                     ks
+                       i'
+                       (case a1 of wild { GHC.Word.W16# x# ->
+                        GHC.Int.I16# (GHC.Prim.narrow16Int# (GHC.Prim.word2Int# x#)) })))
+                   `cast`
+                 (Sym (Data.Binary.Get.Internal.N:Get[0] <GHC.Int.Int16>_R))) -}
+1ded201f18a6f7b323a6000aa4474131
+  getInt32be :: Data.Binary.Get.Internal.Get GHC.Int.Int32
+  {- Arity: 2, Strictness: <S(SLSS),1*U(U,U,U,U)><L,C(C1(U))>,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (let {
+                   m :: GHC.Types.Int = GHC.Types.I# 4#
+                 } in
+                 (\ @ r
+                    (i :: Data.ByteString.Internal.ByteString)
+                    (ks :: Data.Binary.Get.Internal.Success GHC.Int.Int32 r) ->
+                  (Data.Binary.Get.Internal.readN
+                     @ GHC.Word.Word32
+                     m
+                     Data.Binary.Get.word32be)
+                    `cast`
+                  (Data.Binary.Get.Internal.N:Get[0] <GHC.Word.Word32>_R)
+                    @ r
+                    i
+                    (\ (i' :: Data.ByteString.Internal.ByteString)
+                       (a1 :: GHC.Word.Word32) ->
+                     ks
+                       i'
+                       (case a1 of wild { GHC.Word.W32# x# ->
+                        GHC.Int.I32# (GHC.Prim.narrow32Int# (GHC.Prim.word2Int# x#)) })))
+                   `cast`
+                 (Sym (Data.Binary.Get.Internal.N:Get[0] <GHC.Int.Int32>_R))) -}
+207ffae560753c64605f12f00e54dc30
+  getInt32host :: Data.Binary.Get.Internal.Get GHC.Int.Int32
+  {- Arity: 2, Strictness: <S(SLSS),1*U(U,U,U,U)><L,C(C1(U))>,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (Data.Binary.Get.Internal.readN
+                   @ GHC.Int.Int32
+                   Foreign.Storable.$fStorableBool7
+                   (\ (s :: Data.ByteString.Internal.ByteString) ->
+                    case s of wild { Data.ByteString.Internal.PS dt dt1 dt2 dt3 ->
+                    case GHC.Prim.readInt32OffAddr#
+                           @ GHC.Prim.RealWorld
+                           (GHC.Prim.plusAddr# dt dt2)
+                           0#
+                           GHC.Prim.realWorld# of ds2 { (#,#) ipv ipv1 ->
+                    case GHC.Prim.touch#
+                           @ 'GHC.Types.LiftedRep
+                           @ GHC.ForeignPtr.ForeignPtrContents
+                           dt1
+                           ipv of s' { DEFAULT ->
+                    GHC.Int.I32# ipv1 } } })) -}
+f7f70b7dba8fed6dcb39aa5f722d650e
+  getInt32le :: Data.Binary.Get.Internal.Get GHC.Int.Int32
+  {- Arity: 2, Strictness: <S(SLSS),1*U(U,U,U,U)><L,C(C1(U))>,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (let {
+                   m :: GHC.Types.Int = GHC.Types.I# 4#
+                 } in
+                 (\ @ r
+                    (i :: Data.ByteString.Internal.ByteString)
+                    (ks :: Data.Binary.Get.Internal.Success GHC.Int.Int32 r) ->
+                  (Data.Binary.Get.Internal.readN
+                     @ GHC.Word.Word32
+                     m
+                     Data.Binary.Get.word32le)
+                    `cast`
+                  (Data.Binary.Get.Internal.N:Get[0] <GHC.Word.Word32>_R)
+                    @ r
+                    i
+                    (\ (i' :: Data.ByteString.Internal.ByteString)
+                       (a1 :: GHC.Word.Word32) ->
+                     ks
+                       i'
+                       (case a1 of wild { GHC.Word.W32# x# ->
+                        GHC.Int.I32# (GHC.Prim.narrow32Int# (GHC.Prim.word2Int# x#)) })))
+                   `cast`
+                 (Sym (Data.Binary.Get.Internal.N:Get[0] <GHC.Int.Int32>_R))) -}
+c402e1301b1d941fca51b09f4cb9a0bf
+  getInt64be :: Data.Binary.Get.Internal.Get GHC.Int.Int64
+  {- Arity: 2, Strictness: <S(SLSS),1*U(U,U,U,U)><L,C(C1(U))>,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (let {
+                   m :: GHC.Types.Int = GHC.Types.I# 8#
+                 } in
+                 (\ @ r
+                    (i :: Data.ByteString.Internal.ByteString)
+                    (ks :: Data.Binary.Get.Internal.Success GHC.Int.Int64 r) ->
+                  (Data.Binary.Get.Internal.readN
+                     @ GHC.Word.Word64
+                     m
+                     Data.Binary.Get.word64be)
+                    `cast`
+                  (Data.Binary.Get.Internal.N:Get[0] <GHC.Word.Word64>_R)
+                    @ r
+                    i
+                    (\ (i' :: Data.ByteString.Internal.ByteString)
+                       (a1 :: GHC.Word.Word64) ->
+                     ks
+                       i'
+                       (case a1 of wild { GHC.Word.W64# x# ->
+                        GHC.Int.I64# (GHC.Prim.word2Int# x#) })))
+                   `cast`
+                 (Sym (Data.Binary.Get.Internal.N:Get[0] <GHC.Int.Int64>_R))) -}
+2df44ba0497272ffc5ce26e99a18a6a2
+  getInt64host :: Data.Binary.Get.Internal.Get GHC.Int.Int64
+  {- Arity: 2, Strictness: <S(SLSS),1*U(U,U,U,U)><L,C(C1(U))>,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (Data.Binary.Get.Internal.readN
+                   @ GHC.Int.Int64
+                   Foreign.Storable.$fStorableDouble5
+                   (\ (s :: Data.ByteString.Internal.ByteString) ->
+                    case s of wild { Data.ByteString.Internal.PS dt dt1 dt2 dt3 ->
+                    case GHC.Prim.readInt64OffAddr#
+                           @ GHC.Prim.RealWorld
+                           (GHC.Prim.plusAddr# dt dt2)
+                           0#
+                           GHC.Prim.realWorld# of ds2 { (#,#) ipv ipv1 ->
+                    case GHC.Prim.touch#
+                           @ 'GHC.Types.LiftedRep
+                           @ GHC.ForeignPtr.ForeignPtrContents
+                           dt1
+                           ipv of s' { DEFAULT ->
+                    GHC.Int.I64# ipv1 } } })) -}
+638a9b3686536c662f3a0cd5d2b14f4c
+  getInt64le :: Data.Binary.Get.Internal.Get GHC.Int.Int64
+  {- Arity: 2, Strictness: <S(SLSS),1*U(U,U,U,U)><L,C(C1(U))>,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (let {
+                   m :: GHC.Types.Int = GHC.Types.I# 8#
+                 } in
+                 (\ @ r
+                    (i :: Data.ByteString.Internal.ByteString)
+                    (ks :: Data.Binary.Get.Internal.Success GHC.Int.Int64 r) ->
+                  (Data.Binary.Get.Internal.readN
+                     @ GHC.Word.Word64
+                     m
+                     Data.Binary.Get.word64le)
+                    `cast`
+                  (Data.Binary.Get.Internal.N:Get[0] <GHC.Word.Word64>_R)
+                    @ r
+                    i
+                    (\ (i' :: Data.ByteString.Internal.ByteString)
+                       (a1 :: GHC.Word.Word64) ->
+                     ks
+                       i'
+                       (case a1 of wild { GHC.Word.W64# x# ->
+                        GHC.Int.I64# (GHC.Prim.word2Int# x#) })))
+                   `cast`
+                 (Sym (Data.Binary.Get.Internal.N:Get[0] <GHC.Int.Int64>_R))) -}
+098a8959e301e81638183f717d106133
+  getInt8 :: Data.Binary.Get.Internal.Get GHC.Int.Int8
+  {- Arity: 2, Strictness: <S(SLSS),1*U(U,U,U,U)><L,C(C1(U))>,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (let {
+                   m :: GHC.Types.Int = GHC.Types.I# 1#
+                 } in
+                 (\ @ r
+                    (i :: Data.ByteString.Internal.ByteString)
+                    (ks :: Data.Binary.Get.Internal.Success GHC.Int.Int8 r) ->
+                  (Data.Binary.Get.Internal.readN
+                     @ GHC.Word.Word8
+                     m
+                     Data.ByteString.Unsafe.unsafeHead)
+                    `cast`
+                  (Data.Binary.Get.Internal.N:Get[0] <GHC.Word.Word8>_R)
+                    @ r
+                    i
+                    (\ (i' :: Data.ByteString.Internal.ByteString)
+                       (a1 :: GHC.Word.Word8) ->
+                     ks
+                       i'
+                       (case a1 of wild { GHC.Word.W8# x# ->
+                        GHC.Int.I8# (GHC.Prim.narrow8Int# (GHC.Prim.word2Int# x#)) })))
+                   `cast`
+                 (Sym (Data.Binary.Get.Internal.N:Get[0] <GHC.Int.Int8>_R))) -}
+6af5af38472e93a1532145e9b24a42bf
+  getInthost :: Data.Binary.Get.Internal.Get GHC.Types.Int
+  {- Arity: 2, Strictness: <S(SLSS),1*U(U,U,U,U)><L,C(C1(U))>,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (Data.Binary.Get.Internal.readN
+                   @ GHC.Types.Int
+                   Foreign.Storable.$fStorableDouble5
+                   (\ (s :: Data.ByteString.Internal.ByteString) ->
+                    case s of wild { Data.ByteString.Internal.PS dt dt1 dt2 dt3 ->
+                    case GHC.Prim.readIntOffAddr#
+                           @ GHC.Prim.RealWorld
+                           (GHC.Prim.plusAddr# dt dt2)
+                           0#
+                           GHC.Prim.realWorld# of ds2 { (#,#) ipv ipv1 ->
+                    case GHC.Prim.touch#
+                           @ 'GHC.Types.LiftedRep
+                           @ GHC.ForeignPtr.ForeignPtrContents
+                           dt1
+                           ipv of s' { DEFAULT ->
+                    GHC.Types.I# ipv1 } } })) -}
+b14c7501fedcf757c6acd556bb4c3bb2
+  getLazyByteString ::
+    GHC.Int.Int64
+    -> Data.Binary.Get.Internal.Get
+         Data.ByteString.Lazy.Internal.ByteString
+  {- Arity: 3, Strictness: <L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Data.Binary.Get.getLazyByteString1
+                  `cast`
+                (<GHC.Int.Int64>_R
+                 ->_R Sym (Data.Binary.Get.Internal.N:Get[0]
+                               <Data.ByteString.Lazy.Internal.ByteString>_R)) -}
+adeac03125c337c38a48694d1dd140bf
+  getLazyByteString1 ::
+    GHC.Int.Int64
+    -> forall r.
+       Data.ByteString.Internal.ByteString
+       -> Data.Binary.Get.Internal.Success
+            Data.ByteString.Lazy.Internal.ByteString r
+       -> Data.Binary.Get.Internal.Decoder r
+  {- Arity: 3, Strictness: <L,U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (n0 :: GHC.Int.Int64) ->
+                 Data.Binary.Get.Internal.readN1
+                   @ GHC.Int.Int64
+                   @ Data.ByteString.Lazy.Internal.ByteString
+                   n0
+                   Data.Binary.Get.consumeBytes
+                   Data.ByteString.Lazy.fromChunks
+                   (Data.Binary.Get.Internal.failOnEOF1
+                      @ Data.ByteString.Lazy.Internal.ByteString)
+                     `cast`
+                   (<[Data.ByteString.Internal.ByteString]>_R
+                    ->_R Sym (Data.Binary.Get.Internal.N:Get[0]
+                                  <Data.ByteString.Lazy.Internal.ByteString>_R))) -}
+7b404105afdcaaa87d608615dac0c4b7
+  getLazyByteStringNul ::
+    Data.Binary.Get.Internal.Get
+      Data.ByteString.Lazy.Internal.ByteString
+  {- Arity: 2,
+     Unfolding: InlineRule (0, True, True)
+                Data.Binary.Get.getLazyByteStringNul1
+                  `cast`
+                (Sym (Data.Binary.Get.Internal.N:Get[0]
+                          <Data.ByteString.Lazy.Internal.ByteString>_R)) -}
+1e4ecf1bc3c7b65fb1387f44b00c6121
+  getLazyByteStringNul1 ::
+    Data.ByteString.Internal.ByteString
+    -> Data.Binary.Get.Internal.Success
+         Data.ByteString.Lazy.Internal.ByteString r
+    -> Data.Binary.Get.Internal.Decoder r
+  {- Arity: 2,
+     Unfolding: (Data.Binary.Get.Internal.readN1
+                   @ ()
+                   @ Data.ByteString.Lazy.Internal.ByteString
+                   GHC.Tuple.()
+                   Data.Binary.Get.consumeUntilNul
+                   Data.ByteString.Lazy.fromChunks
+                   (Data.Binary.Get.Internal.failOnEOF1
+                      @ Data.ByteString.Lazy.Internal.ByteString)
+                     `cast`
+                   (<[Data.ByteString.Internal.ByteString]>_R
+                    ->_R Sym (Data.Binary.Get.Internal.N:Get[0]
+                                  <Data.ByteString.Lazy.Internal.ByteString>_R))) -}
+36dddb4ba594715729d14decc38a36b2
+  getLazyByteStringNul2 ::
+    Data.Either.Either
+      ()
+      (Data.ByteString.Internal.ByteString,
+       Data.ByteString.Internal.ByteString)
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (Data.Either.Left
+                   @ ()
+                   @ (Data.ByteString.Internal.ByteString,
+                      Data.ByteString.Internal.ByteString)
+                   GHC.Tuple.()) -}
+a4381c4eb854116d2ffe47e81013359e
+  getRemainingLazyByteString ::
+    Data.Binary.Get.Internal.Get
+      Data.ByteString.Lazy.Internal.ByteString
+  {- Arity: 2,
+     Unfolding: InlineRule (0, True, True)
+                Data.Binary.Get.getRemainingLazyByteString1
+                  `cast`
+                (Sym (Data.Binary.Get.Internal.N:Get[0]
+                          <Data.ByteString.Lazy.Internal.ByteString>_R)) -}
+1490f28b97b82bb0351f601537561cd7
+  getRemainingLazyByteString1 ::
+    Data.ByteString.Internal.ByteString
+    -> Data.Binary.Get.Internal.Success
+         Data.ByteString.Lazy.Internal.ByteString r
+    -> Data.Binary.Get.Internal.Decoder r
+  {- Arity: 2,
+     Unfolding: (Data.Binary.Get.Internal.readN1
+                   @ ()
+                   @ Data.ByteString.Lazy.Internal.ByteString
+                   GHC.Tuple.()
+                   Data.Binary.Get.consumeAll
+                   Data.ByteString.Lazy.fromChunks
+                   Data.Binary.Get.resumeOnEOF) -}
+e05487550641a84a782316e6ab2d8d19
+  getWord16be :: Data.Binary.Get.Internal.Get GHC.Word.Word16
+  {- Arity: 2, Strictness: <S(SLSS),1*U(U,U,U,U)><L,C(C1(U))>,
+     Inline: [2] (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (Data.Binary.Get.Internal.readN
+                   @ GHC.Word.Word16
+                   (GHC.Types.I# 2#)
+                   Data.Binary.Get.word16be) -}
+d1b04cfa9a159486cafaa9534110b610
+  getWord16host :: Data.Binary.Get.Internal.Get GHC.Word.Word16
+  {- Arity: 2, Strictness: <S(SLSS),1*U(U,U,U,U)><L,C(C1(U))>,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (Data.Binary.Get.Internal.readN
+                   @ GHC.Word.Word16
+                   Foreign.Storable.$fStorableInt10
+                   (\ (s :: Data.ByteString.Internal.ByteString) ->
+                    case s of wild { Data.ByteString.Internal.PS dt dt1 dt2 dt3 ->
+                    case GHC.Prim.readWord16OffAddr#
+                           @ GHC.Prim.RealWorld
+                           (GHC.Prim.plusAddr# dt dt2)
+                           0#
+                           GHC.Prim.realWorld# of ds2 { (#,#) ipv ipv1 ->
+                    case GHC.Prim.touch#
+                           @ 'GHC.Types.LiftedRep
+                           @ GHC.ForeignPtr.ForeignPtrContents
+                           dt1
+                           ipv of s' { DEFAULT ->
+                    GHC.Word.W16# ipv1 } } })) -}
+0c2e9597693ff7cef79c183a6547a978
+  getWord16le :: Data.Binary.Get.Internal.Get GHC.Word.Word16
+  {- Arity: 2, Strictness: <S(SLSS),1*U(U,U,U,U)><L,C(C1(U))>,
+     Inline: [2] (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (Data.Binary.Get.Internal.readN
+                   @ GHC.Word.Word16
+                   (GHC.Types.I# 2#)
+                   Data.Binary.Get.word16le) -}
+7b765255c9836f804ae3ce784c5c5c09
+  getWord32be :: Data.Binary.Get.Internal.Get GHC.Word.Word32
+  {- Arity: 2, Strictness: <S(SLSS),1*U(U,U,U,U)><L,C(C1(U))>,
+     Inline: [2] (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (Data.Binary.Get.Internal.readN
+                   @ GHC.Word.Word32
+                   (GHC.Types.I# 4#)
+                   Data.Binary.Get.word32be) -}
+39e857c6b636a71c68a93acb58a327f2
+  getWord32host :: Data.Binary.Get.Internal.Get GHC.Word.Word32
+  {- Arity: 2, Strictness: <S(SLSS),1*U(U,U,U,U)><L,C(C1(U))>,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (Data.Binary.Get.Internal.readN
+                   @ GHC.Word.Word32
+                   Foreign.Storable.$fStorableBool7
+                   (\ (s :: Data.ByteString.Internal.ByteString) ->
+                    case s of wild { Data.ByteString.Internal.PS dt dt1 dt2 dt3 ->
+                    case GHC.Prim.readWord32OffAddr#
+                           @ GHC.Prim.RealWorld
+                           (GHC.Prim.plusAddr# dt dt2)
+                           0#
+                           GHC.Prim.realWorld# of ds2 { (#,#) ipv ipv1 ->
+                    case GHC.Prim.touch#
+                           @ 'GHC.Types.LiftedRep
+                           @ GHC.ForeignPtr.ForeignPtrContents
+                           dt1
+                           ipv of s' { DEFAULT ->
+                    GHC.Word.W32# ipv1 } } })) -}
+92fd9ee7d1ae7de0f63c88b2e524888d
+  getWord32le :: Data.Binary.Get.Internal.Get GHC.Word.Word32
+  {- Arity: 2, Strictness: <S(SLSS),1*U(U,U,U,U)><L,C(C1(U))>,
+     Inline: [2] (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (Data.Binary.Get.Internal.readN
+                   @ GHC.Word.Word32
+                   (GHC.Types.I# 4#)
+                   Data.Binary.Get.word32le) -}
+85b029b82c11146b8aeab80d4b266a9e
+  getWord64be :: Data.Binary.Get.Internal.Get GHC.Word.Word64
+  {- Arity: 2, Strictness: <S(SLSS),1*U(U,U,U,U)><L,C(C1(U))>,
+     Inline: [2] (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (Data.Binary.Get.Internal.readN
+                   @ GHC.Word.Word64
+                   (GHC.Types.I# 8#)
+                   Data.Binary.Get.word64be) -}
+3140182049156e8668936d762fa12f4d
+  getWord64host :: Data.Binary.Get.Internal.Get GHC.Word.Word64
+  {- Arity: 2, Strictness: <S(SLSS),1*U(U,U,U,U)><L,C(C1(U))>,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (Data.Binary.Get.Internal.readN
+                   @ GHC.Word.Word64
+                   Foreign.Storable.$fStorableDouble5
+                   (\ (s :: Data.ByteString.Internal.ByteString) ->
+                    case s of wild { Data.ByteString.Internal.PS dt dt1 dt2 dt3 ->
+                    case GHC.Prim.readWord64OffAddr#
+                           @ GHC.Prim.RealWorld
+                           (GHC.Prim.plusAddr# dt dt2)
+                           0#
+                           GHC.Prim.realWorld# of ds2 { (#,#) ipv ipv1 ->
+                    case GHC.Prim.touch#
+                           @ 'GHC.Types.LiftedRep
+                           @ GHC.ForeignPtr.ForeignPtrContents
+                           dt1
+                           ipv of s' { DEFAULT ->
+                    GHC.Word.W64# ipv1 } } })) -}
+f06730139a4d8c3e842d57928528e806
+  getWord64le :: Data.Binary.Get.Internal.Get GHC.Word.Word64
+  {- Arity: 2, Strictness: <S(SLSS),1*U(U,U,U,U)><L,C(C1(U))>,
+     Inline: [2] (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (Data.Binary.Get.Internal.readN
+                   @ GHC.Word.Word64
+                   (GHC.Types.I# 8#)
+                   Data.Binary.Get.word64le) -}
+dfc835d24b3c64d45643d75f94f4204b
+  getWord8 :: Data.Binary.Get.Internal.Get GHC.Word.Word8
+  {- Arity: 2, Strictness: <S(SLSS),1*U(U,U,U,U)><L,C(C1(U))>,
+     Inline: [2] (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (Data.Binary.Get.Internal.readN
+                   @ GHC.Word.Word8
+                   (GHC.Types.I# 1#)
+                   Data.ByteString.Unsafe.unsafeHead) -}
+3f68f270176f2d628038671107337e48
+  getWordhost :: Data.Binary.Get.Internal.Get GHC.Types.Word
+  {- Arity: 2, Strictness: <S(SLSS),1*U(U,U,U,U)><L,C(C1(U))>,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (Data.Binary.Get.Internal.readN
+                   @ GHC.Types.Word
+                   Foreign.Storable.$fStorableDouble5
+                   (\ (s :: Data.ByteString.Internal.ByteString) ->
+                    case s of wild { Data.ByteString.Internal.PS dt dt1 dt2 dt3 ->
+                    case GHC.Prim.readWordOffAddr#
+                           @ GHC.Prim.RealWorld
+                           (GHC.Prim.plusAddr# dt dt2)
+                           0#
+                           GHC.Prim.realWorld# of ds2 { (#,#) ipv ipv1 ->
+                    case GHC.Prim.touch#
+                           @ 'GHC.Types.LiftedRep
+                           @ GHC.ForeignPtr.ForeignPtrContents
+                           dt1
+                           ipv of s' { DEFAULT ->
+                    GHC.Types.W# ipv1 } } })) -}
+dd7be5c722501e81c6fcc0d49175aaef
+  pushChunk ::
+    Data.Binary.Get.Decoder a
+    -> Data.ByteString.Internal.ByteString -> Data.Binary.Get.Decoder a
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: (\ @ a
+                   (r :: Data.Binary.Get.Decoder a)
+                   (inp :: Data.ByteString.Internal.ByteString) ->
+                 case r of wild {
+                   Data.Binary.Get.Fail inp0 dt s
+                   -> case GHC.Base.mappend
+                             @ Data.ByteString.Internal.ByteString
+                             Data.ByteString.Internal.$fMonoidByteString
+                             inp0
+                             inp of dt1 { Data.ByteString.Internal.PS ipv ipv1 ipv2 ipv3 ->
+                      Data.Binary.Get.Fail @ a dt1 dt s }
+                   Data.Binary.Get.Partial k
+                   -> k (GHC.Maybe.Just @ Data.ByteString.Internal.ByteString inp)
+                   Data.Binary.Get.Done inp0 dt a1
+                   -> case GHC.Base.mappend
+                             @ Data.ByteString.Internal.ByteString
+                             Data.ByteString.Internal.$fMonoidByteString
+                             inp0
+                             inp of dt1 { Data.ByteString.Internal.PS ipv ipv1 ipv2 ipv3 ->
+                      Data.Binary.Get.Done @ a dt1 dt a1 } }) -}
+d9af3d9f7af4527843a0074fdc23e914
+  pushChunks ::
+    Data.Binary.Get.Decoder a
+    -> Data.ByteString.Lazy.Internal.ByteString
+    -> Data.Binary.Get.Decoder a
+  {- Arity: 2, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a
+                   (r0 :: Data.Binary.Get.Decoder a)
+                   (eta :: Data.ByteString.Lazy.Internal.ByteString) ->
+                 Data.Binary.Get.pushChunks1
+                   @ a
+                   r0
+                   (Data.ByteString.Lazy.toChunks_go eta)) -}
+a34571d313a70922564e7bf18b4baa7b
+  pushChunks1 ::
+    Data.Binary.Get.Decoder a
+    -> [Data.ByteString.Internal.ByteString]
+    -> Data.Binary.Get.Decoder a
+  {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
+5975c68820cdb4e65a1fe9752717f26d
+  pushEndOfInput ::
+    Data.Binary.Get.Decoder a -> Data.Binary.Get.Decoder a
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (r :: Data.Binary.Get.Decoder a) ->
+                 case r of wild {
+                   DEFAULT -> wild
+                   Data.Binary.Get.Partial k
+                   -> k (GHC.Maybe.Nothing
+                           @ Data.ByteString.Internal.ByteString) }) -}
+bdfadb9175911b9ade114a3a905c8cf9
+  resumeOnEOF ::
+    [Data.ByteString.Internal.ByteString]
+    -> Data.Binary.Get.Internal.Get
+         Data.ByteString.Lazy.Internal.ByteString
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: [Data.ByteString.Internal.ByteString]) ->
+                 let {
+                   x1 :: Data.ByteString.Lazy.Internal.ByteString
+                   = Data.ByteString.Lazy.fromChunks_go x
+                 } in
+                 (\ @ r
+                    (s :: Data.ByteString.Internal.ByteString)
+                    (ks :: Data.Binary.Get.Internal.Success
+                             Data.ByteString.Lazy.Internal.ByteString r) ->
+                  ks s x1)
+                   `cast`
+                 (Sym (Data.Binary.Get.Internal.N:Get[0]
+                           <Data.ByteString.Lazy.Internal.ByteString>_R))) -}
+4bf389532760461bc2c22a911f69433a
+  runGet ::
+    Data.Binary.Get.Internal.Get a
+    -> Data.ByteString.Lazy.Internal.ByteString -> a
+  {- Arity: 2, Strictness: <C(C(S)),1*C1(C1(U))><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a
+                   (g :: Data.Binary.Get.Internal.Get a)
+                   (lbs0 :: Data.ByteString.Lazy.Internal.ByteString) ->
+                 Data.Binary.Get.runGet3
+                   @ a
+                   (Data.Binary.Get.runGet2
+                      @ a
+                      (Data.Binary.Get.Internal.runGetIncremental1
+                         @ a
+                         (g `cast` (Data.Binary.Get.Internal.N:Get[0] <a>_R)
+                            @ a
+                            Data.ByteString.empty
+                            (Data.Binary.Get.Internal.$WDone @ a)))
+                      Data.Binary.Get.runGet1)
+                   lbs0) -}
+cb16504e00d7be92b3239a4a876de1a9
+  runGet1 :: GHC.Int.Int64
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Int.I64# 0#) -}
+73b48499499317347cb0cbef25298aa3
+  runGet2 ::
+    Data.Binary.Get.Internal.Decoder a
+    -> Data.Binary.Get.ByteOffset -> Data.Binary.Get.Decoder a
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S(S),1*U(U)>,
+     Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a
+                   (w :: Data.Binary.Get.Internal.Decoder a)
+                   (w1 :: Data.Binary.Get.ByteOffset) ->
+                 case w1 of ww { GHC.Int.I64# ww1 ->
+                 Data.Binary.Get.$wpoly_go @ a w ww1 }) -}
+c11d1d382135ef7e13e68d7d8065d993
+  runGet3 ::
+    Data.Binary.Get.Decoder a
+    -> Data.ByteString.Lazy.Internal.ByteString -> a
+  {- Arity: 2, Strictness: <S,1*U><L,U> -}
+8b54e97cdb19a34908feb2a7429edc1d
+  runGetIncremental ::
+    Data.Binary.Get.Internal.Get a -> Data.Binary.Get.Decoder a
+  {- Arity: 1, Strictness: <C(C(S)),1*C1(C1(U))>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (x :: Data.Binary.Get.Internal.Get a) ->
+                 Data.Binary.Get.runGet2
+                   @ a
+                   (Data.Binary.Get.Internal.runGetIncremental1
+                      @ a
+                      (x `cast` (Data.Binary.Get.Internal.N:Get[0] <a>_R)
+                         @ a
+                         Data.ByteString.empty
+                         (Data.Binary.Get.Internal.$WDone @ a)))
+                   Data.Binary.Get.runGet1) -}
+fca19fee187fd75d29042ea61f3d7760
+  runGetOrFail ::
+    Data.Binary.Get.Internal.Get a
+    -> Data.ByteString.Lazy.Internal.ByteString
+    -> Data.Either.Either
+         (Data.ByteString.Lazy.Internal.ByteString,
+          Data.Binary.Get.ByteOffset, GHC.Base.String)
+         (Data.ByteString.Lazy.Internal.ByteString,
+          Data.Binary.Get.ByteOffset, a)
+  {- Arity: 2, Strictness: <C(C(S)),1*C1(C1(U))><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a
+                   (g :: Data.Binary.Get.Internal.Get a)
+                   (lbs0 :: Data.ByteString.Lazy.Internal.ByteString) ->
+                 Data.Binary.Get.runGetOrFail1
+                   @ a
+                   (Data.Binary.Get.runGet2
+                      @ a
+                      (Data.Binary.Get.Internal.runGetIncremental1
+                         @ a
+                         (g `cast` (Data.Binary.Get.Internal.N:Get[0] <a>_R)
+                            @ a
+                            Data.ByteString.empty
+                            (Data.Binary.Get.Internal.$WDone @ a)))
+                      Data.Binary.Get.runGet1)
+                   lbs0) -}
+878db5d61a3240dee44a421c92b27247
+  runGetOrFail1 ::
+    Data.Binary.Get.Decoder a
+    -> Data.ByteString.Lazy.Internal.ByteString
+    -> Data.Either.Either
+         (Data.ByteString.Lazy.Internal.ByteString,
+          Data.Binary.Get.ByteOffset, GHC.Base.String)
+         (Data.ByteString.Lazy.Internal.ByteString,
+          Data.Binary.Get.ByteOffset, a)
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,U> -}
+932bba845bc867cce0eaa5708163ebcc
+  runGetState ::
+    Data.Binary.Get.Internal.Get a
+    -> Data.ByteString.Lazy.Internal.ByteString
+    -> Data.Binary.Get.ByteOffset
+    -> (a, Data.ByteString.Lazy.Internal.ByteString,
+        Data.Binary.Get.ByteOffset)
+  {- Arity: 3, Strictness: <C(C(S)),1*C1(C1(U))><L,U><L,U(U)>m,
+     Inline: [2],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   (w :: Data.Binary.Get.Internal.Get a)
+                   (w1 :: Data.ByteString.Lazy.Internal.ByteString)
+                   (w2 :: Data.Binary.Get.ByteOffset) ->
+                 case Data.Binary.Get.$wrunGetState
+                        @ a
+                        w
+                        w1
+                        w2 of ww { (#,,#) ww1 ww2 ww3 ->
+                 (ww1, ww2, ww3) }) -}
+8858ffe6f65d601c9c577fda66807909
+  runGetState1 ::
+    GHC.Prim.Int#
+    -> GHC.Base.String
+    -> (a, Data.ByteString.Lazy.Internal.ByteString,
+        Data.Binary.Get.ByteOffset)
+  {- Arity: 2, Strictness: <B,U><B,U>x -}
+336f4ad9f076d7f144939a10b56de081
+  skip :: GHC.Types.Int -> Data.Binary.Get.Internal.Get ()
+  {- Arity: 3, Strictness: <L,1*U(U)><L,U><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Data.Binary.Get.skip1
+                  `cast`
+                (<GHC.Types.Int>_R
+                 ->_R Sym (Data.Binary.Get.Internal.N:Get[0] <()>_R)) -}
+feb18d19a82a630506cc15d55c6b669b
+  skip1 ::
+    GHC.Types.Int
+    -> forall r.
+       Data.ByteString.Internal.ByteString
+       -> Data.Binary.Get.Internal.Success () r
+       -> Data.Binary.Get.Internal.Decoder r
+  {- Arity: 3, Strictness: <L,1*U(U)><L,U><L,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ (n :: GHC.Types.Int)
+                   @ r
+                   (eta :: Data.ByteString.Internal.ByteString)
+                   (eta1 :: Data.Binary.Get.Internal.Success () r) ->
+                 Data.Binary.Get.Internal.readN1
+                   @ GHC.Int.Int64
+                   @ ()
+                   (case n of wild { GHC.Types.I# x# -> GHC.Int.I64# x# })
+                   Data.Binary.Get.consumeBytes
+                   Data.Binary.Get.skip2
+                   (Data.Binary.Get.Internal.failOnEOF1 @ ())
+                     `cast`
+                   (<[Data.ByteString.Internal.ByteString]>_R
+                    ->_R Sym (Data.Binary.Get.Internal.N:Get[0] <()>_R))
+                   @ r
+                   eta
+                   eta1) -}
+a52ee698ecdfc68bb372b9cf4cad9c8c
+  skip2 :: [Data.ByteString.Internal.ByteString] -> ()
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (ds :: [Data.ByteString.Internal.ByteString]) ->
+                 GHC.Tuple.()) -}
+b6ed46b008cb33f40c84faf23d8337cc
+  takeHeadChunk ::
+    Data.ByteString.Lazy.Internal.ByteString
+    -> GHC.Maybe.Maybe Data.ByteString.Internal.ByteString
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (lbs :: Data.ByteString.Lazy.Internal.ByteString) ->
+                 case lbs of wild {
+                   Data.ByteString.Lazy.Internal.Empty
+                   -> GHC.Maybe.Nothing @ Data.ByteString.Internal.ByteString
+                   Data.ByteString.Lazy.Internal.Chunk dt dt1 dt2 dt3 ds
+                   -> GHC.Maybe.Just
+                        @ Data.ByteString.Internal.ByteString
+                        (Data.ByteString.Internal.PS dt dt1 dt2 dt3) }) -}
+9e60ef305c7907cb925ad916690171c1
+  word16be :: Data.ByteString.Internal.ByteString -> GHC.Word.Word16
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SLSL),1*U(U,U,U,A)>m,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (\ (s :: Data.ByteString.Internal.ByteString) ->
+                 case s of wild { Data.ByteString.Internal.PS dt dt1 dt2 dt3 ->
+                 case GHC.Prim.readWord8OffAddr#
+                        @ GHC.Prim.RealWorld
+                        (GHC.Prim.plusAddr# dt dt2)
+                        0#
+                        GHC.Prim.realWorld# of ds2 { (#,#) ipv ipv1 ->
+                 case GHC.Prim.touch#
+                        @ 'GHC.Types.LiftedRep
+                        @ GHC.ForeignPtr.ForeignPtrContents
+                        dt1
+                        ipv of s' { DEFAULT ->
+                 case GHC.Prim.readWord8OffAddr#
+                        @ GHC.Prim.RealWorld
+                        (GHC.Prim.plusAddr# dt (GHC.Prim.+# dt2 1#))
+                        0#
+                        GHC.Prim.realWorld# of ds1 { (#,#) ipv2 ipv3 ->
+                 case GHC.Prim.touch#
+                        @ 'GHC.Types.LiftedRep
+                        @ GHC.ForeignPtr.ForeignPtrContents
+                        dt1
+                        ipv2 of s'1 { DEFAULT ->
+                 GHC.Word.W16#
+                   (GHC.Prim.or#
+                      (GHC.Prim.uncheckedShiftL# ipv1 8#)
+                      ipv3) } } } } }) -}
+089ccdbf1332e1d1592a8ba58d187646
+  word16le :: Data.ByteString.Internal.ByteString -> GHC.Word.Word16
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SLSL),1*U(U,U,U,A)>m,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (\ (s :: Data.ByteString.Internal.ByteString) ->
+                 case s of wild { Data.ByteString.Internal.PS dt dt1 dt2 dt3 ->
+                 case GHC.Prim.readWord8OffAddr#
+                        @ GHC.Prim.RealWorld
+                        (GHC.Prim.plusAddr# dt (GHC.Prim.+# dt2 1#))
+                        0#
+                        GHC.Prim.realWorld# of ds2 { (#,#) ipv ipv1 ->
+                 case GHC.Prim.touch#
+                        @ 'GHC.Types.LiftedRep
+                        @ GHC.ForeignPtr.ForeignPtrContents
+                        dt1
+                        ipv of s' { DEFAULT ->
+                 case GHC.Prim.readWord8OffAddr#
+                        @ GHC.Prim.RealWorld
+                        (GHC.Prim.plusAddr# dt dt2)
+                        0#
+                        GHC.Prim.realWorld# of ds1 { (#,#) ipv2 ipv3 ->
+                 case GHC.Prim.touch#
+                        @ 'GHC.Types.LiftedRep
+                        @ GHC.ForeignPtr.ForeignPtrContents
+                        dt1
+                        ipv2 of s'1 { DEFAULT ->
+                 GHC.Word.W16#
+                   (GHC.Prim.or#
+                      (GHC.Prim.uncheckedShiftL# ipv1 8#)
+                      ipv3) } } } } }) -}
+89f8054536a7ba40712542de97a86f53
+  word32be :: Data.ByteString.Internal.ByteString -> GHC.Word.Word32
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SLSL),1*U(U,U,U,A)>m,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (\ (s :: Data.ByteString.Internal.ByteString) ->
+                 case s of wild { Data.ByteString.Internal.PS dt dt1 dt2 dt3 ->
+                 case GHC.Prim.readWord8OffAddr#
+                        @ GHC.Prim.RealWorld
+                        (GHC.Prim.plusAddr# dt dt2)
+                        0#
+                        GHC.Prim.realWorld# of ds2 { (#,#) ipv ipv1 ->
+                 case GHC.Prim.touch#
+                        @ 'GHC.Types.LiftedRep
+                        @ GHC.ForeignPtr.ForeignPtrContents
+                        dt1
+                        ipv of s' { DEFAULT ->
+                 case GHC.Prim.readWord8OffAddr#
+                        @ GHC.Prim.RealWorld
+                        (GHC.Prim.plusAddr# dt (GHC.Prim.+# dt2 1#))
+                        0#
+                        GHC.Prim.realWorld# of ds1 { (#,#) ipv2 ipv3 ->
+                 case GHC.Prim.touch#
+                        @ 'GHC.Types.LiftedRep
+                        @ GHC.ForeignPtr.ForeignPtrContents
+                        dt1
+                        ipv2 of s'1 { DEFAULT ->
+                 case GHC.Prim.readWord8OffAddr#
+                        @ GHC.Prim.RealWorld
+                        (GHC.Prim.plusAddr# dt (GHC.Prim.+# dt2 2#))
+                        0#
+                        GHC.Prim.realWorld# of ds3 { (#,#) ipv4 ipv5 ->
+                 case GHC.Prim.touch#
+                        @ 'GHC.Types.LiftedRep
+                        @ GHC.ForeignPtr.ForeignPtrContents
+                        dt1
+                        ipv4 of s'2 { DEFAULT ->
+                 case GHC.Prim.readWord8OffAddr#
+                        @ GHC.Prim.RealWorld
+                        (GHC.Prim.plusAddr# dt (GHC.Prim.+# dt2 3#))
+                        0#
+                        GHC.Prim.realWorld# of ds4 { (#,#) ipv6 ipv7 ->
+                 case GHC.Prim.touch#
+                        @ 'GHC.Types.LiftedRep
+                        @ GHC.ForeignPtr.ForeignPtrContents
+                        dt1
+                        ipv6 of s'3 { DEFAULT ->
+                 GHC.Word.W32#
+                   (GHC.Prim.or#
+                      (GHC.Prim.or#
+                         (GHC.Prim.or#
+                            (GHC.Prim.uncheckedShiftL# ipv1 24#)
+                            (GHC.Prim.uncheckedShiftL# ipv3 16#))
+                         (GHC.Prim.uncheckedShiftL# ipv5 8#))
+                      ipv7) } } } } } } } } }) -}
+f76950729a15c79329f1546a7875ea2c
+  word32le :: Data.ByteString.Internal.ByteString -> GHC.Word.Word32
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SLSL),1*U(U,U,U,A)>m,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (\ (s :: Data.ByteString.Internal.ByteString) ->
+                 case s of wild { Data.ByteString.Internal.PS dt dt1 dt2 dt3 ->
+                 case GHC.Prim.readWord8OffAddr#
+                        @ GHC.Prim.RealWorld
+                        (GHC.Prim.plusAddr# dt (GHC.Prim.+# dt2 3#))
+                        0#
+                        GHC.Prim.realWorld# of ds2 { (#,#) ipv ipv1 ->
+                 case GHC.Prim.touch#
+                        @ 'GHC.Types.LiftedRep
+                        @ GHC.ForeignPtr.ForeignPtrContents
+                        dt1
+                        ipv of s' { DEFAULT ->
+                 case GHC.Prim.readWord8OffAddr#
+                        @ GHC.Prim.RealWorld
+                        (GHC.Prim.plusAddr# dt (GHC.Prim.+# dt2 2#))
+                        0#
+                        GHC.Prim.realWorld# of ds1 { (#,#) ipv2 ipv3 ->
+                 case GHC.Prim.touch#
+                        @ 'GHC.Types.LiftedRep
+                        @ GHC.ForeignPtr.ForeignPtrContents
+                        dt1
+                        ipv2 of s'1 { DEFAULT ->
+                 case GHC.Prim.readWord8OffAddr#
+                        @ GHC.Prim.RealWorld
+                        (GHC.Prim.plusAddr# dt (GHC.Prim.+# dt2 1#))
+                        0#
+                        GHC.Prim.realWorld# of ds3 { (#,#) ipv4 ipv5 ->
+                 case GHC.Prim.touch#
+                        @ 'GHC.Types.LiftedRep
+                        @ GHC.ForeignPtr.ForeignPtrContents
+                        dt1
+                        ipv4 of s'2 { DEFAULT ->
+                 case GHC.Prim.readWord8OffAddr#
+                        @ GHC.Prim.RealWorld
+                        (GHC.Prim.plusAddr# dt dt2)
+                        0#
+                        GHC.Prim.realWorld# of ds4 { (#,#) ipv6 ipv7 ->
+                 case GHC.Prim.touch#
+                        @ 'GHC.Types.LiftedRep
+                        @ GHC.ForeignPtr.ForeignPtrContents
+                        dt1
+                        ipv6 of s'3 { DEFAULT ->
+                 GHC.Word.W32#
+                   (GHC.Prim.or#
+                      (GHC.Prim.or#
+                         (GHC.Prim.or#
+                            (GHC.Prim.uncheckedShiftL# ipv1 24#)
+                            (GHC.Prim.uncheckedShiftL# ipv3 16#))
+                         (GHC.Prim.uncheckedShiftL# ipv5 8#))
+                      ipv7) } } } } } } } } }) -}
+29d915e080ebee3f91e4bf3a7c6666ac
+  word64be :: Data.ByteString.Internal.ByteString -> GHC.Word.Word64
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SLSL),1*U(U,U,U,A)>m,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (\ (s :: Data.ByteString.Internal.ByteString) ->
+                 case s of wild { Data.ByteString.Internal.PS dt dt1 dt2 dt3 ->
+                 case GHC.Prim.readWord8OffAddr#
+                        @ GHC.Prim.RealWorld
+                        (GHC.Prim.plusAddr# dt dt2)
+                        0#
+                        GHC.Prim.realWorld# of ds2 { (#,#) ipv ipv1 ->
+                 case GHC.Prim.touch#
+                        @ 'GHC.Types.LiftedRep
+                        @ GHC.ForeignPtr.ForeignPtrContents
+                        dt1
+                        ipv of s' { DEFAULT ->
+                 case GHC.Prim.readWord8OffAddr#
+                        @ GHC.Prim.RealWorld
+                        (GHC.Prim.plusAddr# dt (GHC.Prim.+# dt2 1#))
+                        0#
+                        GHC.Prim.realWorld# of ds1 { (#,#) ipv2 ipv3 ->
+                 case GHC.Prim.touch#
+                        @ 'GHC.Types.LiftedRep
+                        @ GHC.ForeignPtr.ForeignPtrContents
+                        dt1
+                        ipv2 of s'1 { DEFAULT ->
+                 case GHC.Prim.readWord8OffAddr#
+                        @ GHC.Prim.RealWorld
+                        (GHC.Prim.plusAddr# dt (GHC.Prim.+# dt2 2#))
+                        0#
+                        GHC.Prim.realWorld# of ds3 { (#,#) ipv4 ipv5 ->
+                 case GHC.Prim.touch#
+                        @ 'GHC.Types.LiftedRep
+                        @ GHC.ForeignPtr.ForeignPtrContents
+                        dt1
+                        ipv4 of s'2 { DEFAULT ->
+                 case GHC.Prim.readWord8OffAddr#
+                        @ GHC.Prim.RealWorld
+                        (GHC.Prim.plusAddr# dt (GHC.Prim.+# dt2 3#))
+                        0#
+                        GHC.Prim.realWorld# of ds4 { (#,#) ipv6 ipv7 ->
+                 case GHC.Prim.touch#
+                        @ 'GHC.Types.LiftedRep
+                        @ GHC.ForeignPtr.ForeignPtrContents
+                        dt1
+                        ipv6 of s'3 { DEFAULT ->
+                 case GHC.Prim.readWord8OffAddr#
+                        @ GHC.Prim.RealWorld
+                        (GHC.Prim.plusAddr# dt (GHC.Prim.+# dt2 4#))
+                        0#
+                        GHC.Prim.realWorld# of ds5 { (#,#) ipv8 ipv9 ->
+                 case GHC.Prim.touch#
+                        @ 'GHC.Types.LiftedRep
+                        @ GHC.ForeignPtr.ForeignPtrContents
+                        dt1
+                        ipv8 of s'4 { DEFAULT ->
+                 case GHC.Prim.readWord8OffAddr#
+                        @ GHC.Prim.RealWorld
+                        (GHC.Prim.plusAddr# dt (GHC.Prim.+# dt2 5#))
+                        0#
+                        GHC.Prim.realWorld# of ds6 { (#,#) ipv10 ipv11 ->
+                 case GHC.Prim.touch#
+                        @ 'GHC.Types.LiftedRep
+                        @ GHC.ForeignPtr.ForeignPtrContents
+                        dt1
+                        ipv10 of s'5 { DEFAULT ->
+                 case GHC.Prim.readWord8OffAddr#
+                        @ GHC.Prim.RealWorld
+                        (GHC.Prim.plusAddr# dt (GHC.Prim.+# dt2 6#))
+                        0#
+                        GHC.Prim.realWorld# of ds7 { (#,#) ipv12 ipv13 ->
+                 case GHC.Prim.touch#
+                        @ 'GHC.Types.LiftedRep
+                        @ GHC.ForeignPtr.ForeignPtrContents
+                        dt1
+                        ipv12 of s'6 { DEFAULT ->
+                 case GHC.Prim.readWord8OffAddr#
+                        @ GHC.Prim.RealWorld
+                        (GHC.Prim.plusAddr# dt (GHC.Prim.+# dt2 7#))
+                        0#
+                        GHC.Prim.realWorld# of ds8 { (#,#) ipv14 ipv15 ->
+                 case GHC.Prim.touch#
+                        @ 'GHC.Types.LiftedRep
+                        @ GHC.ForeignPtr.ForeignPtrContents
+                        dt1
+                        ipv14 of s'7 { DEFAULT ->
+                 GHC.Word.W64#
+                   (GHC.Prim.or#
+                      (GHC.Prim.or#
+                         (GHC.Prim.or#
+                            (GHC.Prim.or#
+                               (GHC.Prim.or#
+                                  (GHC.Prim.or#
+                                     (GHC.Prim.or#
+                                        (GHC.Prim.uncheckedShiftL# ipv1 56#)
+                                        (GHC.Prim.uncheckedShiftL# ipv3 48#))
+                                     (GHC.Prim.uncheckedShiftL# ipv5 40#))
+                                  (GHC.Prim.uncheckedShiftL# ipv7 32#))
+                               (GHC.Prim.uncheckedShiftL# ipv9 24#))
+                            (GHC.Prim.uncheckedShiftL# ipv11 16#))
+                         (GHC.Prim.uncheckedShiftL# ipv13 8#))
+                      ipv15) } } } } } } } } } } } } } } } } }) -}
+774c3ccecb2bcc227194729756983eb8
+  word64le :: Data.ByteString.Internal.ByteString -> GHC.Word.Word64
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SLSL),1*U(U,U,U,A)>m,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (\ (s :: Data.ByteString.Internal.ByteString) ->
+                 case s of wild { Data.ByteString.Internal.PS dt dt1 dt2 dt3 ->
+                 case GHC.Prim.readWord8OffAddr#
+                        @ GHC.Prim.RealWorld
+                        (GHC.Prim.plusAddr# dt (GHC.Prim.+# dt2 7#))
+                        0#
+                        GHC.Prim.realWorld# of ds2 { (#,#) ipv ipv1 ->
+                 case GHC.Prim.touch#
+                        @ 'GHC.Types.LiftedRep
+                        @ GHC.ForeignPtr.ForeignPtrContents
+                        dt1
+                        ipv of s' { DEFAULT ->
+                 case GHC.Prim.readWord8OffAddr#
+                        @ GHC.Prim.RealWorld
+                        (GHC.Prim.plusAddr# dt (GHC.Prim.+# dt2 6#))
+                        0#
+                        GHC.Prim.realWorld# of ds1 { (#,#) ipv2 ipv3 ->
+                 case GHC.Prim.touch#
+                        @ 'GHC.Types.LiftedRep
+                        @ GHC.ForeignPtr.ForeignPtrContents
+                        dt1
+                        ipv2 of s'1 { DEFAULT ->
+                 case GHC.Prim.readWord8OffAddr#
+                        @ GHC.Prim.RealWorld
+                        (GHC.Prim.plusAddr# dt (GHC.Prim.+# dt2 5#))
+                        0#
+                        GHC.Prim.realWorld# of ds3 { (#,#) ipv4 ipv5 ->
+                 case GHC.Prim.touch#
+                        @ 'GHC.Types.LiftedRep
+                        @ GHC.ForeignPtr.ForeignPtrContents
+                        dt1
+                        ipv4 of s'2 { DEFAULT ->
+                 case GHC.Prim.readWord8OffAddr#
+                        @ GHC.Prim.RealWorld
+                        (GHC.Prim.plusAddr# dt (GHC.Prim.+# dt2 4#))
+                        0#
+                        GHC.Prim.realWorld# of ds4 { (#,#) ipv6 ipv7 ->
+                 case GHC.Prim.touch#
+                        @ 'GHC.Types.LiftedRep
+                        @ GHC.ForeignPtr.ForeignPtrContents
+                        dt1
+                        ipv6 of s'3 { DEFAULT ->
+                 case GHC.Prim.readWord8OffAddr#
+                        @ GHC.Prim.RealWorld
+                        (GHC.Prim.plusAddr# dt (GHC.Prim.+# dt2 3#))
+                        0#
+                        GHC.Prim.realWorld# of ds5 { (#,#) ipv8 ipv9 ->
+                 case GHC.Prim.touch#
+                        @ 'GHC.Types.LiftedRep
+                        @ GHC.ForeignPtr.ForeignPtrContents
+                        dt1
+                        ipv8 of s'4 { DEFAULT ->
+                 case GHC.Prim.readWord8OffAddr#
+                        @ GHC.Prim.RealWorld
+                        (GHC.Prim.plusAddr# dt (GHC.Prim.+# dt2 2#))
+                        0#
+                        GHC.Prim.realWorld# of ds6 { (#,#) ipv10 ipv11 ->
+                 case GHC.Prim.touch#
+                        @ 'GHC.Types.LiftedRep
+                        @ GHC.ForeignPtr.ForeignPtrContents
+                        dt1
+                        ipv10 of s'5 { DEFAULT ->
+                 case GHC.Prim.readWord8OffAddr#
+                        @ GHC.Prim.RealWorld
+                        (GHC.Prim.plusAddr# dt (GHC.Prim.+# dt2 1#))
+                        0#
+                        GHC.Prim.realWorld# of ds7 { (#,#) ipv12 ipv13 ->
+                 case GHC.Prim.touch#
+                        @ 'GHC.Types.LiftedRep
+                        @ GHC.ForeignPtr.ForeignPtrContents
+                        dt1
+                        ipv12 of s'6 { DEFAULT ->
+                 case GHC.Prim.readWord8OffAddr#
+                        @ GHC.Prim.RealWorld
+                        (GHC.Prim.plusAddr# dt dt2)
+                        0#
+                        GHC.Prim.realWorld# of ds8 { (#,#) ipv14 ipv15 ->
+                 case GHC.Prim.touch#
+                        @ 'GHC.Types.LiftedRep
+                        @ GHC.ForeignPtr.ForeignPtrContents
+                        dt1
+                        ipv14 of s'7 { DEFAULT ->
+                 GHC.Word.W64#
+                   (GHC.Prim.or#
+                      (GHC.Prim.or#
+                         (GHC.Prim.or#
+                            (GHC.Prim.or#
+                               (GHC.Prim.or#
+                                  (GHC.Prim.or#
+                                     (GHC.Prim.or#
+                                        (GHC.Prim.uncheckedShiftL# ipv1 56#)
+                                        (GHC.Prim.uncheckedShiftL# ipv3 48#))
+                                     (GHC.Prim.uncheckedShiftL# ipv5 40#))
+                                  (GHC.Prim.uncheckedShiftL# ipv7 32#))
+                               (GHC.Prim.uncheckedShiftL# ipv9 24#))
+                            (GHC.Prim.uncheckedShiftL# ipv11 16#))
+                         (GHC.Prim.uncheckedShiftL# ipv13 8#))
+                      ipv15) } } } } } } } } } } } } } } } } }) -}
+"getWord16be/readN" forall
+  Data.Binary.Get.getWord16be
+  = Data.Binary.Get.Internal.readN
+      @ GHC.Word.Word16
+      (GHC.Types.I# 2#)
+      Data.Binary.Get.word16be
+"getWord16le/readN" forall
+  Data.Binary.Get.getWord16le
+  = Data.Binary.Get.Internal.readN
+      @ GHC.Word.Word16
+      (GHC.Types.I# 2#)
+      Data.Binary.Get.word16le
+"getWord32be/readN" forall
+  Data.Binary.Get.getWord32be
+  = Data.Binary.Get.Internal.readN
+      @ GHC.Word.Word32
+      (GHC.Types.I# 4#)
+      Data.Binary.Get.word32be
+"getWord32le/readN" forall
+  Data.Binary.Get.getWord32le
+  = Data.Binary.Get.Internal.readN
+      @ GHC.Word.Word32
+      (GHC.Types.I# 4#)
+      Data.Binary.Get.word32le
+"getWord64be/readN" forall
+  Data.Binary.Get.getWord64be
+  = Data.Binary.Get.Internal.readN
+      @ GHC.Word.Word64
+      (GHC.Types.I# 8#)
+      Data.Binary.Get.word64be
+"getWord64le/readN" forall
+  Data.Binary.Get.getWord64le
+  = Data.Binary.Get.Internal.readN
+      @ GHC.Word.Word64
+      (GHC.Types.I# 8#)
+      Data.Binary.Get.word64le
+"getWord8/readN" forall
+  Data.Binary.Get.getWord8
+  = Data.Binary.Get.Internal.readN
+      @ GHC.Word.Word8
+      (GHC.Types.I# 1#)
+      Data.ByteString.Unsafe.unsafeHead
+Warnings runGetState "Use runGetIncremental instead. This function will be removed."
+trusted: trustworthy
+require own pkg trusted: True
+module header:
+  Nothing
+declaration docs:
+arg docs:
+

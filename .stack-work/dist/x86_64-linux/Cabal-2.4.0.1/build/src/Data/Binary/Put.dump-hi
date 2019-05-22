@@ -1,0 +1,1725 @@
+
+==================== FINAL INTERFACE ====================
+2019-05-22 17:17:52.869112683 UTC
+
+interface binary-0.8.7.0-BLOwEKiKlD84pHPCNhnRK5:Data.Binary.Put 8065
+  interface hash: 77b24bf40420e98e3f928f9e6e7ff236
+  ABI hash: 61a573420501fe256acd718e92576610
+  export-list hash: 5058fc1ddc2527395c5542112755645b
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 5b0c8d0352b2c988efc1bc95815ee31f
+  opt_hash: 5835274e0c52a5d281a4b935bfdb5c93
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Data.Binary.Put.execPut
+  Data.Binary.Put.flush
+  Data.Binary.Put.putBuilder
+  Data.Binary.Put.putByteString
+  Data.Binary.Put.putCharUtf8
+  Data.Binary.Put.putDoublebe
+  Data.Binary.Put.putDoublehost
+  Data.Binary.Put.putDoublele
+  Data.Binary.Put.putFloatbe
+  Data.Binary.Put.putFloathost
+  Data.Binary.Put.putFloatle
+  Data.Binary.Put.putInt16be
+  Data.Binary.Put.putInt16host
+  Data.Binary.Put.putInt16le
+  Data.Binary.Put.putInt32be
+  Data.Binary.Put.putInt32host
+  Data.Binary.Put.putInt32le
+  Data.Binary.Put.putInt64be
+  Data.Binary.Put.putInt64host
+  Data.Binary.Put.putInt64le
+  Data.Binary.Put.putInt8
+  Data.Binary.Put.putInthost
+  Data.Binary.Put.putLazyByteString
+  Data.Binary.Put.putShortByteString
+  Data.Binary.Put.putStringUtf8
+  Data.Binary.Put.putWord16be
+  Data.Binary.Put.putWord16host
+  Data.Binary.Put.putWord16le
+  Data.Binary.Put.putWord32be
+  Data.Binary.Put.putWord32host
+  Data.Binary.Put.putWord32le
+  Data.Binary.Put.putWord64be
+  Data.Binary.Put.putWord64host
+  Data.Binary.Put.putWord64le
+  Data.Binary.Put.putWord8
+  Data.Binary.Put.putWordhost
+  Data.Binary.Put.runPut
+  Data.Binary.Put.runPutM
+  Data.Binary.Put.Put
+  Data.Binary.Put.PutM{Data.Binary.Put.Put unPut}
+module dependencies: Data.Binary.Builder Data.Binary.FloatCast
+package dependencies: array-0.5.3.0 base-4.12.0.0*
+                      bytestring-0.10.8.2* deepseq-1.4.4.0 ghc-prim-0.5.3
+                      integer-gmp-1.0.2.0
+orphans: bytestring-0.10.8.2:Data.ByteString.Builder
+         base-4.12.0.0:GHC.Float base-4.12.0.0:GHC.Base
+family instance modules: base-4.12.0.0:Control.Applicative
+                         base-4.12.0.0:Data.Complex base-4.12.0.0:Data.Functor.Compose
+                         base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity
+                         base-4.12.0.0:Data.Functor.Product base-4.12.0.0:Data.Functor.Sum
+                         base-4.12.0.0:Data.Monoid base-4.12.0.0:Data.Semigroup
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:Data.Version
+                         base-4.12.0.0:Data.Void base-4.12.0.0:GHC.Exts
+                         base-4.12.0.0:GHC.Generics base-4.12.0.0:GHC.IO.Exception
+import safe base-4.12.0.0:Control.Applicative 2ae514eb141d45774730765c61bb41c0
+import safe base-4.12.0.0:Data.Int e78f203d621836c59d5015a8a0e4eaea
+import safe base-4.12.0.0:Data.Monoid 12b87658decc811c5251626260c01aeb
+import safe base-4.12.0.0:Data.Semigroup 77d0b010ed701f8a1da4f6d7b4d5812e
+import safe base-4.12.0.0:Data.Word 6b968b6c7df442cfcad986e497aee095
+import safe base-4.12.0.0:GHC.Base c00b75f0b052d05c55ba6a4dd1c63b26
+import safe base-4.12.0.0:GHC.Int 75a738083d98da9ebef0ff75df759462
+import safe base-4.12.0.0:GHC.Real af2b985dd29515c375fb78b2c9298d42
+import safe base-4.12.0.0:GHC.Word 36bd327b03ce8a144ab8e66a53975837
+import safe base-4.12.0.0:Prelude 3c779dfd6448bdd8e234c336802c2acb
+import safe Data.Binary.Builder e88ad0687ccf39a6afa59137e7d6e7b7
+  exports: 7fba21c8ac5f1eb60aa109e8d3882799
+  fromByteString 741f450142e956411d095aa47a3c07a8
+  fromLazyByteString a1aa48abb4d7fd86d3b3be81bdb825df
+  fromShortByteString 40151d96213ba340c0630340272b9caa
+  putCharUtf8 3949d32dc282890db3a189e29879aefc
+  putInt16be 6846cc92808b1cdfa51ecf77a36ed165
+  putInt16host 1f203d94b0f29fffd46fee7699e4cdec
+  putInt16le 933742ae00045892b7061d0c23276013
+  putInt32be a7aeaf69a3119e1b84c1c98c99115caf
+  putInt32host dc48d52d86481f17e2bd04d65e57e355
+  putInt32le 8273cb287b4ae40db3c8914eda2ac360
+  putInt64be 16b51686d58b8019f33650f0608829d0
+  putInt64host c046b2b3577e7f48d6e3afb6de04931d
+  putInt64le a807c718122245adb5a84d9f03a0c1d4
+  putInthost 10d8959982b24268dd37d187c410cdeb
+  putStringUtf8 d9f13bf35953f36767df5ae5b2ce57a9
+  putWord16be 47b4bd09d4be23562ff124f2e109b0e7
+  putWord16host 79c6d997b15edce4d222b2eb79145d52
+  putWord16le cc2e1ee3e3978a0ce024f1f92ebc0d8b
+  putWord32be cd7e661b69dfd0e73cca866c7a84312d
+  putWord32host f5929138b34c6098f9223302b172eda5
+  putWord32le 292f7f68e9561f12da3dd7b51c847346
+  putWord64be b092f00e2de411d549d127f212aa1a16
+  putWord64host 7d6c1329ee71f7adbbb577703545a9d8
+  putWord64le 92b9321ab5ecb50b54eff00316f8cde0
+  putWordhost 07bd91968b5ed1521fbe0bb7be41c23a
+  singleton eb08682033241e9de69891b754083e98
+import safe Data.Binary.FloatCast e902e8bec8d65f930c017c464de1f21c
+  exports: 8a13bb60343e3fa682d9bef51a968a7d
+  doubleToWord 1a74dc052677c21f2f639cde6b57d1f1
+  floatToWord 9827df4c081b1080fb64437c148f0454
+import safe bytestring-0.10.8.2:Data.ByteString fd8cecf441c361eb2e989315be3b33ab
+import safe bytestring-0.10.8.2:Data.ByteString.Builder 6f8db2a06f5101ee328beacd18b0a633
+import safe bytestring-0.10.8.2:Data.ByteString.Builder.Internal 8258443d95d94e3caaed55a182aaa9c6
+import safe bytestring-0.10.8.2:Data.ByteString.Internal f8067c0775041a7adb8f53745475ed88
+import safe bytestring-0.10.8.2:Data.ByteString.Lazy 17bbfcb66adfeb54389d1792c4493dec
+import safe bytestring-0.10.8.2:Data.ByteString.Lazy.Internal 2323410d496b66c6a46f7c8b483c1856
+import safe bytestring-0.10.8.2:Data.ByteString.Short 7c399948e78702d9afb0f2f6efd35ad8
+import safe bytestring-0.10.8.2:Data.ByteString.Short.Internal 296a2bf5bb25707ba11f82bb7c333e3e
+addDependentFile "/home/schernichkin/.stack/programs/x86_64-linux/ghc-8.6.5/lib/ghc-8.6.5/include/ghcversion.h" 43db44f9bb88490c2fa995e5f5ec33f2
+addDependentFile ".stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/autogen/cabal_macros.h" e6f1f8b8bb6582b087a6681896f0d62a
+addDependentFile "/usr/include/stdc-predef.h" b11071912035aeb144fe65c00cfe2168
+d58a34c7ddb8da4b063cc60b7ef9f490
+  $fApplicativePutM :: GHC.Base.Applicative Data.Binary.Put.PutM
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Data.Binary.Put.PutM
+                  Data.Binary.Put.$fFunctorPutM
+                  Data.Binary.Put.$fApplicativePutM_$cpure
+                  Data.Binary.Put.$fApplicativePutM3
+                    `cast`
+                  (forall (a :: <*>_N) (b :: <*>_N).
+                   <Data.Binary.Put.PutM (a -> b)>_R
+                   ->_R <Data.Binary.Put.PutM a>_R
+                   ->_R Sym (Data.Binary.Put.N:PutM[0]) <b>_N)
+                  (\ @ a @ b @ c -> Data.Binary.Put.$fApplicativePutM2 @ c @ b @ a)
+                    `cast`
+                  (forall (a :: <*>_N) (b :: <*>_N) (c :: <*>_N).
+                   <a -> b -> c>_R
+                   ->_R <Data.Binary.Put.PutM a>_R
+                   ->_R <Data.Binary.Put.PutM b>_R
+                   ->_R Sym (Data.Binary.Put.N:PutM[0]) <c>_N)
+                  Data.Binary.Put.$fApplicativePutM_$c*>
+                  Data.Binary.Put.$fApplicativePutM1
+                    `cast`
+                  (forall (a :: <*>_N) (b :: <*>_N).
+                   <Data.Binary.Put.PutM a>_R
+                   ->_R <Data.Binary.Put.PutM b>_R
+                   ->_R Sym (Data.Binary.Put.N:PutM[0]) <a>_N) -}
+d58a34c7ddb8da4b063cc60b7ef9f490
+  $fApplicativePutM1 ::
+    Data.Binary.Put.PutM a
+    -> Data.Binary.Put.PutM b -> Data.Binary.Put.PairS a
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,U(1*U,C(U))><L,U(A,C(U))>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a
+                   @ b
+                   (x :: Data.Binary.Put.PutM a)
+                   (eta :: Data.Binary.Put.PutM b) ->
+                 Data.Binary.Put.PairS
+                   @ a
+                   (case x `cast`
+                         (Data.Binary.Put.N:PutM[0] <a>_N) of wild { Data.Binary.Put.PairS a1 w ->
+                    a1 })
+                   (\ @ r (x1 :: Data.ByteString.Builder.Internal.BuildStep r) ->
+                    case x `cast`
+                         (Data.Binary.Put.N:PutM[0] <a>_N) of wild { Data.Binary.Put.PairS a1 w ->
+                    w `cast` (Data.ByteString.Builder.Internal.N:Builder[0])
+                      @ r
+                      (case eta
+                              `cast`
+                            (Data.Binary.Put.N:PutM[0] <b>_N) of wild1 { Data.Binary.Put.PairS x2 w' ->
+                       w' `cast` (Data.ByteString.Builder.Internal.N:Builder[0])
+                         @ r
+                         x1 }) })
+                     `cast`
+                   (Sym (Data.ByteString.Builder.Internal.N:Builder[0]))) -}
+d58a34c7ddb8da4b063cc60b7ef9f490
+  $fApplicativePutM2 ::
+    (a -> b -> c)
+    -> Data.Binary.Put.PutM a
+    -> Data.Binary.Put.PutM b
+    -> Data.Binary.Put.PairS c
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,1*C1(C(U))><L,1*U(U,C(U))>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ c @ b @ a (f1 :: a -> b -> c) (x :: Data.Binary.Put.PutM a) ->
+                 Data.Binary.Put.$fApplicativePutM3
+                   @ b
+                   @ c
+                   (Data.Binary.Put.$fApplicativePutM_$cfmap @ a @ (b -> c) f1 x)) -}
+d58a34c7ddb8da4b063cc60b7ef9f490
+  $fApplicativePutM3 ::
+    Data.Binary.Put.PutM (a -> b)
+    -> Data.Binary.Put.PutM a -> Data.Binary.Put.PairS b
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,U(1*C1(U),C(U))><L,U(1*U,C(U))>m, Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a
+                   @ b
+                   (w :: Data.Binary.Put.PutM (a -> b))
+                   (w1 :: Data.Binary.Put.PutM a) ->
+                 Data.Binary.Put.PairS
+                   @ b
+                   (case w `cast`
+                         (Data.Binary.Put.N:PutM[0] <a
+                                                     -> b>_N) of wild { Data.Binary.Put.PairS f w2 ->
+                    f (case w1
+                              `cast`
+                            (Data.Binary.Put.N:PutM[0] <a>_N) of wild1 { Data.Binary.Put.PairS x w' ->
+                       x }) })
+                   (\ @ r (x :: Data.ByteString.Builder.Internal.BuildStep r) ->
+                    case w `cast`
+                         (Data.Binary.Put.N:PutM[0] <a
+                                                     -> b>_N) of wild { Data.Binary.Put.PairS f w2 ->
+                    w2 `cast` (Data.ByteString.Builder.Internal.N:Builder[0])
+                      @ r
+                      (case w1
+                              `cast`
+                            (Data.Binary.Put.N:PutM[0] <a>_N) of wild1 { Data.Binary.Put.PairS x1 w' ->
+                       w' `cast` (Data.ByteString.Builder.Internal.N:Builder[0])
+                         @ r
+                         x }) })
+                     `cast`
+                   (Sym (Data.ByteString.Builder.Internal.N:Builder[0]))) -}
+d58a34c7ddb8da4b063cc60b7ef9f490
+  $fApplicativePutM_$c*> ::
+    Data.Binary.Put.PutM a
+    -> Data.Binary.Put.PutM b -> Data.Binary.Put.PutM b
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,U(A,C(U))><L,U(1*U,C(U))>m, Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ @ a
+                   @ b
+                   (m :: Data.Binary.Put.PutM a)
+                   (k :: Data.Binary.Put.PutM b) ->
+                 Data.Binary.Put.$WPairS
+                   @ b
+                   (case k `cast`
+                         (Data.Binary.Put.N:PutM[0] <b>_N) of wild { Data.Binary.Put.PairS b1 w' ->
+                    b1 })
+                   (Data.ByteString.Builder.Internal.append
+                      (case m `cast`
+                            (Data.Binary.Put.N:PutM[0] <a>_N) of wild { Data.Binary.Put.PairS ds w ->
+                       w })
+                      (case k `cast`
+                            (Data.Binary.Put.N:PutM[0] <b>_N) of wild { Data.Binary.Put.PairS b1 w' ->
+                       w' })))
+                  `cast`
+                (forall (a :: <*>_N) (b :: <*>_N).
+                 <Data.Binary.Put.PutM a>_R
+                 ->_R <Data.Binary.Put.PutM b>_R
+                 ->_R Sym (Data.Binary.Put.N:PutM[0]) <b>_N) -}
+d58a34c7ddb8da4b063cc60b7ef9f490
+  $fApplicativePutM_$cfmap ::
+    (a -> b) -> Data.Binary.Put.PutM a -> Data.Binary.Put.PutM b
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,1*C1(U)><S(LS),1*U(U,U)>m, Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ @ a @ b (f :: a -> b) (m :: Data.Binary.Put.PutM a) ->
+                 case m `cast`
+                      (Data.Binary.Put.N:PutM[0] <a>_N) of wild { Data.Binary.Put.PairS a1 w ->
+                 Data.Binary.Put.$WPairS @ b (f a1) w })
+                  `cast`
+                (forall (a :: <*>_N) (b :: <*>_N).
+                 <a -> b>_R
+                 ->_R <Data.Binary.Put.PutM a>_R
+                 ->_R Sym (Data.Binary.Put.N:PutM[0]) <b>_N) -}
+d58a34c7ddb8da4b063cc60b7ef9f490
+  $fApplicativePutM_$cpure :: a -> Data.Binary.Put.PutM a
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m,
+     Inline: (sat-args=1),
+     Unfolding: InlineRule (1, False, False)
+                (\ @ a (a1 :: a) ->
+                 Data.Binary.Put.$WPairS
+                   @ a
+                   a1
+                   Data.ByteString.Builder.Internal.empty)
+                  `cast`
+                (forall (a :: <*>_N).
+                 <a>_R ->_R Sym (Data.Binary.Put.N:PutM[0]) <a>_N) -}
+d58a34c7ddb8da4b063cc60b7ef9f490
+  $fFunctorPutM :: GHC.Base.Functor Data.Binary.Put.PutM
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Data.Binary.Put.PutM
+                  Data.Binary.Put.$fApplicativePutM_$cfmap
+                  Data.Binary.Put.$fFunctorPutM1
+                    `cast`
+                  (forall (a :: <*>_N) (b :: <*>_N).
+                   <a>_R
+                   ->_R <Data.Binary.Put.PutM b>_R
+                   ->_R Sym (Data.Binary.Put.N:PutM[0]) <a>_N) -}
+d58a34c7ddb8da4b063cc60b7ef9f490
+  $fFunctorPutM1 ::
+    a -> Data.Binary.Put.PutM b -> Data.Binary.Put.PairS a
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S(LS),1*U(A,U)>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a @ b (x :: a) (eta :: Data.Binary.Put.PutM b) ->
+                 case eta
+                        `cast`
+                      (Data.Binary.Put.N:PutM[0] <b>_N) of wild { Data.Binary.Put.PairS a1 w ->
+                 Data.Binary.Put.PairS @ a x w }) -}
+d58a34c7ddb8da4b063cc60b7ef9f490
+  $fMonadPutM :: GHC.Base.Monad Data.Binary.Put.PutM
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Data.Binary.Put.PutM
+                  Data.Binary.Put.$fApplicativePutM
+                  Data.Binary.Put.$fMonadPutM_$c>>=
+                  Data.Binary.Put.$fApplicativePutM_$c*>
+                  Data.Binary.Put.$fApplicativePutM_$cpure
+                  (\ @ a ->
+                   GHC.Err.errorWithoutStackTrace
+                     @ 'GHC.Types.LiftedRep
+                     @ (Data.Binary.Put.PutM a)) -}
+d58a34c7ddb8da4b063cc60b7ef9f490
+  $fMonadPutM_$c>>= ::
+    Data.Binary.Put.PutM a
+    -> (a -> Data.Binary.Put.PutM b) -> Data.Binary.Put.PutM b
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,U(1*U,C(U))><L,1*C1(U(1*U,C(U)))>m,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ @ a
+                   @ b
+                   (m :: Data.Binary.Put.PutM a)
+                   (k :: a -> Data.Binary.Put.PutM b) ->
+                 let {
+                   ds :: Data.Binary.Put.PutM b
+                   = k (case m `cast`
+                             (Data.Binary.Put.N:PutM[0] <a>_N) of wild { Data.Binary.Put.PairS a1 w ->
+                        a1 })
+                 } in
+                 (Data.Binary.Put.$WPairS
+                    @ b
+                    (case ds
+                            `cast`
+                          (Data.Binary.Put.N:PutM[0] <b>_N) of wild { Data.Binary.Put.PairS b1 w' ->
+                     b1 })
+                    (Data.ByteString.Builder.Internal.append
+                       (case m `cast`
+                             (Data.Binary.Put.N:PutM[0] <a>_N) of wild { Data.Binary.Put.PairS a1 w ->
+                        w })
+                       (case ds
+                               `cast`
+                             (Data.Binary.Put.N:PutM[0] <b>_N) of wild { Data.Binary.Put.PairS b1 w' ->
+                        w' })))
+                   `cast`
+                 (Sym (Data.Binary.Put.N:PutM[0]) <b>_N)) -}
+d58a34c7ddb8da4b063cc60b7ef9f490
+  $fMonoidPutM :: GHC.Base.Monoid (Data.Binary.Put.PutM ())
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ (Data.Binary.Put.PutM ())
+                  Data.Binary.Put.$fSemigroupPutM
+                  Data.Binary.Put.$fMonoidPutM_$cmempty
+                  Data.Binary.Put.mappend'
+                  Data.Binary.Put.$fMonoidPutM_go -}
+d58a34c7ddb8da4b063cc60b7ef9f490
+  $fMonoidPutM_$cmempty :: Data.Binary.Put.PutM ()
+  {- Strictness: m, Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (Data.Binary.Put.$WPairS
+                   @ ()
+                   GHC.Tuple.()
+                   Data.ByteString.Builder.Internal.empty)
+                  `cast`
+                (Sym (Data.Binary.Put.N:PutM[0]) <()>_N) -}
+d58a34c7ddb8da4b063cc60b7ef9f490
+  $fMonoidPutM_go ::
+    [Data.Binary.Put.PutM ()] -> Data.Binary.Put.PutM ()
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>m, Inline: [2],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: [Data.Binary.Put.PutM ()]) ->
+                 case Data.Binary.Put.$wgo w of ww { (#,#) ww1 ww2 ->
+                 (Data.Binary.Put.PairS @ () ww1 ww2)
+                   `cast`
+                 (Sym (Data.Binary.Put.N:PutM[0]) <()>_N) }) -}
+d58a34c7ddb8da4b063cc60b7ef9f490
+  $fSemigroupPutM :: GHC.Base.Semigroup (Data.Binary.Put.PutM ())
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ (Data.Binary.Put.PutM ())
+                  Data.Binary.Put.mappend'
+                  Data.Binary.Put.$fSemigroupPutM_$csconcat
+                  Data.Binary.Put.$fSemigroupPutM_$cstimes -}
+d58a34c7ddb8da4b063cc60b7ef9f490
+  $fSemigroupPutM_$csconcat ::
+    GHC.Base.NonEmpty (Data.Binary.Put.PutM ())
+    -> Data.Binary.Put.PutM ()
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LS),1*U(U(U,U),1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: GHC.Base.NonEmpty (Data.Binary.Put.PutM ())) ->
+                 case ds of wild { GHC.Base.:| a1 as ->
+                 Data.Binary.Put.$fSemigroupPutM_go a1 as }) -}
+d58a34c7ddb8da4b063cc60b7ef9f490
+  $fSemigroupPutM_$cstimes ::
+    GHC.Real.Integral b =>
+    b -> Data.Binary.Put.PutM () -> Data.Binary.Put.PutM ()
+  {- Arity: 1, Strictness: <L,U> -}
+d58a34c7ddb8da4b063cc60b7ef9f490
+  $fSemigroupPutM_go ::
+    Data.Binary.Put.PutM ()
+    -> [Data.Binary.Put.PutM ()] -> Data.Binary.Put.PutM ()
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U(U,U)><S,1*U> -}
+444410f1e5225a65a51582c3ccf13604
+  $tc'PairS :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   17994325283616745774##
+                   2000651449849802506##
+                   Data.Binary.Put.$trModule
+                   Data.Binary.Put.$tc'PairS2
+                   1#
+                   Data.Binary.Put.$tc'PairS1) -}
+dccde24523548b852cc68c6de6da4640
+  $tc'PairS1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+3086495c2594b4c94037465da10f25fa
+  $tc'PairS2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Data.Binary.Put.$tc'PairS3) -}
+b9b888c61a626736b4d417a51f2ee9a7
+  $tc'PairS3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'PairS"#) -}
+f9346af238b7d7515cb6a03f5401424c
+  $tc'Put :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1216073528541947450##
+                   16054425574721606436##
+                   Data.Binary.Put.$trModule
+                   Data.Binary.Put.$tc'Put2
+                   1#
+                   Data.Binary.Put.$tc'Put1) -}
+0f31e9c0eebca4758d9271a23e72d926
+  $tc'Put1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+d0ec993783eb9eb40aeb8b95de06e5f5
+  $tc'Put2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Data.Binary.Put.$tc'Put3) -}
+33d13c9c21f4c013c84d42ce9c4984f3
+  $tc'Put3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Put"#) -}
+1016fbab5dc806fec07ad50245cdf5d8
+  $tcPairS :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10951542906761332366##
+                   17380154444536848384##
+                   Data.Binary.Put.$trModule
+                   Data.Binary.Put.$tcPairS1
+                   0#
+                   GHC.Types.krep$*Arr*) -}
+b5715bb8968af1c1569fc570b590ac7a
+  $tcPairS1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Data.Binary.Put.$tcPairS2) -}
+25acc703cc9ff4352ade4f8c996f0845
+  $tcPairS2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("PairS"#) -}
+aa060a96841f0d3c952eaa3e628ecefc
+  $tcPutM :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13261480337167934845##
+                   7796149274699820507##
+                   Data.Binary.Put.$trModule
+                   Data.Binary.Put.$tcPutM1
+                   0#
+                   GHC.Types.krep$*Arr*) -}
+e29d4dda8002c8f57aa90243e7657d0e
+  $tcPutM1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Data.Binary.Put.$tcPutM2) -}
+13429accda3aed9209a77d288238347a
+  $tcPutM2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("PutM"#) -}
+f20a05285208013747274beb19982a94
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Data.Binary.Put.$trModule3
+                   Data.Binary.Put.$trModule1) -}
+1bf2aa126fe2c0d423ef86309ea4f1c5
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Data.Binary.Put.$trModule2) -}
+274678c52e4676e6e8ac9456d0863740
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Data.Binary.Put"#) -}
+ce3671a2412c1191486f1f9e2c9d1620
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Data.Binary.Put.$trModule4) -}
+d8e85768760668df689f59a061441ff1
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("binary-0.8.7.0-BLOwEKiKlD84pHPCNhnRK5"#) -}
+d58a34c7ddb8da4b063cc60b7ef9f490
+  $wgo ::
+    [Data.Binary.Put.PutM ()]
+    -> (# (), Data.ByteString.Builder.Internal.Builder #)
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>, Inline: [2] -}
+3dbe08889b1bb701525ff32a4a07a6aa
+  data PairS a = PairS a !Data.ByteString.Builder.Internal.Builder
+d58a34c7ddb8da4b063cc60b7ef9f490
+  type Put = Data.Binary.Put.PutM ()
+d58a34c7ddb8da4b063cc60b7ef9f490
+  newtype PutM a = Put {unPut :: Data.Binary.Put.PairS a}
+c91db8e53a13076769485639d4dfd56e
+  execPut ::
+    Data.Binary.Put.PutM a -> Data.ByteString.Builder.Internal.Builder
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LS),1*U(A,U)>,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (\ @ a (x :: Data.Binary.Put.PutM a) ->
+                 case x `cast`
+                      (Data.Binary.Put.N:PutM[0] <a>_N) of wild { Data.Binary.Put.PairS ds b ->
+                 b }) -}
+ef8b9415d946a2fc31efd89149bd58d6
+  flush :: Data.Binary.Put.Put
+  {- Strictness: m, Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (Data.Binary.Put.$WPairS
+                   @ ()
+                   GHC.Tuple.()
+                   Data.ByteString.Builder.Internal.flush)
+                  `cast`
+                (Sym (Data.Binary.Put.N:PutM[0]) <()>_N) -}
+d58a34c7ddb8da4b063cc60b7ef9f490
+  mappend' ::
+    Data.Binary.Put.Put -> Data.Binary.Put.Put -> Data.Binary.Put.Put
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U(A,C(U))><L,U(A,C(U))>m,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (m :: Data.Binary.Put.Put) (k :: Data.Binary.Put.Put) ->
+                 Data.Binary.Put.$WPairS
+                   @ ()
+                   GHC.Tuple.()
+                   (Data.ByteString.Builder.Internal.append
+                      (case m `cast`
+                            (Data.Binary.Put.N:PutM[0] <()>_N) of wild { Data.Binary.Put.PairS ds w ->
+                       w })
+                      (case k `cast`
+                            (Data.Binary.Put.N:PutM[0] <()>_N) of wild { Data.Binary.Put.PairS ds w' ->
+                       w' })))
+                  `cast`
+                (<Data.Binary.Put.Put>_R
+                 ->_R <Data.Binary.Put.Put>_R
+                 ->_R Sym (Data.Binary.Put.N:PutM[0]) <()>_N) -}
+8b8379b110cc73872fafcc7c8d950669
+  putBuilder ::
+    Data.ByteString.Builder.Internal.Builder -> Data.Binary.Put.Put
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>m,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, True) Data.Binary.Put.tell -}
+e7ac4f4be940a26f83f0f9db071b0306
+  putByteString ::
+    Data.ByteString.Internal.ByteString -> Data.Binary.Put.Put
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U(U,U,U,U)>m,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (\ (x :: Data.ByteString.Internal.ByteString) ->
+                 Data.Binary.Put.$WPairS
+                   @ ()
+                   GHC.Tuple.()
+                   (\ @ r
+                      (k :: Data.ByteString.Builder.Internal.BuildStep r)
+                      (br :: Data.ByteString.Builder.Internal.BufferRange) ->
+                    case x of wild { Data.ByteString.Internal.PS dt dt1 dt2 dt3 ->
+                    case k of k1 { DEFAULT ->
+                    case br of wild1 { Data.ByteString.Builder.Internal.BufferRange dt4 dt5 ->
+                    case GHC.Classes.leInt
+                           (GHC.Types.I# dt3)
+                           Data.ByteString.Builder.Internal.maximalCopySize of wild2 {
+                      GHC.Types.False
+                      -> (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                          (# s,
+                             Data.ByteString.Builder.Internal.$WInsertChunk
+                               @ r
+                               (GHC.Ptr.Ptr @ GHC.Word.Word8 dt4)
+                               wild
+                               k1 #))
+                           `cast`
+                         (Sym (GHC.Types.N:IO[0]
+                                   <Data.ByteString.Builder.Internal.BuildSignal r>_R))
+                      GHC.Types.True
+                      -> let {
+                           ip :: GHC.Prim.Addr# = GHC.Prim.plusAddr# dt dt2
+                         } in
+                         let {
+                           op' :: GHC.Prim.Addr# = GHC.Prim.plusAddr# dt4 dt3
+                         } in
+                         case GHC.Prim.ltAddr# dt5 op' of lwild {
+                           DEFAULT
+                           -> (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                               case {__pkg_ccall base-4.12.0.0 GHC.Prim.Addr#
+                                                               -> GHC.Prim.Addr#
+                                                               -> GHC.Prim.Word#
+                                                               -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                               -> (# GHC.Prim.State#
+                                                                       GHC.Prim.RealWorld,
+                                                                     GHC.Prim.Addr# #)}
+                                      dt4
+                                      ip
+                                      (GHC.Prim.int2Word# dt3)
+                                      s of wild3 { (#,#) ds4 ds5 ->
+                               case GHC.Prim.touch#
+                                      @ 'GHC.Types.LiftedRep
+                                      @ GHC.ForeignPtr.ForeignPtrContents
+                                      dt1
+                                      ds4 of s' { DEFAULT ->
+                               (k1
+                                  (Data.ByteString.Builder.Internal.$WBufferRange
+                                     (GHC.Ptr.Ptr @ GHC.Word.Word8 op')
+                                     (GHC.Ptr.Ptr @ GHC.Word.Word8 dt5)))
+                                 `cast`
+                               (GHC.Types.N:IO[0]
+                                    <Data.ByteString.Builder.Internal.BuildSignal r>_R)
+                                 s' } })
+                                `cast`
+                              (Sym (GHC.Types.N:IO[0]
+                                        <Data.ByteString.Builder.Internal.BuildSignal r>_R))
+                           1#
+                           -> (Data.ByteString.Builder.Internal.byteString1
+                                 @ r
+                                 (Data.ByteString.Builder.Internal.$WBufferRange
+                                    (GHC.Ptr.Ptr @ GHC.Word.Word8 ip)
+                                    (GHC.Ptr.Ptr @ GHC.Word.Word8 (GHC.Prim.plusAddr# ip dt3)))
+                                 (\ (br1 :: Data.ByteString.Builder.Internal.BufferRange)
+                                    (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                                  case GHC.Prim.touch#
+                                         @ 'GHC.Types.LiftedRep
+                                         @ GHC.ForeignPtr.ForeignPtrContents
+                                         dt1
+                                         s of s' { DEFAULT ->
+                                  (k1 br1)
+                                    `cast`
+                                  (GHC.Types.N:IO[0]
+                                       <Data.ByteString.Builder.Internal.BuildSignal r>_R)
+                                    s' })
+                                   `cast`
+                                 (<Data.ByteString.Builder.Internal.BufferRange>_R
+                                  ->_R Sym (GHC.Types.N:IO[0]
+                                                <Data.ByteString.Builder.Internal.BuildSignal r>_R))
+                                 wild1)
+                                `cast`
+                              (Sym (GHC.Types.N:IO[0]
+                                        <Data.ByteString.Builder.Internal.BuildSignal
+                                           r>_R)) } } } } })
+                     `cast`
+                   (Sym (Data.ByteString.Builder.Internal.N:Builder[0])))
+                  `cast`
+                (<Data.ByteString.Internal.ByteString>_R
+                 ->_R Sym (Data.Binary.Put.N:PutM[0]) <()>_N) -}
+fb757802287c354facdf09d5a4f6a914
+  putCharUtf8 :: GHC.Types.Char -> Data.Binary.Put.Put
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (\ (x :: GHC.Types.Char) ->
+                 Data.Binary.Put.$WPairS
+                   @ ()
+                   GHC.Tuple.()
+                   (Data.ByteString.Builder.Prim.primBounded
+                      @ GHC.Types.Char
+                      Data.ByteString.Builder.Prim.charUtf8
+                      x))
+                  `cast`
+                (<GHC.Types.Char>_R ->_R Sym (Data.Binary.Put.N:PutM[0]) <()>_N) -}
+a4464586d338520d1b057d514b4aaaff
+  putDoublebe :: GHC.Types.Double -> Data.Binary.Put.Put
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,1*U(U)>m,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (\ (x :: GHC.Types.Double) ->
+                 Data.Binary.Put.$WPairS
+                   @ ()
+                   GHC.Tuple.()
+                   (Data.ByteString.Builder.Prim.primBounded
+                      @ GHC.Word.Word64
+                      (Data.ByteString.Builder.Prim.Internal.toB
+                         @ GHC.Word.Word64
+                         Data.ByteString.Builder.Prim.Binary.word64BE)
+                      (Data.Binary.FloatCast.doubleToWord x)))
+                  `cast`
+                (<GHC.Types.Double>_R
+                 ->_R Sym (Data.Binary.Put.N:PutM[0]) <()>_N) -}
+90517121c9f19bfdc302e54627971a6c
+  putDoublehost :: GHC.Types.Double -> Data.Binary.Put.Put
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,1*U(U)>m,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (\ (x :: GHC.Types.Double) ->
+                 Data.Binary.Put.$WPairS
+                   @ ()
+                   GHC.Tuple.()
+                   (Data.ByteString.Builder.Prim.primBounded
+                      @ GHC.Word.Word64
+                      (Data.ByteString.Builder.Prim.Internal.toB
+                         @ GHC.Word.Word64
+                         Data.ByteString.Builder.Prim.Binary.word64Host)
+                      (Data.Binary.FloatCast.doubleToWord x)))
+                  `cast`
+                (<GHC.Types.Double>_R
+                 ->_R Sym (Data.Binary.Put.N:PutM[0]) <()>_N) -}
+2c5133f65d9ad0fe46ec485d535a3d5f
+  putDoublele :: GHC.Types.Double -> Data.Binary.Put.Put
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,1*U(U)>m,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (\ (x :: GHC.Types.Double) ->
+                 Data.Binary.Put.$WPairS
+                   @ ()
+                   GHC.Tuple.()
+                   (Data.ByteString.Builder.Prim.primBounded
+                      @ GHC.Word.Word64
+                      (Data.ByteString.Builder.Prim.Internal.toB
+                         @ GHC.Word.Word64
+                         Data.ByteString.Builder.Prim.Binary.word64Host)
+                      (Data.Binary.FloatCast.doubleToWord x)))
+                  `cast`
+                (<GHC.Types.Double>_R
+                 ->_R Sym (Data.Binary.Put.N:PutM[0]) <()>_N) -}
+15a28d2f779acf329fcaa04b86fe4975
+  putFloatbe :: GHC.Types.Float -> Data.Binary.Put.Put
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,1*U(U)>m,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (\ (x :: GHC.Types.Float) ->
+                 Data.Binary.Put.$WPairS
+                   @ ()
+                   GHC.Tuple.()
+                   (Data.ByteString.Builder.Prim.primBounded
+                      @ GHC.Word.Word32
+                      (Data.ByteString.Builder.Prim.Internal.toB
+                         @ GHC.Word.Word32
+                         Data.ByteString.Builder.Prim.Binary.word32BE)
+                      (Data.Binary.FloatCast.floatToWord x)))
+                  `cast`
+                (<GHC.Types.Float>_R
+                 ->_R Sym (Data.Binary.Put.N:PutM[0]) <()>_N) -}
+4bc5ec22e182b6a3f2be0aae552ba5bc
+  putFloathost :: GHC.Types.Float -> Data.Binary.Put.Put
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,1*U(U)>m,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (\ (x :: GHC.Types.Float) ->
+                 Data.Binary.Put.$WPairS
+                   @ ()
+                   GHC.Tuple.()
+                   (Data.ByteString.Builder.Prim.primBounded
+                      @ GHC.Word.Word32
+                      (Data.ByteString.Builder.Prim.Internal.toB
+                         @ GHC.Word.Word32
+                         Data.ByteString.Builder.Prim.Binary.word32Host)
+                      (Data.Binary.FloatCast.floatToWord x)))
+                  `cast`
+                (<GHC.Types.Float>_R
+                 ->_R Sym (Data.Binary.Put.N:PutM[0]) <()>_N) -}
+0105198618aede5a4cf2c46f589fc8dd
+  putFloatle :: GHC.Types.Float -> Data.Binary.Put.Put
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,1*U(U)>m,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (\ (x :: GHC.Types.Float) ->
+                 Data.Binary.Put.$WPairS
+                   @ ()
+                   GHC.Tuple.()
+                   (Data.ByteString.Builder.Prim.primBounded
+                      @ GHC.Word.Word32
+                      (Data.ByteString.Builder.Prim.Internal.toB
+                         @ GHC.Word.Word32
+                         Data.ByteString.Builder.Prim.Binary.word32Host)
+                      (Data.Binary.FloatCast.floatToWord x)))
+                  `cast`
+                (<GHC.Types.Float>_R
+                 ->_R Sym (Data.Binary.Put.N:PutM[0]) <()>_N) -}
+eab6fd519e38e74fbe7158d17e5c2d6e
+  putInt16be :: GHC.Int.Int16 -> Data.Binary.Put.Put
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U(U)>m,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (\ (x :: GHC.Int.Int16) ->
+                 Data.Binary.Put.$WPairS
+                   @ ()
+                   GHC.Tuple.()
+                   (Data.ByteString.Builder.Prim.primBounded
+                      @ GHC.Int.Int16
+                      (Data.ByteString.Builder.Prim.Internal.toB
+                         @ GHC.Int.Int16
+                         Data.ByteString.Builder.Prim.Binary.int16BE)
+                      x))
+                  `cast`
+                (<GHC.Int.Int16>_R ->_R Sym (Data.Binary.Put.N:PutM[0]) <()>_N) -}
+d20787abcba783f0eb212095170a526d
+  putInt16host :: GHC.Int.Int16 -> Data.Binary.Put.Put
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U(U)>m,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (\ (x :: GHC.Int.Int16) ->
+                 Data.Binary.Put.$WPairS
+                   @ ()
+                   GHC.Tuple.()
+                   (Data.ByteString.Builder.Prim.primBounded
+                      @ GHC.Int.Int16
+                      (Data.ByteString.Builder.Prim.Internal.toB
+                         @ GHC.Int.Int16
+                         Data.ByteString.Builder.Prim.Binary.int16Host)
+                      x))
+                  `cast`
+                (<GHC.Int.Int16>_R ->_R Sym (Data.Binary.Put.N:PutM[0]) <()>_N) -}
+19c4a200ea0b9f4e75df7a338ab269a4
+  putInt16le :: GHC.Int.Int16 -> Data.Binary.Put.Put
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U(U)>m,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (\ (x :: GHC.Int.Int16) ->
+                 Data.Binary.Put.$WPairS
+                   @ ()
+                   GHC.Tuple.()
+                   (Data.ByteString.Builder.Prim.primBounded
+                      @ GHC.Int.Int16
+                      (Data.ByteString.Builder.Prim.Internal.toB
+                         @ GHC.Int.Int16
+                         Data.ByteString.Builder.Prim.Binary.int16LE)
+                      x))
+                  `cast`
+                (<GHC.Int.Int16>_R ->_R Sym (Data.Binary.Put.N:PutM[0]) <()>_N) -}
+e3cddaa25d34ee2d8913928a83ba84a6
+  putInt32be :: GHC.Int.Int32 -> Data.Binary.Put.Put
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U(U)>m,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (\ (x :: GHC.Int.Int32) ->
+                 Data.Binary.Put.$WPairS
+                   @ ()
+                   GHC.Tuple.()
+                   (Data.ByteString.Builder.Prim.primBounded
+                      @ GHC.Int.Int32
+                      (Data.ByteString.Builder.Prim.Internal.toB
+                         @ GHC.Int.Int32
+                         Data.ByteString.Builder.Prim.Binary.int32BE)
+                      x))
+                  `cast`
+                (<GHC.Int.Int32>_R ->_R Sym (Data.Binary.Put.N:PutM[0]) <()>_N) -}
+2aa453ff327bec458e397a815612b190
+  putInt32host :: GHC.Int.Int32 -> Data.Binary.Put.Put
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U(U)>m,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (\ (x :: GHC.Int.Int32) ->
+                 Data.Binary.Put.$WPairS
+                   @ ()
+                   GHC.Tuple.()
+                   (Data.ByteString.Builder.Prim.primBounded
+                      @ GHC.Int.Int32
+                      (Data.ByteString.Builder.Prim.Internal.toB
+                         @ GHC.Int.Int32
+                         Data.ByteString.Builder.Prim.Binary.int32Host)
+                      x))
+                  `cast`
+                (<GHC.Int.Int32>_R ->_R Sym (Data.Binary.Put.N:PutM[0]) <()>_N) -}
+01600e3164e0013429293a0376bd9f8d
+  putInt32le :: GHC.Int.Int32 -> Data.Binary.Put.Put
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U(U)>m,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (\ (x :: GHC.Int.Int32) ->
+                 Data.Binary.Put.$WPairS
+                   @ ()
+                   GHC.Tuple.()
+                   (Data.ByteString.Builder.Prim.primBounded
+                      @ GHC.Int.Int32
+                      (Data.ByteString.Builder.Prim.Internal.toB
+                         @ GHC.Int.Int32
+                         Data.ByteString.Builder.Prim.Binary.int32LE)
+                      x))
+                  `cast`
+                (<GHC.Int.Int32>_R ->_R Sym (Data.Binary.Put.N:PutM[0]) <()>_N) -}
+09aa4c056de57be21620d27897d208ea
+  putInt64be :: GHC.Int.Int64 -> Data.Binary.Put.Put
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U(U)>m,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (\ (x :: GHC.Int.Int64) ->
+                 Data.Binary.Put.$WPairS
+                   @ ()
+                   GHC.Tuple.()
+                   (Data.ByteString.Builder.Prim.primBounded
+                      @ GHC.Int.Int64
+                      (Data.ByteString.Builder.Prim.Internal.toB
+                         @ GHC.Int.Int64
+                         Data.ByteString.Builder.Prim.Binary.int64BE)
+                      x))
+                  `cast`
+                (<GHC.Int.Int64>_R ->_R Sym (Data.Binary.Put.N:PutM[0]) <()>_N) -}
+8fb3bc025f4a97bd1b49b699490b7ec4
+  putInt64host :: GHC.Int.Int64 -> Data.Binary.Put.Put
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U(U)>m,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (\ (x :: GHC.Int.Int64) ->
+                 Data.Binary.Put.$WPairS
+                   @ ()
+                   GHC.Tuple.()
+                   (Data.ByteString.Builder.Prim.primBounded
+                      @ GHC.Int.Int64
+                      (Data.ByteString.Builder.Prim.Internal.toB
+                         @ GHC.Int.Int64
+                         Data.ByteString.Builder.Prim.Binary.int64Host)
+                      x))
+                  `cast`
+                (<GHC.Int.Int64>_R ->_R Sym (Data.Binary.Put.N:PutM[0]) <()>_N) -}
+f829d85bf5a241e4fdb5999565e20034
+  putInt64le :: GHC.Int.Int64 -> Data.Binary.Put.Put
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U(U)>m,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (\ (x :: GHC.Int.Int64) ->
+                 Data.Binary.Put.$WPairS
+                   @ ()
+                   GHC.Tuple.()
+                   (Data.ByteString.Builder.Prim.primBounded
+                      @ GHC.Int.Int64
+                      (Data.ByteString.Builder.Prim.Internal.toB
+                         @ GHC.Int.Int64
+                         Data.ByteString.Builder.Prim.Binary.int64LE)
+                      x))
+                  `cast`
+                (<GHC.Int.Int64>_R ->_R Sym (Data.Binary.Put.N:PutM[0]) <()>_N) -}
+d06471372832049d93d0fef2fc8a01ec
+  putInt8 :: GHC.Int.Int8 -> Data.Binary.Put.Put
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,1*U(U)>m,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (\ (x :: GHC.Int.Int8) ->
+                 Data.Binary.Put.$WPairS
+                   @ ()
+                   GHC.Tuple.()
+                   (Data.ByteString.Builder.Prim.primBounded
+                      @ GHC.Word.Word8
+                      (Data.ByteString.Builder.Prim.Internal.toB
+                         @ GHC.Word.Word8
+                         Data.ByteString.Builder.Prim.Binary.word8)
+                      (case x of wild { GHC.Int.I8# x# ->
+                       GHC.Word.W8# (GHC.Prim.narrow8Word# (GHC.Prim.int2Word# x#)) })))
+                  `cast`
+                (<GHC.Int.Int8>_R ->_R Sym (Data.Binary.Put.N:PutM[0]) <()>_N) -}
+132f26382a44daa72445fe7ece934c4e
+  putInthost :: GHC.Types.Int -> Data.Binary.Put.Put
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U(U)>m,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (\ (x :: GHC.Types.Int) ->
+                 Data.Binary.Put.$WPairS
+                   @ ()
+                   GHC.Tuple.()
+                   (Data.ByteString.Builder.Prim.primBounded
+                      @ GHC.Types.Int
+                      (Data.ByteString.Builder.Prim.Internal.toB
+                         @ GHC.Types.Int
+                         Data.ByteString.Builder.Prim.Binary.intHost)
+                      x))
+                  `cast`
+                (<GHC.Types.Int>_R ->_R Sym (Data.Binary.Put.N:PutM[0]) <()>_N) -}
+4a99ba57fa154c137555480f27264a18
+  putLazyByteString ::
+    Data.ByteString.Lazy.Internal.ByteString -> Data.Binary.Put.Put
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (\ (x :: Data.ByteString.Lazy.Internal.ByteString) ->
+                 letrec {
+                   go1 :: Data.ByteString.Lazy.Internal.ByteString
+                          -> Data.ByteString.Builder.Internal.Builder
+                     {- Arity: 1 -}
+                   = \ (ds :: Data.ByteString.Lazy.Internal.ByteString) ->
+                     case ds of wild {
+                       Data.ByteString.Lazy.Internal.Empty
+                       -> Data.ByteString.Builder.Internal.empty
+                       Data.ByteString.Lazy.Internal.Chunk dt dt1 dt2 dt3 cs
+                       -> Data.ByteString.Builder.Internal.append
+                            (\ @ r
+                               (k :: Data.ByteString.Builder.Internal.BuildStep r)
+                               (br :: Data.ByteString.Builder.Internal.BufferRange) ->
+                             case k of k1 { DEFAULT ->
+                             case br of wild1 { Data.ByteString.Builder.Internal.BufferRange dt4 dt5 ->
+                             case GHC.Classes.leInt
+                                    (GHC.Types.I# dt3)
+                                    Data.ByteString.Builder.Internal.maximalCopySize of wild2 {
+                               GHC.Types.False
+                               -> (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                                   (# s,
+                                      Data.ByteString.Builder.Internal.$WInsertChunk
+                                        @ r
+                                        (GHC.Ptr.Ptr @ GHC.Word.Word8 dt4)
+                                        (Data.ByteString.Internal.PS dt dt1 dt2 dt3)
+                                        k1 #))
+                                    `cast`
+                                  (Sym (GHC.Types.N:IO[0]
+                                            <Data.ByteString.Builder.Internal.BuildSignal r>_R))
+                               GHC.Types.True
+                               -> let {
+                                    ip :: GHC.Prim.Addr# = GHC.Prim.plusAddr# dt dt2
+                                  } in
+                                  let {
+                                    op' :: GHC.Prim.Addr# = GHC.Prim.plusAddr# dt4 dt3
+                                  } in
+                                  case GHC.Prim.ltAddr# dt5 op' of lwild {
+                                    DEFAULT
+                                    -> (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                                        case {__pkg_ccall base-4.12.0.0 GHC.Prim.Addr#
+                                                                        -> GHC.Prim.Addr#
+                                                                        -> GHC.Prim.Word#
+                                                                        -> GHC.Prim.State#
+                                                                             GHC.Prim.RealWorld
+                                                                        -> (# GHC.Prim.State#
+                                                                                GHC.Prim.RealWorld,
+                                                                              GHC.Prim.Addr# #)}
+                                               dt4
+                                               ip
+                                               (GHC.Prim.int2Word# dt3)
+                                               s of wild3 { (#,#) ds4 ds5 ->
+                                        case GHC.Prim.touch#
+                                               @ 'GHC.Types.LiftedRep
+                                               @ GHC.ForeignPtr.ForeignPtrContents
+                                               dt1
+                                               ds4 of s' { DEFAULT ->
+                                        (k1
+                                           (Data.ByteString.Builder.Internal.$WBufferRange
+                                              (GHC.Ptr.Ptr @ GHC.Word.Word8 op')
+                                              (GHC.Ptr.Ptr @ GHC.Word.Word8 dt5)))
+                                          `cast`
+                                        (GHC.Types.N:IO[0]
+                                             <Data.ByteString.Builder.Internal.BuildSignal r>_R)
+                                          s' } })
+                                         `cast`
+                                       (Sym (GHC.Types.N:IO[0]
+                                                 <Data.ByteString.Builder.Internal.BuildSignal
+                                                    r>_R))
+                                    1#
+                                    -> (Data.ByteString.Builder.Internal.byteString1
+                                          @ r
+                                          (Data.ByteString.Builder.Internal.$WBufferRange
+                                             (GHC.Ptr.Ptr @ GHC.Word.Word8 ip)
+                                             (GHC.Ptr.Ptr
+                                                @ GHC.Word.Word8
+                                                (GHC.Prim.plusAddr# ip dt3)))
+                                          (\ (br1 :: Data.ByteString.Builder.Internal.BufferRange)
+                                             (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                                           case GHC.Prim.touch#
+                                                  @ 'GHC.Types.LiftedRep
+                                                  @ GHC.ForeignPtr.ForeignPtrContents
+                                                  dt1
+                                                  s of s' { DEFAULT ->
+                                           (k1 br1)
+                                             `cast`
+                                           (GHC.Types.N:IO[0]
+                                                <Data.ByteString.Builder.Internal.BuildSignal r>_R)
+                                             s' })
+                                            `cast`
+                                          (<Data.ByteString.Builder.Internal.BufferRange>_R
+                                           ->_R Sym (GHC.Types.N:IO[0]
+                                                         <Data.ByteString.Builder.Internal.BuildSignal
+                                                            r>_R))
+                                          wild1)
+                                         `cast`
+                                       (Sym (GHC.Types.N:IO[0]
+                                                 <Data.ByteString.Builder.Internal.BuildSignal
+                                                    r>_R)) } } } })
+                              `cast`
+                            (Sym (Data.ByteString.Builder.Internal.N:Builder[0]))
+                            (go1 cs) }
+                 } in
+                 Data.Binary.Put.$WPairS @ () GHC.Tuple.() (go1 x))
+                  `cast`
+                (<Data.ByteString.Lazy.Internal.ByteString>_R
+                 ->_R Sym (Data.Binary.Put.N:PutM[0]) <()>_N) -}
+9bf890f55762c4b134ee538730e702e0
+  putShortByteString ::
+    Data.ByteString.Short.Internal.ShortByteString
+    -> Data.Binary.Put.Put
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U(U)>m,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (\ (x :: Data.ByteString.Short.Internal.ShortByteString) ->
+                 Data.Binary.Put.$WPairS
+                   @ ()
+                   GHC.Tuple.()
+                   (\ @ r ->
+                    Data.ByteString.Builder.Internal.shortByteStringCopyStep @ r x)
+                     `cast`
+                   (Sym (Data.ByteString.Builder.Internal.N:Builder[0])))
+                  `cast`
+                (<Data.ByteString.Short.Internal.ShortByteString>_R
+                 ->_R Sym (Data.Binary.Put.N:PutM[0]) <()>_N) -}
+4b353d7c00866f1bb944462048c46a01
+  putStringUtf8 :: GHC.Base.String -> Data.Binary.Put.Put
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (\ (x :: GHC.Base.String) ->
+                 let {
+                   bound :: GHC.Types.Int
+                   = case Data.ByteString.Builder.Prim.Internal.$WBP
+                            @ GHC.Types.Char
+                            (GHC.Types.I# 4#)
+                            (Data.ByteString.Builder.Prim.encodeCharUtf8
+                               @ (GHC.Ptr.Ptr GHC.Word.Word8
+                                  -> GHC.Types.IO (GHC.Ptr.Ptr GHC.Word.Word8))
+                               (\ (x1 :: GHC.Word.Word8)
+                                  (op :: GHC.Ptr.Ptr GHC.Word.Word8)
+                                  (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                                case op of wild { GHC.Ptr.Ptr addr ->
+                                case x1 of wild2 { GHC.Word.W8# x2 ->
+                                case GHC.Prim.writeWord8OffAddr#
+                                       @ GHC.Prim.RealWorld
+                                       addr
+                                       0#
+                                       x2
+                                       s of s2 { DEFAULT ->
+                                (# s2,
+                                   GHC.Ptr.Ptr
+                                     @ GHC.Word.Word8
+                                     (GHC.Prim.plusAddr# addr 1#) #) } } })
+                                 `cast`
+                               (<GHC.Word.Word8>_R
+                                ->_R <GHC.Ptr.Ptr GHC.Word.Word8>_R
+                                ->_R Sym (GHC.Types.N:IO[0] <GHC.Ptr.Ptr GHC.Word.Word8>_R))
+                               (\ (x1 :: GHC.Word.Word8)
+                                  (x2 :: GHC.Word.Word8)
+                                  (op :: GHC.Ptr.Ptr GHC.Word.Word8)
+                                  (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                                case op of wild { GHC.Ptr.Ptr addr ->
+                                case x1 of wild2 { GHC.Word.W8# x4 ->
+                                case GHC.Prim.writeWord8OffAddr#
+                                       @ GHC.Prim.RealWorld
+                                       addr
+                                       0#
+                                       x4
+                                       s of s2 { DEFAULT ->
+                                case x2 of wild1 { GHC.Word.W8# x5 ->
+                                case GHC.Prim.writeWord8OffAddr#
+                                       @ GHC.Prim.RealWorld
+                                       (GHC.Prim.plusAddr# addr 1#)
+                                       0#
+                                       x5
+                                       s2 of s1 { DEFAULT ->
+                                (# s1,
+                                   GHC.Ptr.Ptr
+                                     @ GHC.Word.Word8
+                                     (GHC.Prim.plusAddr# addr 2#) #) } } } } })
+                                 `cast`
+                               (<GHC.Word.Word8>_R
+                                ->_R <GHC.Word.Word8>_R
+                                ->_R <GHC.Ptr.Ptr GHC.Word.Word8>_R
+                                ->_R Sym (GHC.Types.N:IO[0] <GHC.Ptr.Ptr GHC.Word.Word8>_R))
+                               (\ (x1 :: GHC.Word.Word8)
+                                  (x2 :: GHC.Word.Word8)
+                                  (x3 :: GHC.Word.Word8)
+                                  (op :: GHC.Ptr.Ptr GHC.Word.Word8)
+                                  (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                                case op of wild { GHC.Ptr.Ptr addr ->
+                                case x1 of wild2 { GHC.Word.W8# x4 ->
+                                case GHC.Prim.writeWord8OffAddr#
+                                       @ GHC.Prim.RealWorld
+                                       addr
+                                       0#
+                                       x4
+                                       s of s2 { DEFAULT ->
+                                case x2 of wild1 { GHC.Word.W8# x5 ->
+                                case GHC.Prim.writeWord8OffAddr#
+                                       @ GHC.Prim.RealWorld
+                                       (GHC.Prim.plusAddr# addr 1#)
+                                       0#
+                                       x5
+                                       s2 of s1 { DEFAULT ->
+                                case x3 of wild3 { GHC.Word.W8# x6 ->
+                                case GHC.Prim.writeWord8OffAddr#
+                                       @ GHC.Prim.RealWorld
+                                       (GHC.Prim.plusAddr# addr 2#)
+                                       0#
+                                       x6
+                                       s1 of s3 { DEFAULT ->
+                                (# s3,
+                                   GHC.Ptr.Ptr
+                                     @ GHC.Word.Word8
+                                     (GHC.Prim.plusAddr# addr 3#) #) } } } } } } })
+                                 `cast`
+                               (<GHC.Word.Word8>_R
+                                ->_R <GHC.Word.Word8>_R
+                                ->_R <GHC.Word.Word8>_R
+                                ->_R <GHC.Ptr.Ptr GHC.Word.Word8>_R
+                                ->_R Sym (GHC.Types.N:IO[0] <GHC.Ptr.Ptr GHC.Word.Word8>_R))
+                               (\ (x1 :: GHC.Word.Word8)
+                                  (x2 :: GHC.Word.Word8)
+                                  (x3 :: GHC.Word.Word8)
+                                  (x4 :: GHC.Word.Word8)
+                                  (op :: GHC.Ptr.Ptr GHC.Word.Word8)
+                                  (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                                case op of wild { GHC.Ptr.Ptr addr ->
+                                case x1 of wild2 { GHC.Word.W8# x7 ->
+                                case GHC.Prim.writeWord8OffAddr#
+                                       @ GHC.Prim.RealWorld
+                                       addr
+                                       0#
+                                       x7
+                                       s of s2 { DEFAULT ->
+                                case x2 of wild1 { GHC.Word.W8# x8 ->
+                                case GHC.Prim.writeWord8OffAddr#
+                                       @ GHC.Prim.RealWorld
+                                       (GHC.Prim.plusAddr# addr 1#)
+                                       0#
+                                       x8
+                                       s2 of s1 { DEFAULT ->
+                                case x3 of wild3 { GHC.Word.W8# x9 ->
+                                case GHC.Prim.writeWord8OffAddr#
+                                       @ GHC.Prim.RealWorld
+                                       (GHC.Prim.plusAddr# addr 2#)
+                                       0#
+                                       x9
+                                       s1 of s3 { DEFAULT ->
+                                case x4 of wild4 { GHC.Word.W8# x10 ->
+                                case GHC.Prim.writeWord8OffAddr#
+                                       @ GHC.Prim.RealWorld
+                                       (GHC.Prim.plusAddr# addr 3#)
+                                       0#
+                                       x10
+                                       s3 of s4 { DEFAULT ->
+                                (# s4,
+                                   GHC.Ptr.Ptr
+                                     @ GHC.Word.Word8
+                                     (GHC.Prim.plusAddr# addr 4#) #) } } } } } } } } })
+                                 `cast`
+                               (<GHC.Word.Word8>_R
+                                ->_R <GHC.Word.Word8>_R
+                                ->_R <GHC.Word.Word8>_R
+                                ->_R <GHC.Word.Word8>_R
+                                ->_R <GHC.Ptr.Ptr GHC.Word.Word8>_R
+                                ->_R Sym (GHC.Types.N:IO[0]
+                                              <GHC.Ptr.Ptr
+                                                 GHC.Word.Word8>_R))) of wild { Data.ByteString.Builder.Prim.Internal.BP dt ds1 ->
+                     GHC.Types.I# dt }
+                 } in
+                 Data.Binary.Put.$WPairS
+                   @ ()
+                   GHC.Tuple.()
+                   (\ @ r ->
+                    letrec {
+                      step :: [GHC.Types.Char]
+                              -> (Data.ByteString.Builder.Internal.BufferRange
+                                  -> GHC.Types.IO (Data.ByteString.Builder.Internal.BuildSignal r))
+                              -> Data.ByteString.Builder.Internal.BufferRange
+                              -> GHC.Types.IO (Data.ByteString.Builder.Internal.BuildSignal r)
+                        {- Arity: 3 -}
+                      = \ (xs1 :: [GHC.Types.Char])
+                          (k :: Data.ByteString.Builder.Internal.BufferRange
+                                -> GHC.Types.IO (Data.ByteString.Builder.Internal.BuildSignal r))
+                          (ds :: Data.ByteString.Builder.Internal.BufferRange) ->
+                        case ds of wild { Data.ByteString.Builder.Internal.BufferRange dt dt1 ->
+                        let {
+                          ope0 :: GHC.Ptr.Ptr GHC.Word.Word8
+                          = GHC.Ptr.Ptr @ GHC.Word.Word8 dt1
+                        } in
+                        letrec {
+                          go :: [GHC.Types.Char]
+                                -> GHC.Ptr.Ptr GHC.Word.Word8
+                                -> GHC.Types.IO (Data.ByteString.Builder.Internal.BuildSignal r)
+                            {- Arity: 2 -}
+                          = \ (ds1 :: [GHC.Types.Char]) (op :: GHC.Ptr.Ptr GHC.Word.Word8) ->
+                            case ds1 of wild1 {
+                              []
+                              -> case op of op1 { GHC.Ptr.Ptr ipv ->
+                                 k (Data.ByteString.Builder.Internal.$WBufferRange op1 ope0) }
+                              : x' xs'
+                              -> case op of op1 { GHC.Ptr.Ptr ipv ->
+                                 case Data.ByteString.Builder.Prim.Internal.$WBP
+                                        @ GHC.Types.Char
+                                        (GHC.Types.I# 4#)
+                                        (Data.ByteString.Builder.Prim.encodeCharUtf8
+                                           @ (GHC.Ptr.Ptr GHC.Word.Word8
+                                              -> GHC.Types.IO (GHC.Ptr.Ptr GHC.Word.Word8))
+                                           (\ (x1 :: GHC.Word.Word8)
+                                              (op2 :: GHC.Ptr.Ptr GHC.Word.Word8)
+                                              (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                                            case op2 of wild2 { GHC.Ptr.Ptr addr ->
+                                            case x1 of wild3 { GHC.Word.W8# x2 ->
+                                            case GHC.Prim.writeWord8OffAddr#
+                                                   @ GHC.Prim.RealWorld
+                                                   addr
+                                                   0#
+                                                   x2
+                                                   s of s2 { DEFAULT ->
+                                            (# s2,
+                                               GHC.Ptr.Ptr
+                                                 @ GHC.Word.Word8
+                                                 (GHC.Prim.plusAddr# addr 1#) #) } } })
+                                             `cast`
+                                           (<GHC.Word.Word8>_R
+                                            ->_R <GHC.Ptr.Ptr GHC.Word.Word8>_R
+                                            ->_R Sym (GHC.Types.N:IO[0]
+                                                          <GHC.Ptr.Ptr GHC.Word.Word8>_R))
+                                           (\ (x1 :: GHC.Word.Word8)
+                                              (x2 :: GHC.Word.Word8)
+                                              (op2 :: GHC.Ptr.Ptr GHC.Word.Word8)
+                                              (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                                            case op2 of wild2 { GHC.Ptr.Ptr addr ->
+                                            case x1 of wild3 { GHC.Word.W8# x4 ->
+                                            case GHC.Prim.writeWord8OffAddr#
+                                                   @ GHC.Prim.RealWorld
+                                                   addr
+                                                   0#
+                                                   x4
+                                                   s of s2 { DEFAULT ->
+                                            case x2 of wild4 { GHC.Word.W8# x5 ->
+                                            case GHC.Prim.writeWord8OffAddr#
+                                                   @ GHC.Prim.RealWorld
+                                                   (GHC.Prim.plusAddr# addr 1#)
+                                                   0#
+                                                   x5
+                                                   s2 of s1 { DEFAULT ->
+                                            (# s1,
+                                               GHC.Ptr.Ptr
+                                                 @ GHC.Word.Word8
+                                                 (GHC.Prim.plusAddr# addr 2#) #) } } } } })
+                                             `cast`
+                                           (<GHC.Word.Word8>_R
+                                            ->_R <GHC.Word.Word8>_R
+                                            ->_R <GHC.Ptr.Ptr GHC.Word.Word8>_R
+                                            ->_R Sym (GHC.Types.N:IO[0]
+                                                          <GHC.Ptr.Ptr GHC.Word.Word8>_R))
+                                           (\ (x1 :: GHC.Word.Word8)
+                                              (x2 :: GHC.Word.Word8)
+                                              (x3 :: GHC.Word.Word8)
+                                              (op2 :: GHC.Ptr.Ptr GHC.Word.Word8)
+                                              (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                                            case op2 of wild2 { GHC.Ptr.Ptr addr ->
+                                            case x1 of wild3 { GHC.Word.W8# x4 ->
+                                            case GHC.Prim.writeWord8OffAddr#
+                                                   @ GHC.Prim.RealWorld
+                                                   addr
+                                                   0#
+                                                   x4
+                                                   s of s2 { DEFAULT ->
+                                            case x2 of wild4 { GHC.Word.W8# x5 ->
+                                            case GHC.Prim.writeWord8OffAddr#
+                                                   @ GHC.Prim.RealWorld
+                                                   (GHC.Prim.plusAddr# addr 1#)
+                                                   0#
+                                                   x5
+                                                   s2 of s1 { DEFAULT ->
+                                            case x3 of wild5 { GHC.Word.W8# x6 ->
+                                            case GHC.Prim.writeWord8OffAddr#
+                                                   @ GHC.Prim.RealWorld
+                                                   (GHC.Prim.plusAddr# addr 2#)
+                                                   0#
+                                                   x6
+                                                   s1 of s3 { DEFAULT ->
+                                            (# s3,
+                                               GHC.Ptr.Ptr
+                                                 @ GHC.Word.Word8
+                                                 (GHC.Prim.plusAddr# addr 3#) #) } } } } } } })
+                                             `cast`
+                                           (<GHC.Word.Word8>_R
+                                            ->_R <GHC.Word.Word8>_R
+                                            ->_R <GHC.Word.Word8>_R
+                                            ->_R <GHC.Ptr.Ptr GHC.Word.Word8>_R
+                                            ->_R Sym (GHC.Types.N:IO[0]
+                                                          <GHC.Ptr.Ptr GHC.Word.Word8>_R))
+                                           (\ (x1 :: GHC.Word.Word8)
+                                              (x2 :: GHC.Word.Word8)
+                                              (x3 :: GHC.Word.Word8)
+                                              (x4 :: GHC.Word.Word8)
+                                              (op2 :: GHC.Ptr.Ptr GHC.Word.Word8)
+                                              (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                                            case op2 of wild2 { GHC.Ptr.Ptr addr ->
+                                            case x1 of wild3 { GHC.Word.W8# x7 ->
+                                            case GHC.Prim.writeWord8OffAddr#
+                                                   @ GHC.Prim.RealWorld
+                                                   addr
+                                                   0#
+                                                   x7
+                                                   s of s2 { DEFAULT ->
+                                            case x2 of wild4 { GHC.Word.W8# x8 ->
+                                            case GHC.Prim.writeWord8OffAddr#
+                                                   @ GHC.Prim.RealWorld
+                                                   (GHC.Prim.plusAddr# addr 1#)
+                                                   0#
+                                                   x8
+                                                   s2 of s1 { DEFAULT ->
+                                            case x3 of wild5 { GHC.Word.W8# x9 ->
+                                            case GHC.Prim.writeWord8OffAddr#
+                                                   @ GHC.Prim.RealWorld
+                                                   (GHC.Prim.plusAddr# addr 2#)
+                                                   0#
+                                                   x9
+                                                   s1 of s3 { DEFAULT ->
+                                            case x4 of wild6 { GHC.Word.W8# x10 ->
+                                            case GHC.Prim.writeWord8OffAddr#
+                                                   @ GHC.Prim.RealWorld
+                                                   (GHC.Prim.plusAddr# addr 3#)
+                                                   0#
+                                                   x10
+                                                   s3 of s4 { DEFAULT ->
+                                            (# s4,
+                                               GHC.Ptr.Ptr
+                                                 @ GHC.Word.Word8
+                                                 (GHC.Prim.plusAddr# addr 4#) #) } } } } } } } } })
+                                             `cast`
+                                           (<GHC.Word.Word8>_R
+                                            ->_R <GHC.Word.Word8>_R
+                                            ->_R <GHC.Word.Word8>_R
+                                            ->_R <GHC.Word.Word8>_R
+                                            ->_R <GHC.Ptr.Ptr GHC.Word.Word8>_R
+                                            ->_R Sym (GHC.Types.N:IO[0]
+                                                          <GHC.Ptr.Ptr
+                                                             GHC.Word.Word8>_R))) of wild2 { Data.ByteString.Builder.Prim.Internal.BP dt2 ds2 ->
+                                 case GHC.Prim.ltAddr# dt1 (GHC.Prim.plusAddr# ipv dt2) of lwild {
+                                   DEFAULT
+                                   -> (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                                       case (ds2 x' op1)
+                                              `cast`
+                                            (GHC.Types.N:IO[0] <GHC.Ptr.Ptr GHC.Word.Word8>_R)
+                                              s of ds3 { (#,#) ipv1 ipv2 ->
+                                       (go xs' ipv2)
+                                         `cast`
+                                       (GHC.Types.N:IO[0]
+                                            <Data.ByteString.Builder.Internal.BuildSignal r>_R)
+                                         ipv1 })
+                                        `cast`
+                                      (Sym (GHC.Types.N:IO[0]
+                                                <Data.ByteString.Builder.Internal.BuildSignal r>_R))
+                                   1#
+                                   -> (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                                       (# s,
+                                          Data.ByteString.Builder.Internal.$WBufferFull
+                                            @ r
+                                            bound
+                                            op1
+                                            (step wild1 k) #))
+                                        `cast`
+                                      (Sym (GHC.Types.N:IO[0]
+                                                <Data.ByteString.Builder.Internal.BuildSignal
+                                                   r>_R)) } } } }
+                        } in
+                        go xs1 (GHC.Ptr.Ptr @ GHC.Word.Word8 dt) }
+                    } in
+                    step x)
+                     `cast`
+                   (Sym (Data.ByteString.Builder.Internal.N:Builder[0])))
+                  `cast`
+                (<GHC.Base.String>_R
+                 ->_R Sym (Data.Binary.Put.N:PutM[0]) <()>_N) -}
+7508a2270fa2c26f98e254c37d1dfc61
+  putWord16be :: GHC.Word.Word16 -> Data.Binary.Put.Put
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U(U)>m,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (\ (x :: GHC.Word.Word16) ->
+                 Data.Binary.Put.$WPairS
+                   @ ()
+                   GHC.Tuple.()
+                   (Data.ByteString.Builder.Prim.primBounded
+                      @ GHC.Word.Word16
+                      (Data.ByteString.Builder.Prim.Internal.toB
+                         @ GHC.Word.Word16
+                         Data.ByteString.Builder.Prim.Binary.word16BE)
+                      x))
+                  `cast`
+                (<GHC.Word.Word16>_R
+                 ->_R Sym (Data.Binary.Put.N:PutM[0]) <()>_N) -}
+719b59cf78440e732a5b2e4dc65dcc8b
+  putWord16host :: GHC.Word.Word16 -> Data.Binary.Put.Put
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U(U)>m,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (\ (x :: GHC.Word.Word16) ->
+                 Data.Binary.Put.$WPairS
+                   @ ()
+                   GHC.Tuple.()
+                   (Data.ByteString.Builder.Prim.primBounded
+                      @ GHC.Word.Word16
+                      (Data.ByteString.Builder.Prim.Internal.toB
+                         @ GHC.Word.Word16
+                         Data.ByteString.Builder.Prim.Binary.word16Host)
+                      x))
+                  `cast`
+                (<GHC.Word.Word16>_R
+                 ->_R Sym (Data.Binary.Put.N:PutM[0]) <()>_N) -}
+67518d6e97eed9dcfa116408b299a4fb
+  putWord16le :: GHC.Word.Word16 -> Data.Binary.Put.Put
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U(U)>m,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (\ (x :: GHC.Word.Word16) ->
+                 Data.Binary.Put.$WPairS
+                   @ ()
+                   GHC.Tuple.()
+                   (Data.ByteString.Builder.Prim.primBounded
+                      @ GHC.Word.Word16
+                      (Data.ByteString.Builder.Prim.Internal.toB
+                         @ GHC.Word.Word16
+                         Data.ByteString.Builder.Prim.Binary.word16Host)
+                      x))
+                  `cast`
+                (<GHC.Word.Word16>_R
+                 ->_R Sym (Data.Binary.Put.N:PutM[0]) <()>_N) -}
+ac14e443f7452d818ad967783d0fa95f
+  putWord32be :: GHC.Word.Word32 -> Data.Binary.Put.Put
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U(U)>m,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (\ (x :: GHC.Word.Word32) ->
+                 Data.Binary.Put.$WPairS
+                   @ ()
+                   GHC.Tuple.()
+                   (Data.ByteString.Builder.Prim.primBounded
+                      @ GHC.Word.Word32
+                      (Data.ByteString.Builder.Prim.Internal.toB
+                         @ GHC.Word.Word32
+                         Data.ByteString.Builder.Prim.Binary.word32BE)
+                      x))
+                  `cast`
+                (<GHC.Word.Word32>_R
+                 ->_R Sym (Data.Binary.Put.N:PutM[0]) <()>_N) -}
+ec92f53c0dc1afdf5567bd745ac985e0
+  putWord32host :: GHC.Word.Word32 -> Data.Binary.Put.Put
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U(U)>m,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (\ (x :: GHC.Word.Word32) ->
+                 Data.Binary.Put.$WPairS
+                   @ ()
+                   GHC.Tuple.()
+                   (Data.ByteString.Builder.Prim.primBounded
+                      @ GHC.Word.Word32
+                      (Data.ByteString.Builder.Prim.Internal.toB
+                         @ GHC.Word.Word32
+                         Data.ByteString.Builder.Prim.Binary.word32Host)
+                      x))
+                  `cast`
+                (<GHC.Word.Word32>_R
+                 ->_R Sym (Data.Binary.Put.N:PutM[0]) <()>_N) -}
+5ef838f166239562112cdcd3a007afa4
+  putWord32le :: GHC.Word.Word32 -> Data.Binary.Put.Put
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U(U)>m,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (\ (x :: GHC.Word.Word32) ->
+                 Data.Binary.Put.$WPairS
+                   @ ()
+                   GHC.Tuple.()
+                   (Data.ByteString.Builder.Prim.primBounded
+                      @ GHC.Word.Word32
+                      (Data.ByteString.Builder.Prim.Internal.toB
+                         @ GHC.Word.Word32
+                         Data.ByteString.Builder.Prim.Binary.word32Host)
+                      x))
+                  `cast`
+                (<GHC.Word.Word32>_R
+                 ->_R Sym (Data.Binary.Put.N:PutM[0]) <()>_N) -}
+1b098990848e869d8d393c2a0c4da3bc
+  putWord64be :: GHC.Word.Word64 -> Data.Binary.Put.Put
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U(U)>m,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (\ (x :: GHC.Word.Word64) ->
+                 Data.Binary.Put.$WPairS
+                   @ ()
+                   GHC.Tuple.()
+                   (Data.ByteString.Builder.Prim.primBounded
+                      @ GHC.Word.Word64
+                      (Data.ByteString.Builder.Prim.Internal.toB
+                         @ GHC.Word.Word64
+                         Data.ByteString.Builder.Prim.Binary.word64BE)
+                      x))
+                  `cast`
+                (<GHC.Word.Word64>_R
+                 ->_R Sym (Data.Binary.Put.N:PutM[0]) <()>_N) -}
+54b0fc76e8f6f39b550df8c4c76cf9ad
+  putWord64host :: GHC.Word.Word64 -> Data.Binary.Put.Put
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U(U)>m,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (\ (x :: GHC.Word.Word64) ->
+                 Data.Binary.Put.$WPairS
+                   @ ()
+                   GHC.Tuple.()
+                   (Data.ByteString.Builder.Prim.primBounded
+                      @ GHC.Word.Word64
+                      (Data.ByteString.Builder.Prim.Internal.toB
+                         @ GHC.Word.Word64
+                         Data.ByteString.Builder.Prim.Binary.word64Host)
+                      x))
+                  `cast`
+                (<GHC.Word.Word64>_R
+                 ->_R Sym (Data.Binary.Put.N:PutM[0]) <()>_N) -}
+84aada043578174a35dab4d618d28982
+  putWord64le :: GHC.Word.Word64 -> Data.Binary.Put.Put
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U(U)>m,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (\ (x :: GHC.Word.Word64) ->
+                 Data.Binary.Put.$WPairS
+                   @ ()
+                   GHC.Tuple.()
+                   (Data.ByteString.Builder.Prim.primBounded
+                      @ GHC.Word.Word64
+                      (Data.ByteString.Builder.Prim.Internal.toB
+                         @ GHC.Word.Word64
+                         Data.ByteString.Builder.Prim.Binary.word64Host)
+                      x))
+                  `cast`
+                (<GHC.Word.Word64>_R
+                 ->_R Sym (Data.Binary.Put.N:PutM[0]) <()>_N) -}
+6c466f4379a8c4619f31202e0de6d2e1
+  putWord8 :: GHC.Word.Word8 -> Data.Binary.Put.Put
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U(U)>m,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (\ (x :: GHC.Word.Word8) ->
+                 Data.Binary.Put.$WPairS
+                   @ ()
+                   GHC.Tuple.()
+                   (Data.ByteString.Builder.Prim.primBounded
+                      @ GHC.Word.Word8
+                      (Data.ByteString.Builder.Prim.Internal.toB
+                         @ GHC.Word.Word8
+                         Data.ByteString.Builder.Prim.Binary.word8)
+                      x))
+                  `cast`
+                (<GHC.Word.Word8>_R ->_R Sym (Data.Binary.Put.N:PutM[0]) <()>_N) -}
+222c5673f5936b13c483de3f8bc76a7e
+  putWordhost :: GHC.Types.Word -> Data.Binary.Put.Put
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U(U)>m,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (\ (x :: GHC.Types.Word) ->
+                 Data.Binary.Put.$WPairS
+                   @ ()
+                   GHC.Tuple.()
+                   (Data.ByteString.Builder.Prim.primBounded
+                      @ GHC.Types.Word
+                      (Data.ByteString.Builder.Prim.Internal.toB
+                         @ GHC.Types.Word
+                         Data.ByteString.Builder.Prim.Binary.wordHost)
+                      x))
+                  `cast`
+                (<GHC.Types.Word>_R ->_R Sym (Data.Binary.Put.N:PutM[0]) <()>_N) -}
+4a4e359e7717f31a7443fa77411a0043
+  runPut ::
+    Data.Binary.Put.Put -> Data.ByteString.Lazy.Internal.ByteString
+  {- Arity: 1, Strictness: <L,1*U(A,U)>, Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (\ (x :: Data.Binary.Put.PutM ()) ->
+                 Data.ByteString.Builder.toLazyByteString
+                   (case x `cast`
+                         (Data.Binary.Put.N:PutM[0] <()>_N) of wild { Data.Binary.Put.PairS ds b ->
+                    b })) -}
+076ca529972ed66e14568baf40054689
+  runPutM ::
+    Data.Binary.Put.PutM a
+    -> (a, Data.ByteString.Lazy.Internal.ByteString)
+  {- Arity: 1, Strictness: <S(LS),1*U(U,U)>m, Inline: (sat-args=1),
+     Unfolding: InlineRule (1, False, False)
+                (\ @ a (ds :: Data.Binary.Put.PutM a) ->
+                 case ds
+                        `cast`
+                      (Data.Binary.Put.N:PutM[0] <a>_N) of wild { Data.Binary.Put.PairS f s ->
+                 (f, Data.ByteString.Builder.toLazyByteString s) }) -}
+99f37f237ba8a9590a7747b4116a2c0e
+  tell ::
+    Data.ByteString.Builder.Internal.Builder -> Data.Binary.Put.Put
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>m,
+     Inline: (sat-args=1),
+     Unfolding: InlineRule (1, False, False)
+                (\ (b :: Data.ByteString.Builder.Internal.Builder) ->
+                 Data.Binary.Put.$WPairS @ () GHC.Tuple.() b)
+                  `cast`
+                (<Data.ByteString.Builder.Internal.Builder>_R
+                 ->_R Sym (Data.Binary.Put.N:PutM[0]) <()>_N) -}
+d58a34c7ddb8da4b063cc60b7ef9f490
+  unPut :: Data.Binary.Put.PutM a -> Data.Binary.Put.PairS a
+  RecSel Left Data.Binary.Put.PutM
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U(U,U)>m,
+     Unfolding: InlineRule (0, True, True)
+                Data.Binary.Put.unPut1
+                  `cast`
+                (forall (a :: <*>_N).
+                 <Data.Binary.Put.PutM a>_R ->_R Data.Binary.Put.N:PutM[0] <a>_N) -}
+d58a34c7ddb8da4b063cc60b7ef9f490
+  unPut1 :: Data.Binary.Put.PutM a -> Data.Binary.Put.PutM a
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U(U,U)>m,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ a (ds :: Data.Binary.Put.PutM a) -> ds) -}
+instance [safe] GHC.Base.Applicative [Data.Binary.Put.PutM]
+  = Data.Binary.Put.$fApplicativePutM
+instance [safe] GHC.Base.Functor [Data.Binary.Put.PutM]
+  = Data.Binary.Put.$fFunctorPutM
+instance [safe] GHC.Base.Monad [Data.Binary.Put.PutM]
+  = Data.Binary.Put.$fMonadPutM
+instance [safe] GHC.Base.Monoid [Data.Binary.Put.PutM]
+  = Data.Binary.Put.$fMonoidPutM
+instance [safe] GHC.Base.Semigroup [Data.Binary.Put.PutM]
+  = Data.Binary.Put.$fSemigroupPutM
+trusted: safe
+require own pkg trusted: True
+module header:
+  Nothing
+declaration docs:
+arg docs:
+

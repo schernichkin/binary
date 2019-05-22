@@ -1,0 +1,939 @@
+
+==================== FINAL INTERFACE ====================
+2019-05-22 17:17:49.069277734 UTC
+
+interface binary-0.8.7.0-BLOwEKiKlD84pHPCNhnRK5:Data.Binary.FloatCast 8065
+  interface hash: 59c1ef6b2fc162c4d522d5cb88140722
+  ABI hash: e902e8bec8d65f930c017c464de1f21c
+  export-list hash: 8a13bb60343e3fa682d9bef51a968a7d
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 6fa632bdd4fd0d1b2d6ecefa33d08ecf
+  opt_hash: 5835274e0c52a5d281a4b935bfdb5c93
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Data.Binary.FloatCast.doubleToWord
+  Data.Binary.FloatCast.floatToWord
+  Data.Binary.FloatCast.wordToDouble
+  Data.Binary.FloatCast.wordToFloat
+module dependencies:
+package dependencies: array-0.5.3.0 base-4.12.0.0 ghc-prim-0.5.3
+                      integer-gmp-1.0.2.0
+orphans: base-4.12.0.0:GHC.Float base-4.12.0.0:GHC.Base
+family instance modules: base-4.12.0.0:Control.Applicative
+                         base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity base-4.12.0.0:Data.Monoid
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:Data.Version
+                         base-4.12.0.0:GHC.Exts base-4.12.0.0:GHC.Generics
+                         base-4.12.0.0:GHC.IO.Exception
+import  -/  array-0.5.3.0:Data.Array.Base ede05b091fefc604cd572a3818a902f4
+import  -/  array-0.5.3.0:Data.Array.ST 49aef1682287ada9fafdb2348c3765ad
+import  -/  array-0.5.3.0:Data.Array.Unsafe c9b6b6929afbcdbb68267651058ed9aa
+import  -/  base-4.12.0.0:Data.Word 6b968b6c7df442cfcad986e497aee095
+import  -/  base-4.12.0.0:GHC.Base c00b75f0b052d05c55ba6a4dd1c63b26
+import  -/  base-4.12.0.0:GHC.ST 8761d3f79849f7dde72ab648a4243d63
+import  -/  base-4.12.0.0:GHC.Word 36bd327b03ce8a144ab8e66a53975837
+import  -/  base-4.12.0.0:Prelude 3c779dfd6448bdd8e234c336802c2acb
+771a91478df450b1937e7b15dab75ab0
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Data.Binary.FloatCast.$trModule3
+                   Data.Binary.FloatCast.$trModule1) -}
+52c6278c508a23fd140d947e98be78f1
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Data.Binary.FloatCast.$trModule2) -}
+913ad0984d04587cd62fac3c9240995c
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Data.Binary.FloatCast"#) -}
+83b1f14ae24279b94a9f4cf9adcae5a4
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Data.Binary.FloatCast.$trModule4) -}
+7521e31313059181ff82e9e8a101626e
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("binary-0.8.7.0-BLOwEKiKlD84pHPCNhnRK5"#) -}
+1a74dc052677c21f2f639cde6b57d1f1
+  doubleToWord :: GHC.Types.Double -> GHC.Word.Word64
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>,
+     Inline: (sat-args=1),
+     Unfolding: InlineRule (1, False, False)
+                (\ (x :: GHC.Types.Double) ->
+                 case GHC.Magic.runRW#
+                        @ ('GHC.Types.TupleRep
+                             '[ 'GHC.Types.TupleRep '[], 'GHC.Types.LiftedRep])
+                        @ (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Word.Word64 #)
+                        (\ (s1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                         case GHC.Prim.newByteArray#
+                                @ GHC.Prim.RealWorld
+                                8#
+                                s1 of ds1 { (#,#) ipv ipv1 ->
+                         let {
+                           ipv2 :: Data.Array.Base.STUArray
+                                     GHC.Prim.RealWorld GHC.Types.Int GHC.Types.Double
+                           = Data.Array.Base.$WSTUArray
+                               @ GHC.Prim.RealWorld
+                               @ GHC.Types.Int
+                               @ GHC.Types.Double
+                               (GHC.Types.I# 0#)
+                               (GHC.Types.I# 0#)
+                               (GHC.Types.I# 1#)
+                               ipv1
+                         } in
+                         case GHC.Classes.ltInt
+                                (GHC.Types.I# 1#)
+                                (GHC.Types.I# 0#) of wild2 {
+                           GHC.Types.False
+                           -> case (GHC.Enum.eftIntFB
+                                      @ (GHC.ST.ST GHC.Prim.RealWorld ())
+                                      (\ (ds2 :: GHC.Types.Int)
+                                         (ds3 :: GHC.ST.ST GHC.Prim.RealWorld ())[OneShot]
+                                         (s2 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                                       case ipv2 of wild4 { Data.Array.Base.STUArray ds4 ds5 dt marr# ->
+                                       case ds2 of wild5 { GHC.Types.I# i# ->
+                                       case x of wild6 { GHC.Types.D# e# ->
+                                       case GHC.Prim.writeDoubleArray#
+                                              @ GHC.Prim.RealWorld
+                                              marr#
+                                              i#
+                                              e#
+                                              s2 of s2# { DEFAULT ->
+                                       ds3 `cast` (GHC.ST.N:ST[0] <GHC.Prim.RealWorld>_N <()>_R)
+                                         s2# } } } })
+                                        `cast`
+                                      (<GHC.Types.Int>_R
+                                       ->_R <GHC.ST.ST GHC.Prim.RealWorld ()>_R
+                                       ->_R Sym (GHC.ST.N:ST[0] <GHC.Prim.RealWorld>_N <()>_R))
+                                      (\ (s2 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                                       (# s2, GHC.Tuple.() #))
+                                        `cast`
+                                      (Sym (GHC.ST.N:ST[0] <GHC.Prim.RealWorld>_N <()>_R))
+                                      0#
+                                      0#)
+                                     `cast`
+                                   (GHC.ST.N:ST[0] <GHC.Prim.RealWorld>_N <()>_R)
+                                     ipv of ds2 { (#,#) ipv3 ipv4 ->
+                              case ipv2 of wild { Data.Array.Base.STUArray l u dt marr# ->
+                              let {
+                                ipv7 :: GHC.Types.Int = GHC.Types.I# dt
+                              } in
+                              let {
+                                i' :: GHC.Types.Int
+                                = case l of wild1 { GHC.Types.I# m ->
+                                  case u of wild4 { GHC.Types.I# n ->
+                                  let {
+                                    $j :: GHC.Types.Int <join 0> {- Strictness: x -}
+                                    = GHC.Arr.indexError
+                                        @ GHC.Types.Int
+                                        @ GHC.Types.Int
+                                        GHC.Show.$fShowInt
+                                        (wild1, wild4)
+                                        (GHC.Types.I# 0#)
+                                        (GHC.Base.build
+                                           @ GHC.Types.Char
+                                           (\ @ b1 -> GHC.CString.unpackFoldrCString# @ b1 "Int"#))
+                                  } in
+                                  case GHC.Prim.<=# m 0# of lwild {
+                                    DEFAULT -> $j
+                                    1#
+                                    -> case GHC.Prim.<=# 0# n of lwild1 {
+                                         DEFAULT -> $j 1# -> GHC.Types.I# (GHC.Prim.-# 0# m) } } } }
+                              } in
+                              let {
+                                $j :: (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Word.Word64 #)
+                                  <join 0> {- Strictness: x -}
+                                = case GHC.Err.error
+                                         @ 'GHC.Types.LiftedRep
+                                         @ GHC.Types.Int
+                                         (GHC.Stack.Types.PushCallStack
+                                            (GHC.Base.build
+                                               @ GHC.Types.Char
+                                               (\ @ b ->
+                                                GHC.CString.unpackFoldrCString# @ b "error"#))
+                                            (GHC.Stack.Types.SrcLoc
+                                               (GHC.Base.build
+                                                  @ GHC.Types.Char
+                                                  (\ @ b ->
+                                                   GHC.CString.unpackFoldrCString#
+                                                     @ b
+                                                     "array-0.5.3.0"#))
+                                               (GHC.Base.build
+                                                  @ GHC.Types.Char
+                                                  (\ @ b ->
+                                                   GHC.CString.unpackFoldrCString#
+                                                     @ b
+                                                     "Data.Array.Base"#))
+                                               (GHC.Base.build
+                                                  @ GHC.Types.Char
+                                                  (\ @ b ->
+                                                   GHC.CString.unpackFoldrCString#
+                                                     @ b
+                                                     "libraries/array/Data/Array/Base.hs"#))
+                                               (GHC.Types.I# 91#)
+                                               (GHC.Types.I# 31#)
+                                               (GHC.Types.I# 92#)
+                                               (GHC.Types.I# 76#))
+                                            GHC.Stack.Types.EmptyCallStack)
+                                           `cast`
+                                         (Sym (GHC.Classes.N:IP[0]
+                                                   <"callStack">_N <GHC.Stack.Types.CallStack>_N))
+                                         (GHC.Base.build
+                                            @ GHC.Types.Char
+                                            (\ @ b
+                                               (c :: GHC.Types.Char -> b -> b)[OneShot]
+                                               (n1 :: b)[OneShot] ->
+                                             GHC.CString.unpackFoldrCString#
+                                               @ b
+                                               "Error in array index; "#
+                                               c
+                                               (GHC.Base.foldr
+                                                  @ GHC.Types.Char
+                                                  @ b
+                                                  c
+                                                  (GHC.CString.unpackFoldrCString#
+                                                     @ b
+                                                     " not in range [0.."#
+                                                     c
+                                                     (GHC.Base.foldr
+                                                        @ GHC.Types.Char
+                                                        @ b
+                                                        c
+                                                        (GHC.CString.unpackFoldrCString#
+                                                           @ b
+                                                           ")"#
+                                                           c
+                                                           n1)
+                                                        (GHC.Show.showSignedInt
+                                                           GHC.Show.$fShow(,)1
+                                                           ipv7
+                                                           (GHC.Types.[] @ GHC.Types.Char))))
+                                                  (GHC.Show.showSignedInt
+                                                     GHC.Show.$fShow(,)1
+                                                     i'
+                                                     (GHC.Types.[] @ GHC.Types.Char)))))
+                                  ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Word.Word64 #)
+                                  of {}
+                              } in
+                              case GHC.Classes.leInt (GHC.Types.I# 0#) i' of wild1 {
+                                GHC.Types.False -> $j
+                                GHC.Types.True
+                                -> case GHC.Classes.ltInt i' ipv7 of wild4 {
+                                     GHC.Types.False -> $j
+                                     GHC.Types.True
+                                     -> case i' of wild5 { GHC.Types.I# i# ->
+                                        case GHC.Prim.readWord64Array#
+                                               @ GHC.Prim.RealWorld
+                                               marr#
+                                               i#
+                                               ipv3 of ds4 { (#,#) ipv8 ipv9 ->
+                                        (# ipv8, GHC.Word.W64# ipv9 #) } } } } } }
+                           GHC.Types.True
+                           -> case GHC.Err.error
+                                     @ 'GHC.Types.LiftedRep
+                                     @ GHC.Types.Int
+                                     (GHC.Stack.Types.PushCallStack
+                                        (GHC.Base.build
+                                           @ GHC.Types.Char
+                                           (\ @ b -> GHC.CString.unpackFoldrCString# @ b "error"#))
+                                        (GHC.Stack.Types.SrcLoc
+                                           (GHC.Base.build
+                                              @ GHC.Types.Char
+                                              (\ @ b ->
+                                               GHC.CString.unpackFoldrCString#
+                                                 @ b
+                                                 "array-0.5.3.0"#))
+                                           (GHC.Base.build
+                                              @ GHC.Types.Char
+                                              (\ @ b ->
+                                               GHC.CString.unpackFoldrCString#
+                                                 @ b
+                                                 "Data.Array.Base"#))
+                                           (GHC.Base.build
+                                              @ GHC.Types.Char
+                                              (\ @ b ->
+                                               GHC.CString.unpackFoldrCString#
+                                                 @ b
+                                                 "libraries/array/Data/Array/Base.hs"#))
+                                           (GHC.Types.I# 83#)
+                                           (GHC.Types.I# 40#)
+                                           (GHC.Types.I# 83#)
+                                           (GHC.Types.I# 67#))
+                                        GHC.Stack.Types.EmptyCallStack)
+                                       `cast`
+                                     (Sym (GHC.Classes.N:IP[0]
+                                               <"callStack">_N <GHC.Stack.Types.CallStack>_N))
+                                     (GHC.Base.build
+                                        @ GHC.Types.Char
+                                        (\ @ b ->
+                                         GHC.CString.unpackFoldrCString#
+                                           @ b
+                                           "Negative range size"#))
+                              ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Word.Word64 #)
+                              of {} } }) of ds1 { (#,#) ipv ipv1 ->
+                 ipv1 }) -}
+9827df4c081b1080fb64437c148f0454
+  floatToWord :: GHC.Types.Float -> GHC.Word.Word32
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>,
+     Inline: (sat-args=1),
+     Unfolding: InlineRule (1, False, False)
+                (\ (x :: GHC.Types.Float) ->
+                 case GHC.Magic.runRW#
+                        @ ('GHC.Types.TupleRep
+                             '[ 'GHC.Types.TupleRep '[], 'GHC.Types.LiftedRep])
+                        @ (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Word.Word32 #)
+                        (\ (s1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                         case GHC.Prim.newByteArray#
+                                @ GHC.Prim.RealWorld
+                                4#
+                                s1 of ds1 { (#,#) ipv ipv1 ->
+                         let {
+                           ipv2 :: Data.Array.Base.STUArray
+                                     GHC.Prim.RealWorld GHC.Types.Int GHC.Types.Float
+                           = Data.Array.Base.$WSTUArray
+                               @ GHC.Prim.RealWorld
+                               @ GHC.Types.Int
+                               @ GHC.Types.Float
+                               (GHC.Types.I# 0#)
+                               (GHC.Types.I# 0#)
+                               (GHC.Types.I# 1#)
+                               ipv1
+                         } in
+                         case GHC.Classes.ltInt
+                                (GHC.Types.I# 1#)
+                                (GHC.Types.I# 0#) of wild2 {
+                           GHC.Types.False
+                           -> case (GHC.Enum.eftIntFB
+                                      @ (GHC.ST.ST GHC.Prim.RealWorld ())
+                                      (\ (ds2 :: GHC.Types.Int)
+                                         (ds3 :: GHC.ST.ST GHC.Prim.RealWorld ())[OneShot]
+                                         (s2 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                                       case ipv2 of wild4 { Data.Array.Base.STUArray ds4 ds5 dt marr# ->
+                                       case ds2 of wild5 { GHC.Types.I# i# ->
+                                       case x of wild6 { GHC.Types.F# e# ->
+                                       case GHC.Prim.writeFloatArray#
+                                              @ GHC.Prim.RealWorld
+                                              marr#
+                                              i#
+                                              e#
+                                              s2 of s2# { DEFAULT ->
+                                       ds3 `cast` (GHC.ST.N:ST[0] <GHC.Prim.RealWorld>_N <()>_R)
+                                         s2# } } } })
+                                        `cast`
+                                      (<GHC.Types.Int>_R
+                                       ->_R <GHC.ST.ST GHC.Prim.RealWorld ()>_R
+                                       ->_R Sym (GHC.ST.N:ST[0] <GHC.Prim.RealWorld>_N <()>_R))
+                                      (\ (s2 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                                       (# s2, GHC.Tuple.() #))
+                                        `cast`
+                                      (Sym (GHC.ST.N:ST[0] <GHC.Prim.RealWorld>_N <()>_R))
+                                      0#
+                                      0#)
+                                     `cast`
+                                   (GHC.ST.N:ST[0] <GHC.Prim.RealWorld>_N <()>_R)
+                                     ipv of ds2 { (#,#) ipv3 ipv4 ->
+                              case ipv2 of wild { Data.Array.Base.STUArray l u dt marr# ->
+                              let {
+                                ipv7 :: GHC.Types.Int = GHC.Types.I# dt
+                              } in
+                              let {
+                                i' :: GHC.Types.Int
+                                = case l of wild1 { GHC.Types.I# m ->
+                                  case u of wild4 { GHC.Types.I# n ->
+                                  let {
+                                    $j :: GHC.Types.Int <join 0> {- Strictness: x -}
+                                    = GHC.Arr.indexError
+                                        @ GHC.Types.Int
+                                        @ GHC.Types.Int
+                                        GHC.Show.$fShowInt
+                                        (wild1, wild4)
+                                        (GHC.Types.I# 0#)
+                                        (GHC.Base.build
+                                           @ GHC.Types.Char
+                                           (\ @ b1 -> GHC.CString.unpackFoldrCString# @ b1 "Int"#))
+                                  } in
+                                  case GHC.Prim.<=# m 0# of lwild {
+                                    DEFAULT -> $j
+                                    1#
+                                    -> case GHC.Prim.<=# 0# n of lwild1 {
+                                         DEFAULT -> $j 1# -> GHC.Types.I# (GHC.Prim.-# 0# m) } } } }
+                              } in
+                              let {
+                                $j :: (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Word.Word32 #)
+                                  <join 0> {- Strictness: x -}
+                                = case GHC.Err.error
+                                         @ 'GHC.Types.LiftedRep
+                                         @ GHC.Types.Int
+                                         (GHC.Stack.Types.PushCallStack
+                                            (GHC.Base.build
+                                               @ GHC.Types.Char
+                                               (\ @ b ->
+                                                GHC.CString.unpackFoldrCString# @ b "error"#))
+                                            (GHC.Stack.Types.SrcLoc
+                                               (GHC.Base.build
+                                                  @ GHC.Types.Char
+                                                  (\ @ b ->
+                                                   GHC.CString.unpackFoldrCString#
+                                                     @ b
+                                                     "array-0.5.3.0"#))
+                                               (GHC.Base.build
+                                                  @ GHC.Types.Char
+                                                  (\ @ b ->
+                                                   GHC.CString.unpackFoldrCString#
+                                                     @ b
+                                                     "Data.Array.Base"#))
+                                               (GHC.Base.build
+                                                  @ GHC.Types.Char
+                                                  (\ @ b ->
+                                                   GHC.CString.unpackFoldrCString#
+                                                     @ b
+                                                     "libraries/array/Data/Array/Base.hs"#))
+                                               (GHC.Types.I# 91#)
+                                               (GHC.Types.I# 31#)
+                                               (GHC.Types.I# 92#)
+                                               (GHC.Types.I# 76#))
+                                            GHC.Stack.Types.EmptyCallStack)
+                                           `cast`
+                                         (Sym (GHC.Classes.N:IP[0]
+                                                   <"callStack">_N <GHC.Stack.Types.CallStack>_N))
+                                         (GHC.Base.build
+                                            @ GHC.Types.Char
+                                            (\ @ b
+                                               (c :: GHC.Types.Char -> b -> b)[OneShot]
+                                               (n1 :: b)[OneShot] ->
+                                             GHC.CString.unpackFoldrCString#
+                                               @ b
+                                               "Error in array index; "#
+                                               c
+                                               (GHC.Base.foldr
+                                                  @ GHC.Types.Char
+                                                  @ b
+                                                  c
+                                                  (GHC.CString.unpackFoldrCString#
+                                                     @ b
+                                                     " not in range [0.."#
+                                                     c
+                                                     (GHC.Base.foldr
+                                                        @ GHC.Types.Char
+                                                        @ b
+                                                        c
+                                                        (GHC.CString.unpackFoldrCString#
+                                                           @ b
+                                                           ")"#
+                                                           c
+                                                           n1)
+                                                        (GHC.Show.showSignedInt
+                                                           GHC.Show.$fShow(,)1
+                                                           ipv7
+                                                           (GHC.Types.[] @ GHC.Types.Char))))
+                                                  (GHC.Show.showSignedInt
+                                                     GHC.Show.$fShow(,)1
+                                                     i'
+                                                     (GHC.Types.[] @ GHC.Types.Char)))))
+                                  ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Word.Word32 #)
+                                  of {}
+                              } in
+                              case GHC.Classes.leInt (GHC.Types.I# 0#) i' of wild1 {
+                                GHC.Types.False -> $j
+                                GHC.Types.True
+                                -> case GHC.Classes.ltInt i' ipv7 of wild4 {
+                                     GHC.Types.False -> $j
+                                     GHC.Types.True
+                                     -> case i' of wild5 { GHC.Types.I# i# ->
+                                        case GHC.Prim.readWord32Array#
+                                               @ GHC.Prim.RealWorld
+                                               marr#
+                                               i#
+                                               ipv3 of ds4 { (#,#) ipv8 ipv9 ->
+                                        (# ipv8, GHC.Word.W32# ipv9 #) } } } } } }
+                           GHC.Types.True
+                           -> case GHC.Err.error
+                                     @ 'GHC.Types.LiftedRep
+                                     @ GHC.Types.Int
+                                     (GHC.Stack.Types.PushCallStack
+                                        (GHC.Base.build
+                                           @ GHC.Types.Char
+                                           (\ @ b -> GHC.CString.unpackFoldrCString# @ b "error"#))
+                                        (GHC.Stack.Types.SrcLoc
+                                           (GHC.Base.build
+                                              @ GHC.Types.Char
+                                              (\ @ b ->
+                                               GHC.CString.unpackFoldrCString#
+                                                 @ b
+                                                 "array-0.5.3.0"#))
+                                           (GHC.Base.build
+                                              @ GHC.Types.Char
+                                              (\ @ b ->
+                                               GHC.CString.unpackFoldrCString#
+                                                 @ b
+                                                 "Data.Array.Base"#))
+                                           (GHC.Base.build
+                                              @ GHC.Types.Char
+                                              (\ @ b ->
+                                               GHC.CString.unpackFoldrCString#
+                                                 @ b
+                                                 "libraries/array/Data/Array/Base.hs"#))
+                                           (GHC.Types.I# 83#)
+                                           (GHC.Types.I# 40#)
+                                           (GHC.Types.I# 83#)
+                                           (GHC.Types.I# 67#))
+                                        GHC.Stack.Types.EmptyCallStack)
+                                       `cast`
+                                     (Sym (GHC.Classes.N:IP[0]
+                                               <"callStack">_N <GHC.Stack.Types.CallStack>_N))
+                                     (GHC.Base.build
+                                        @ GHC.Types.Char
+                                        (\ @ b ->
+                                         GHC.CString.unpackFoldrCString#
+                                           @ b
+                                           "Negative range size"#))
+                              ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Word.Word32 #)
+                              of {} } }) of ds1 { (#,#) ipv ipv1 ->
+                 ipv1 }) -}
+8481404c56aa387878af4cc8e02a89c2
+  wordToDouble :: GHC.Word.Word64 -> GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>,
+     Inline: (sat-args=1),
+     Unfolding: InlineRule (1, False, False)
+                (\ (x :: GHC.Word.Word64) ->
+                 case GHC.Magic.runRW#
+                        @ ('GHC.Types.TupleRep
+                             '[ 'GHC.Types.TupleRep '[], 'GHC.Types.LiftedRep])
+                        @ (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Types.Double #)
+                        (\ (s1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                         case GHC.Prim.newByteArray#
+                                @ GHC.Prim.RealWorld
+                                8#
+                                s1 of ds1 { (#,#) ipv ipv1 ->
+                         let {
+                           ipv2 :: Data.Array.Base.STUArray
+                                     GHC.Prim.RealWorld GHC.Types.Int GHC.Word.Word64
+                           = Data.Array.Base.$WSTUArray
+                               @ GHC.Prim.RealWorld
+                               @ GHC.Types.Int
+                               @ GHC.Word.Word64
+                               (GHC.Types.I# 0#)
+                               (GHC.Types.I# 0#)
+                               (GHC.Types.I# 1#)
+                               ipv1
+                         } in
+                         case GHC.Classes.ltInt
+                                (GHC.Types.I# 1#)
+                                (GHC.Types.I# 0#) of wild2 {
+                           GHC.Types.False
+                           -> case (GHC.Enum.eftIntFB
+                                      @ (GHC.ST.ST GHC.Prim.RealWorld ())
+                                      (\ (ds2 :: GHC.Types.Int)
+                                         (ds3 :: GHC.ST.ST GHC.Prim.RealWorld ())[OneShot]
+                                         (s2 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                                       case ipv2 of wild4 { Data.Array.Base.STUArray ds4 ds5 dt marr# ->
+                                       case ds2 of wild5 { GHC.Types.I# i# ->
+                                       case x of wild6 { GHC.Word.W64# e# ->
+                                       case GHC.Prim.writeWord64Array#
+                                              @ GHC.Prim.RealWorld
+                                              marr#
+                                              i#
+                                              e#
+                                              s2 of s2# { DEFAULT ->
+                                       ds3 `cast` (GHC.ST.N:ST[0] <GHC.Prim.RealWorld>_N <()>_R)
+                                         s2# } } } })
+                                        `cast`
+                                      (<GHC.Types.Int>_R
+                                       ->_R <GHC.ST.ST GHC.Prim.RealWorld ()>_R
+                                       ->_R Sym (GHC.ST.N:ST[0] <GHC.Prim.RealWorld>_N <()>_R))
+                                      (\ (s2 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                                       (# s2, GHC.Tuple.() #))
+                                        `cast`
+                                      (Sym (GHC.ST.N:ST[0] <GHC.Prim.RealWorld>_N <()>_R))
+                                      0#
+                                      0#)
+                                     `cast`
+                                   (GHC.ST.N:ST[0] <GHC.Prim.RealWorld>_N <()>_R)
+                                     ipv of ds2 { (#,#) ipv3 ipv4 ->
+                              case ipv2 of wild { Data.Array.Base.STUArray l u dt marr# ->
+                              let {
+                                ipv7 :: GHC.Types.Int = GHC.Types.I# dt
+                              } in
+                              let {
+                                i' :: GHC.Types.Int
+                                = case l of wild1 { GHC.Types.I# m ->
+                                  case u of wild4 { GHC.Types.I# n ->
+                                  let {
+                                    $j :: GHC.Types.Int <join 0> {- Strictness: x -}
+                                    = GHC.Arr.indexError
+                                        @ GHC.Types.Int
+                                        @ GHC.Types.Int
+                                        GHC.Show.$fShowInt
+                                        (wild1, wild4)
+                                        (GHC.Types.I# 0#)
+                                        (GHC.Base.build
+                                           @ GHC.Types.Char
+                                           (\ @ b1 -> GHC.CString.unpackFoldrCString# @ b1 "Int"#))
+                                  } in
+                                  case GHC.Prim.<=# m 0# of lwild {
+                                    DEFAULT -> $j
+                                    1#
+                                    -> case GHC.Prim.<=# 0# n of lwild1 {
+                                         DEFAULT -> $j 1# -> GHC.Types.I# (GHC.Prim.-# 0# m) } } } }
+                              } in
+                              let {
+                                $j :: (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Types.Double #)
+                                  <join 0> {- Strictness: x -}
+                                = case GHC.Err.error
+                                         @ 'GHC.Types.LiftedRep
+                                         @ GHC.Types.Int
+                                         (GHC.Stack.Types.PushCallStack
+                                            (GHC.Base.build
+                                               @ GHC.Types.Char
+                                               (\ @ b ->
+                                                GHC.CString.unpackFoldrCString# @ b "error"#))
+                                            (GHC.Stack.Types.SrcLoc
+                                               (GHC.Base.build
+                                                  @ GHC.Types.Char
+                                                  (\ @ b ->
+                                                   GHC.CString.unpackFoldrCString#
+                                                     @ b
+                                                     "array-0.5.3.0"#))
+                                               (GHC.Base.build
+                                                  @ GHC.Types.Char
+                                                  (\ @ b ->
+                                                   GHC.CString.unpackFoldrCString#
+                                                     @ b
+                                                     "Data.Array.Base"#))
+                                               (GHC.Base.build
+                                                  @ GHC.Types.Char
+                                                  (\ @ b ->
+                                                   GHC.CString.unpackFoldrCString#
+                                                     @ b
+                                                     "libraries/array/Data/Array/Base.hs"#))
+                                               (GHC.Types.I# 91#)
+                                               (GHC.Types.I# 31#)
+                                               (GHC.Types.I# 92#)
+                                               (GHC.Types.I# 76#))
+                                            GHC.Stack.Types.EmptyCallStack)
+                                           `cast`
+                                         (Sym (GHC.Classes.N:IP[0]
+                                                   <"callStack">_N <GHC.Stack.Types.CallStack>_N))
+                                         (GHC.Base.build
+                                            @ GHC.Types.Char
+                                            (\ @ b
+                                               (c :: GHC.Types.Char -> b -> b)[OneShot]
+                                               (n1 :: b)[OneShot] ->
+                                             GHC.CString.unpackFoldrCString#
+                                               @ b
+                                               "Error in array index; "#
+                                               c
+                                               (GHC.Base.foldr
+                                                  @ GHC.Types.Char
+                                                  @ b
+                                                  c
+                                                  (GHC.CString.unpackFoldrCString#
+                                                     @ b
+                                                     " not in range [0.."#
+                                                     c
+                                                     (GHC.Base.foldr
+                                                        @ GHC.Types.Char
+                                                        @ b
+                                                        c
+                                                        (GHC.CString.unpackFoldrCString#
+                                                           @ b
+                                                           ")"#
+                                                           c
+                                                           n1)
+                                                        (GHC.Show.showSignedInt
+                                                           GHC.Show.$fShow(,)1
+                                                           ipv7
+                                                           (GHC.Types.[] @ GHC.Types.Char))))
+                                                  (GHC.Show.showSignedInt
+                                                     GHC.Show.$fShow(,)1
+                                                     i'
+                                                     (GHC.Types.[] @ GHC.Types.Char)))))
+                                  ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Types.Double #)
+                                  of {}
+                              } in
+                              case GHC.Classes.leInt (GHC.Types.I# 0#) i' of wild1 {
+                                GHC.Types.False -> $j
+                                GHC.Types.True
+                                -> case GHC.Classes.ltInt i' ipv7 of wild4 {
+                                     GHC.Types.False -> $j
+                                     GHC.Types.True
+                                     -> case i' of wild5 { GHC.Types.I# i# ->
+                                        case GHC.Prim.readDoubleArray#
+                                               @ GHC.Prim.RealWorld
+                                               marr#
+                                               i#
+                                               ipv3 of ds4 { (#,#) ipv8 ipv9 ->
+                                        (# ipv8, GHC.Types.D# ipv9 #) } } } } } }
+                           GHC.Types.True
+                           -> case GHC.Err.error
+                                     @ 'GHC.Types.LiftedRep
+                                     @ GHC.Types.Int
+                                     (GHC.Stack.Types.PushCallStack
+                                        (GHC.Base.build
+                                           @ GHC.Types.Char
+                                           (\ @ b -> GHC.CString.unpackFoldrCString# @ b "error"#))
+                                        (GHC.Stack.Types.SrcLoc
+                                           (GHC.Base.build
+                                              @ GHC.Types.Char
+                                              (\ @ b ->
+                                               GHC.CString.unpackFoldrCString#
+                                                 @ b
+                                                 "array-0.5.3.0"#))
+                                           (GHC.Base.build
+                                              @ GHC.Types.Char
+                                              (\ @ b ->
+                                               GHC.CString.unpackFoldrCString#
+                                                 @ b
+                                                 "Data.Array.Base"#))
+                                           (GHC.Base.build
+                                              @ GHC.Types.Char
+                                              (\ @ b ->
+                                               GHC.CString.unpackFoldrCString#
+                                                 @ b
+                                                 "libraries/array/Data/Array/Base.hs"#))
+                                           (GHC.Types.I# 83#)
+                                           (GHC.Types.I# 40#)
+                                           (GHC.Types.I# 83#)
+                                           (GHC.Types.I# 67#))
+                                        GHC.Stack.Types.EmptyCallStack)
+                                       `cast`
+                                     (Sym (GHC.Classes.N:IP[0]
+                                               <"callStack">_N <GHC.Stack.Types.CallStack>_N))
+                                     (GHC.Base.build
+                                        @ GHC.Types.Char
+                                        (\ @ b ->
+                                         GHC.CString.unpackFoldrCString#
+                                           @ b
+                                           "Negative range size"#))
+                              ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Types.Double #)
+                              of {} } }) of ds1 { (#,#) ipv ipv1 ->
+                 ipv1 }) -}
+52d7cd847aa863aaf7bf2599830bae70
+  wordToFloat :: GHC.Word.Word32 -> GHC.Types.Float
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>,
+     Inline: (sat-args=1),
+     Unfolding: InlineRule (1, False, False)
+                (\ (x :: GHC.Word.Word32) ->
+                 case GHC.Magic.runRW#
+                        @ ('GHC.Types.TupleRep
+                             '[ 'GHC.Types.TupleRep '[], 'GHC.Types.LiftedRep])
+                        @ (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Types.Float #)
+                        (\ (s1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                         case GHC.Prim.newByteArray#
+                                @ GHC.Prim.RealWorld
+                                4#
+                                s1 of ds1 { (#,#) ipv ipv1 ->
+                         let {
+                           ipv2 :: Data.Array.Base.STUArray
+                                     GHC.Prim.RealWorld GHC.Types.Int GHC.Word.Word32
+                           = Data.Array.Base.$WSTUArray
+                               @ GHC.Prim.RealWorld
+                               @ GHC.Types.Int
+                               @ GHC.Word.Word32
+                               (GHC.Types.I# 0#)
+                               (GHC.Types.I# 0#)
+                               (GHC.Types.I# 1#)
+                               ipv1
+                         } in
+                         case GHC.Classes.ltInt
+                                (GHC.Types.I# 1#)
+                                (GHC.Types.I# 0#) of wild2 {
+                           GHC.Types.False
+                           -> case (GHC.Enum.eftIntFB
+                                      @ (GHC.ST.ST GHC.Prim.RealWorld ())
+                                      (\ (ds2 :: GHC.Types.Int)
+                                         (ds3 :: GHC.ST.ST GHC.Prim.RealWorld ())[OneShot]
+                                         (s2 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                                       case ipv2 of wild4 { Data.Array.Base.STUArray ds4 ds5 dt marr# ->
+                                       case ds2 of wild5 { GHC.Types.I# i# ->
+                                       case x of wild6 { GHC.Word.W32# e# ->
+                                       case GHC.Prim.writeWord32Array#
+                                              @ GHC.Prim.RealWorld
+                                              marr#
+                                              i#
+                                              e#
+                                              s2 of s2# { DEFAULT ->
+                                       ds3 `cast` (GHC.ST.N:ST[0] <GHC.Prim.RealWorld>_N <()>_R)
+                                         s2# } } } })
+                                        `cast`
+                                      (<GHC.Types.Int>_R
+                                       ->_R <GHC.ST.ST GHC.Prim.RealWorld ()>_R
+                                       ->_R Sym (GHC.ST.N:ST[0] <GHC.Prim.RealWorld>_N <()>_R))
+                                      (\ (s2 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                                       (# s2, GHC.Tuple.() #))
+                                        `cast`
+                                      (Sym (GHC.ST.N:ST[0] <GHC.Prim.RealWorld>_N <()>_R))
+                                      0#
+                                      0#)
+                                     `cast`
+                                   (GHC.ST.N:ST[0] <GHC.Prim.RealWorld>_N <()>_R)
+                                     ipv of ds2 { (#,#) ipv3 ipv4 ->
+                              case ipv2 of wild { Data.Array.Base.STUArray l u dt marr# ->
+                              let {
+                                ipv7 :: GHC.Types.Int = GHC.Types.I# dt
+                              } in
+                              let {
+                                i' :: GHC.Types.Int
+                                = case l of wild1 { GHC.Types.I# m ->
+                                  case u of wild4 { GHC.Types.I# n ->
+                                  let {
+                                    $j :: GHC.Types.Int <join 0> {- Strictness: x -}
+                                    = GHC.Arr.indexError
+                                        @ GHC.Types.Int
+                                        @ GHC.Types.Int
+                                        GHC.Show.$fShowInt
+                                        (wild1, wild4)
+                                        (GHC.Types.I# 0#)
+                                        (GHC.Base.build
+                                           @ GHC.Types.Char
+                                           (\ @ b1 -> GHC.CString.unpackFoldrCString# @ b1 "Int"#))
+                                  } in
+                                  case GHC.Prim.<=# m 0# of lwild {
+                                    DEFAULT -> $j
+                                    1#
+                                    -> case GHC.Prim.<=# 0# n of lwild1 {
+                                         DEFAULT -> $j 1# -> GHC.Types.I# (GHC.Prim.-# 0# m) } } } }
+                              } in
+                              let {
+                                $j :: (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Types.Float #)
+                                  <join 0> {- Strictness: x -}
+                                = case GHC.Err.error
+                                         @ 'GHC.Types.LiftedRep
+                                         @ GHC.Types.Int
+                                         (GHC.Stack.Types.PushCallStack
+                                            (GHC.Base.build
+                                               @ GHC.Types.Char
+                                               (\ @ b ->
+                                                GHC.CString.unpackFoldrCString# @ b "error"#))
+                                            (GHC.Stack.Types.SrcLoc
+                                               (GHC.Base.build
+                                                  @ GHC.Types.Char
+                                                  (\ @ b ->
+                                                   GHC.CString.unpackFoldrCString#
+                                                     @ b
+                                                     "array-0.5.3.0"#))
+                                               (GHC.Base.build
+                                                  @ GHC.Types.Char
+                                                  (\ @ b ->
+                                                   GHC.CString.unpackFoldrCString#
+                                                     @ b
+                                                     "Data.Array.Base"#))
+                                               (GHC.Base.build
+                                                  @ GHC.Types.Char
+                                                  (\ @ b ->
+                                                   GHC.CString.unpackFoldrCString#
+                                                     @ b
+                                                     "libraries/array/Data/Array/Base.hs"#))
+                                               (GHC.Types.I# 91#)
+                                               (GHC.Types.I# 31#)
+                                               (GHC.Types.I# 92#)
+                                               (GHC.Types.I# 76#))
+                                            GHC.Stack.Types.EmptyCallStack)
+                                           `cast`
+                                         (Sym (GHC.Classes.N:IP[0]
+                                                   <"callStack">_N <GHC.Stack.Types.CallStack>_N))
+                                         (GHC.Base.build
+                                            @ GHC.Types.Char
+                                            (\ @ b
+                                               (c :: GHC.Types.Char -> b -> b)[OneShot]
+                                               (n1 :: b)[OneShot] ->
+                                             GHC.CString.unpackFoldrCString#
+                                               @ b
+                                               "Error in array index; "#
+                                               c
+                                               (GHC.Base.foldr
+                                                  @ GHC.Types.Char
+                                                  @ b
+                                                  c
+                                                  (GHC.CString.unpackFoldrCString#
+                                                     @ b
+                                                     " not in range [0.."#
+                                                     c
+                                                     (GHC.Base.foldr
+                                                        @ GHC.Types.Char
+                                                        @ b
+                                                        c
+                                                        (GHC.CString.unpackFoldrCString#
+                                                           @ b
+                                                           ")"#
+                                                           c
+                                                           n1)
+                                                        (GHC.Show.showSignedInt
+                                                           GHC.Show.$fShow(,)1
+                                                           ipv7
+                                                           (GHC.Types.[] @ GHC.Types.Char))))
+                                                  (GHC.Show.showSignedInt
+                                                     GHC.Show.$fShow(,)1
+                                                     i'
+                                                     (GHC.Types.[] @ GHC.Types.Char)))))
+                                  ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Types.Float #)
+                                  of {}
+                              } in
+                              case GHC.Classes.leInt (GHC.Types.I# 0#) i' of wild1 {
+                                GHC.Types.False -> $j
+                                GHC.Types.True
+                                -> case GHC.Classes.ltInt i' ipv7 of wild4 {
+                                     GHC.Types.False -> $j
+                                     GHC.Types.True
+                                     -> case i' of wild5 { GHC.Types.I# i# ->
+                                        case GHC.Prim.readFloatArray#
+                                               @ GHC.Prim.RealWorld
+                                               marr#
+                                               i#
+                                               ipv3 of ds4 { (#,#) ipv8 ipv9 ->
+                                        (# ipv8, GHC.Types.F# ipv9 #) } } } } } }
+                           GHC.Types.True
+                           -> case GHC.Err.error
+                                     @ 'GHC.Types.LiftedRep
+                                     @ GHC.Types.Int
+                                     (GHC.Stack.Types.PushCallStack
+                                        (GHC.Base.build
+                                           @ GHC.Types.Char
+                                           (\ @ b -> GHC.CString.unpackFoldrCString# @ b "error"#))
+                                        (GHC.Stack.Types.SrcLoc
+                                           (GHC.Base.build
+                                              @ GHC.Types.Char
+                                              (\ @ b ->
+                                               GHC.CString.unpackFoldrCString#
+                                                 @ b
+                                                 "array-0.5.3.0"#))
+                                           (GHC.Base.build
+                                              @ GHC.Types.Char
+                                              (\ @ b ->
+                                               GHC.CString.unpackFoldrCString#
+                                                 @ b
+                                                 "Data.Array.Base"#))
+                                           (GHC.Base.build
+                                              @ GHC.Types.Char
+                                              (\ @ b ->
+                                               GHC.CString.unpackFoldrCString#
+                                                 @ b
+                                                 "libraries/array/Data/Array/Base.hs"#))
+                                           (GHC.Types.I# 83#)
+                                           (GHC.Types.I# 40#)
+                                           (GHC.Types.I# 83#)
+                                           (GHC.Types.I# 67#))
+                                        GHC.Stack.Types.EmptyCallStack)
+                                       `cast`
+                                     (Sym (GHC.Classes.N:IP[0]
+                                               <"callStack">_N <GHC.Stack.Types.CallStack>_N))
+                                     (GHC.Base.build
+                                        @ GHC.Types.Char
+                                        (\ @ b ->
+                                         GHC.CString.unpackFoldrCString#
+                                           @ b
+                                           "Negative range size"#))
+                              ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Types.Float #)
+                              of {} } }) of ds1 { (#,#) ipv ipv1 ->
+                 ipv1 }) -}
+trusted: trustworthy
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+
